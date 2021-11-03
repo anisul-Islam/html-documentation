@@ -1,6 +1,6 @@
 # My HTML Documentation
 
-## Overall Sections
+### Total Chapters are following
 
 1. Introduction
 2. Typography
@@ -14,11 +14,8 @@
 10. Projects
 
 <br />
-<br />
 
-## Section 1: Introduction
-
----
+## Chapter 1: Introduction
 
 ### [1.1 Introduction to HTML](https://youtu.be/d35dfSwBTNY)
 
@@ -33,7 +30,6 @@
 
 - Tim Berners-Lee created HTML in 1991
 
-<br />
 <br />
 
 ### [1.2 Tag, content, attribute, element](https://youtu.be/SEZ7YCF141I)
@@ -87,7 +83,6 @@
 - Attribute Syntax: `attributeName="attributeValue"`
 
 <br />
-<br />
 
 ### [1.3 Structure of an HTML document](https://youtu.be/t9FkGMxsz_g)
 
@@ -120,7 +115,6 @@
 - Version Control: GitHub
 
 <br/>
-<br/>
 
 ### [1.4 First HTML Program](https://youtu.be/j4jh3iZ6t-M)
 
@@ -144,7 +138,6 @@
 - Inside `<head>` tag we have set title of the webpage using `<title>` tag
 - Inside `<body>` tag we are displaying some text. here `<br/>` tag creates a line break
 
-<br/>
 <br/>
 
 ### [1.5 Inside Head Tag]()
@@ -177,7 +170,6 @@
 - `<script src="index.js"></script>` generally connects js file to html. we can also use `<script> ... </script>` tag directly inside the body tag.
 
 <br/>
-<br/>
 
 ### [1.6 Debugging](https://youtu.be/ApmhBx908Ik)
 
@@ -186,9 +178,7 @@
 <br/>
 <br/>
 
-## Section 2: Typography
-
----
+## Chapter 2: Typography
 
 ### [2.1 Headings, Paragraph, Horizontal rule](https://youtu.be/NX7YoHFll6s)
 
@@ -215,6 +205,8 @@
 - There are 6 HTML heading levels. `<h1>` is the largest level and `<h6>` is the smallest level.
 - by default, heading tags and paragraph tag create new line (block level element)
 - `<hr size="2"/>` here `<hr/>` is an empty tag responsible for creating horizontal rule and size attribute set the heights of the horizontal rule in pixel
+
+<br/>
 
 ### [2.2 Styling html elemnts](https://youtu.be/yOxgDRpr6kE)
 
@@ -260,7 +252,6 @@
   - [colorzilla][colorzilla]
 
 <br/>
-<br/>
 
 ### [2.3 Text Formatting tags](https://youtu.be/3LYkVHPA7V8)
 
@@ -301,11 +292,9 @@
 ```
 
 <br/>
-<br/>
 
 ### [2.4 How to write bangla in html documentation](https://youtu.be/cTdMbPHvH68)
 
-<br/>
 <br/>
 
 ### [2.5 Entity, pre tag, comment](https://youtu.be/7YOZEFX1hTQ)
