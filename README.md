@@ -500,8 +500,3 @@ video Example
 [colorhunt]: https://colorhunt.co/
 [imagecolorpicker]: https://imagecolorpicker.com/
 [htmlcolorcodes]: https://htmlcolorcodes.com/
-
-git:
-git add .
-git commit -m "$m"
-git push -u origin master
