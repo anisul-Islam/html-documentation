@@ -4,14 +4,10 @@
 
 1. Introduction
 2. Typography
-3. List, Image, Link
-4. Div, Display
-5. Table
-6. Form
-7. Media (audio, video)
-8. Graphics
-9. HTML5 & Web Accessibility
-10. Projects
+3. List, Link, Media
+4. Table & Form
+5. HTML5 & Web Accessibility
+6. Projects
 
 <br />
 
@@ -205,6 +201,9 @@
 </body>
 ```
 
+output of the text-formatting tags is below:  
+ <img src="./images/headings.png" width="60%"/>
+
 - There are 6 HTML heading levels. `<h1>` is the largest level and `<h6>` is the smallest level.
 - by default, heading tags and paragraph tag create new line (block level element)
 - `<hr size="2"/>` here `<hr/>` is an empty tag responsible for creating horizontal rule and size attribute set the heights of the horizontal rule in pixel
@@ -294,17 +293,215 @@
 </body>
 ```
 
+output of the text-formatting tags is below:  
+ <img src="./images/text-formatting.png" width="60%"/>
+
+<!-- various links -->
+
+<br/>
+
 <br/>
 
 ### [2.4 How to write bangla in html documentation](https://youtu.be/cTdMbPHvH68)
 
 <br/>
 
-### [2.5 Entity, pre tag, comment](https://youtu.be/7YOZEFX1hTQ)
+### [2.5 Entity, comment](https://youtu.be/7YOZEFX1hTQ)
 
-<!-- various links -->
+Comment syntax example
+
+```html
+<!-- This is a comment -->
+```
+
+Entity syntax example
+
+```html
+&copy; &lt; &gt; &gt; &hearts;
+```
+
+- First example shows the example of a html comment
+- second example shows an example of entity
+- To create an entity first write & then give a keyword and then give a semicolon
+- `&copy;` will create copyright symbol
+- `&lt;` will create less than symbol
+- `&gt;` will create greater than symbol
+- `&hearts;` will create hearts symbol
+
+<br/>
+
+### [2.6 How to add symbol and emoji](https://youtu.be/_LVzF0XMAqc)
+
+Unicode character website: https://unicode-table.com/en/  
+W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
+
+<br/>
+
+### [2.7 Font Style](https://youtu.be/NEJnq8ir-TY)
+
+- Some common style property such as font-size, font-family, color, background-color, for styling text
+- In the following example, we are setting the h1's background color as green, font color as white, font size 5rem or 80px and font family is fantasy
+
+  ```html
+  <body>
+    <h1
+      style="
+        background-color: green;
+        color: white;
+        font-size: 5rem;
+        font-family: fantasy;
+      "
+    >
+      Bangladesh
+    </h1>
+  </body>
+  ```
+
+  output of the heading style code  
+  <img src="./images/style.png" width="60%"/>
+     <!-- various links -->
+
+<br/>
+
+## Chapter 3: List, Link, Media
+
+### [3.1 HTML List](https://youtu.be/o5LRFPZrA7Y)
+
+- Mainly there are 2 types of list available in html: ordered list, unordered list
+- `ol` (ordered list) tag is used for creating ordered list
+- `ul` (unordered list) tag is used for creating unordered list
+- `li` (list) tag is a common tag for both ordered and unordered list
+  example
+
+  ```html
+  <body>
+    <h3>Web development front end skills</h3>
+    <ol>
+      <li>HTML</li>
+      <li>GitHub</li>
+      <li>Figma</li>
+      <li>CSS</li>
+      <li>Tailwind CSS / Bootstrap</li>
+    </ol>
+    <ul>
+      <li>JS</li>
+      <li>sass</li>
+      <li>React.js</li>
+      <li>Typescript.js</li>
+    </ul>
+  </body>
+  ```
+
+  output of the list code  
+  <img src="./images/list.png" width="60%"/>
+     <!-- various links -->
+
+<br />
+
+### [3.2 HTML Link](https://youtu.be/G3u4zuk-Fi8)
+
+- link tag `<a> ... </a>` is used for visiting other pages or websites.
+- Inside `<a>` link `href="url"` attribute is used where we give the address where we want to visit based on click
+- Inside `<a>` link `target="_blank"` attribute is used to open a new tab for the visited page/site
+- As shown in the following example we can send email by clicking the link for that we have to use `href="mailto:EMAIL_ADDRESS_HERE"`
+- As shown in the following example we can call somone by clicking the link for that we have to use `href="tel:PHONE_NUMBER_HERE"`
+
+  Example
+
+  ```html
+  <body>
+    <h3>Contact Me</h3>
+    <a href="http://www.studywithanis.com" target="_blank">website</a> <br />
+    <br />
+    <a href="https://www.youtube.com/c/anisulislamrubel" target="_blank"
+      >YouTube</a
+    >
+    <br />
+    <br />
+    <a href="tel:0017444044000" target="_blank">Call me</a> <br />
+    <br />
+    <a href="mailto:anisul2010s@yahoo.co.uk" target="_blank">Mail Me</a>
+  </body>
+  ```
+
+  output of the html link code  
+  <img src="./images/link.png" width="60%"/>
+     <!-- various links -->
+
+<br />
+
+### [3.3 HTML Image](https://youtu.be/UfioPT4M2VQ)
+
+- For adding image on webpage we use `<img />` tag as shown in the following example.
+- some common attribute for `<img />` tag: `src, alt, height, width, title`
+- syntax for adding image: `<img src="imagename" alt="alternative" title="profile image"> `
+- `src` attribute needs the image address
+- `alt` attribute shows some text about image if image is not found
+- `title` attribute shows some tooltip text when we hover over the image
+- `height` and `width` attribute helps us to set the height and width of image
+- we can use `<img>` tag inside of `<a>` tag so that when we click an image it will take us to a link. `<a href="" target="_blank"> <img src="" alt="" /> </a>`
+
+<br />
+
+### [3.4 iframe](https://youtu.be/oN8aS_HW4k8)
+
+- iframe helps us to display any website, youtube video or map inside our own webpage  
+  iframe Example
+
+  ```html
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/oN8aS_HW4k8"
+    title="YouTube video player"
+    allowfullscreen
+  >
+  </iframe>
+  ```
+
+<br />
+
+### [3.5 how to add audio in webpage](https://youtu.be/nnrCS41iuAQ)
+
+- `<audio> ... </audio>` tag helps us to add audio in our webpage
+- `<audio> ... </audio>` tag has some attributes such as `controls autoplay muted height width`
+- audio example shows how to add aduio source by using `<source />` tag
+- Inside `<source />` tag we must define the `src=""` src address/name and also the `type=""` of audio
+- as the example shows there are 2 `<source />` tag is used if the first format is not supported by the browser then second one will work. if first and second both is not supported by the browser then `Your browser does not support the audio element.` will work.
+
+  audio Example
+
+  ```html
+  <audio controls autoplay muted height="300" width="300">
+    <source src="anis.mp3" type="audio/mp3">
+    <source src="anis.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio
+  ```
+
+<br />
+
+### [3.6 how to add video in webpage](https://youtu.be/kpqX5pZtAJE)
+
+- `<video> ... </video>` tag helps us to add video in our webpage
+- `<video> ... </video>` tag has some attributes such as `controls autoplay muted height width`
+
+video Example
+
+```html
+<video controls autoplay muted height="300" width="300">
+  <source src="anis.mp4" type="video/mp4">
+  <source src="anis.ogg" type="audio/ogg">
+  Your browser does not support the video element.
+</video
+```
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
 [imagecolorpicker]: https://imagecolorpicker.com/
 [htmlcolorcodes]: https://htmlcolorcodes.com/
+
+git:
+git add .
+git commit -m "$m"
+git push -u origin master
