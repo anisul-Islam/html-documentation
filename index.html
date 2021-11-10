@@ -2,18 +2,43 @@
 <html lang="en">
   <head>
     <title>Document</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
-    <h3>Contact Me</h3>
-    <a href="http://www.studywithanis.com" target="_blank">website</a> <br />
-    <br />
-    <a href="https://www.youtube.com/c/anisulislamrubel" target="_blank"
-      >YouTube</a
-    >
-    <br />
-    <br />
-    <a href="tel:0017444044000" target="_blank">Call me</a> <br />
-    <br />
-    <a href="mailto:anisul2010s@yahoo.co.uk" target="_blank">Mail Me</a>
+    <table>
+      <caption>
+        Student Table
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: tomato" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Student ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">101</th>
+          <td>Anis</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <th scope="row">102</th>
+          <td>Rabeya</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

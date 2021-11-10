@@ -496,6 +496,348 @@ video Example
 </video
 ```
 
+<br />
+
+## Chapter 4: Table, Form
+
+### [4.1 HTML Basic Table](https://youtu.be/MzpGs7TAQ8o)
+
+- `<table>` tag is used to create table.
+- `<thead>` tag is used to create table head.
+- `<tbody>` tag is used to create table body.
+- `<tfoot>` tag is used to create table footer.
+- `<tr>` tag is used to create table row.
+- `<td>` tag is used to create table data cell.
+- `<th>` tag is used to create table header cell.
+- `<caption>` tag is used to create table caption.
+
+- Follow the image to understand td, tr,
+  <img src="./images/table.png" alt="table" width="90%">
+
+  ```html
+  <body>
+    <table>
+      <caption>
+        Student Table
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Anis</td>
+          <td>3.92</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rabeya</td>
+          <td>3.45</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Rasel</td>
+          <td>3.45</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  ```
+
+  output of the above html code
+  <img src="./images/table2.png" alt="table" width="90%">
+
+  <br />
+
+### [4.2 HTML Table rowspan, colspan](https://youtu.be/yvDlTMs5ZGc)
+
+- `rowspan="N"` attribute is used to tell that a cell will expand N number of rows.
+- `colspan="N"` attribute is used to tell that a cell will expand N number of columns.  
+   An example of rowspan is given below:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <caption>
+          Student Table
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Anis</td>
+            <td>3.92</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Rabeya</td>
+            <td rowspan="2">3.45</td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Rasel</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  ```
+
+  output of the above html code
+  <img src="./images/table3.png" alt="table" width="90%">
+
+        <br/>
+
+  An example of rowspan is given below:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <caption>
+          Student Table
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="2">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Anis</td>
+            <td>017</td>
+            <td>018</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Rabeya</td>
+            <td>019</td>
+            <td>015</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  ```
+
+  output of the above html code
+  <img src="./images/table4.png" alt="table" width="90%">
+
+      <br />
+
+  An example of colspan and rowspan is given below:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <caption>
+          Student Table
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th colspan="2">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Anis</td>
+            <td rowspan="2">3.45</td>
+            <td>017</td>
+            <td>018</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Rabeya</td>
+            <td>019</td>
+            <td>015</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Rabeya</td>
+            <td>3.95</td>
+            <td>019</td>
+            <td>015</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  ```
+
+  output of the above html code
+  <img src="./images/table5.png" alt="table" width="90%">
+
+    <br />
+
+  An example of accessible table using scope is given below:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <caption>
+          Student Table
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Anis</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <th scope="row">102</th>
+            <td>Rabeya</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  ```
+
+  output of the above html code
+  <img src="./images/table6.png" alt="table" width="90%">
+
+  <br />
+
+  An example of table using `<colgroup> & <col>` tags is given below:
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-collapse: collapse;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <caption>
+          Student Table
+        </caption>
+        <colgroup>
+          <col span="2" style="background-color: tomato" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">101</th>
+            <td>Anis</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <th scope="row">102</th>
+            <td>Rabeya</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  ```
+
+  output of the above html code
+  <img src="./images/table7.png" alt="table" width="90%">
+
+  <br />
+
+### [4.3 HTML Form](https://youtu.be/HoV2LR3-Izo)
+
+- `<form>` tag is used to create a html form.
+
+  <br/>
+
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
 [imagecolorpicker]: https://imagecolorpicker.com/
