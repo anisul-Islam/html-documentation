@@ -1076,7 +1076,7 @@ Input attributes:
 
   <br/>
 
-  ### [5.2 details and figure elements]()
+  ### [5.2 details and figure elements](https://youtu.be/nkLd4qAFwzg)
 
   - `<details>` elements have tewo states: closed, open
   - `<summary>` a short summary of details is provided by summary element
@@ -1125,6 +1125,56 @@ Input attributes:
     output of the heading style code  
     <img src="./images/details1.png" width="60%"/>
     <img src="./images/details2.png" width="60%"/>
+
+      <br/>
+
+## Chapter 6: Web accessibility
+
+### [6.1 web accessibility](https://youtu.be/LH4Sn9ZF-jQ)
+
+- what is web accessibility?
+  - making website supportive for disable people and search engine
+- how to check web accessibility?
+  - we can use some tools like axe DevTools - Web Accessibility Testing
+- Tips for making website accessible:
+
+  1. Use Semantic elements over non semantic elements. In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
+
+     ```html
+     <div>Click me</div>
+     <button>Click me</button>
+     ```
+
+  2. Use Heading tags in order
+
+     - use one h1 element in a webpage
+     - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
+
+  3. Use alt attribute
+
+     - use alt attribute for `<img />` element
+     - alt attribute provides more info to the blind people
+     - low bandwidth might not render the image so the alt will help here
+     - alt attributes helps technologies like search engines
+     - title attribute can be used when we hover over image to get extra information
+
+  4. Contrast ratio checker
+     - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
+  5. Declare the languages
+     - `<html lang="en">`
+  6. Meaningful Link txt
+     - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
+  7. Clear Link test
+     - make link text understandable and clear `<html lang="en">`
+  8. Form related matters
+     - use label and bind input elements with label by using id and for value same. example is given below:
+       ```html
+       <label for="email">Email: </label> <input type="email" id="email" />
+       ```
+
+- References:
+  - https://www.w3.org/WAI/fundamentals/accessibility-intro/
+  - https://www.w3schools.com/html/html_accessibility.asp
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
