@@ -369,17 +369,44 @@ W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
 
 - `<details>` elements have tewo states: closed, open
 - `<summary>` a short summary of details is provided by summary element
+
   ```html
-  <details>
-    <summary>Anisul Islam</summary>
-    My Name is Anisul Islam. I am 31 years old. I have done my masters in
-    Software, Web & cloud at Tampere University, Finland.
-  </details>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Document</title>
+      <style>
+        details[open] > summary {
+          background-color: aqua;
+        }
+      </style>
+    </head>
+    <body>
+      <details>
+        <summary>Anisul Islam</summary>
+        My Name is Anisul Islam. I am 31 years old. I have done my masters in
+        Software, Web & cloud at Tampere University, Finland.
+      </details>
+
+      <!-- no need to understand this part cause I just tested using javascript here -->
+      <!-- <script>
+        const details = document.querySelector("details");
+        details.addEventListener("toggle", () => {
+          if (details.open) {
+            console.log("open");
+          } else {
+            console.log("close");
+          }
+        });
+      </script> -->
+    </body>
+  </html>
   ```
+
   output of the heading style code  
-  <img src="./images/details1.png" width="60%"/>
+   <img src="./images/details1.png" width="60%"/>
   <img src="./images/details2.png" width="60%"/>
-     <!-- various links -->
+  <!-- various links -->
 
 <br/>
 
@@ -1071,6 +1098,29 @@ Input attributes:
 ## Chapter 5: HTML5 Sematic Elements
 
 ### [5.1 Introduction to HTML5](https://youtu.be/7vaU86CFaWs)
+
+- HTML5 developed in 2014
+- HTML5'S Objectives
+
+  - adding more semantic tags
+  - more form types
+  - improve accessibility
+  - improved storage facilities
+  - improved graphics & media
+  - remove few things
+
+  <br/>
+
+- HTML5 Semantic elements: `<header> <nav> <main> <article> <aside> <section> <footer> <figure> <figcaption> <details> <summary> <mark> <time>`
+
+- sematic tags vs non semantic tags
+
+  - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
+  - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
+  - sematic tags vs non semantic tags example is given below:
+    <img src="./images/semantic.png" alt="table" width="90%">
+
+  <br/>
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
