@@ -1043,6 +1043,9 @@ Input attributes:
   </form>
   ```
 
+  output of the above html code
+  <img src="./images/form.png" alt="table" width="90%">
+
   <br/>
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
