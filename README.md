@@ -1114,6 +1114,10 @@ Input attributes:
             }
           });
         </script> -->
+        <figure>
+          <img src="./images/list.png" alt="list" />
+          <figcaption>fig1: list image</figcaption>
+        </figure>
       </body>
     </html>
     ```
