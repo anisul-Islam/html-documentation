@@ -6,8 +6,10 @@
 2. Typography
 3. List, Link, Media
 4. Table & Form
-5. HTML5 & Web Accessibility
-6. Projects
+5. HTML5 Sematic Elements
+6. Web Accessibility
+7. HTML Graphics
+8. Projects
 
 <br />
 
@@ -360,6 +362,20 @@ W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
   output of the heading style code  
   <img src="./images/style.png" width="60%"/>
      <!-- various links -->
+
+<br/>
+
+### [2.8 details & summary]()
+
+- `<details>` elements have tewo states: closed, open
+- `<summary>` a short summary of details is provided by summary element
+  ```html
+  <details>
+    <summary>Anisul Islam</summary>
+    My Name is Anisul Islam. I am 31 years old. I have done my masters in
+    Software, Web & cloud at Tampere University, Finland.
+  </details>
+  ```
 
 <br/>
 
@@ -1047,6 +1063,10 @@ Input attributes:
   <img src="./images/form.png" alt="table" width="90%">
 
   <br/>
+
+## Chapter 5: HTML5 Sematic Elements
+
+### [5.1 Introduction to HTML5](https://youtu.be/7vaU86CFaWs)
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
