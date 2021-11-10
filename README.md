@@ -834,7 +834,77 @@ video Example
 
 ### [4.3 HTML Form](https://youtu.be/HoV2LR3-Izo)
 
-- `<form>` tag is used to create a html form.
+HTML `<form>` Elements:
+
+- `<form>` element is used to create a html form. form help us to collect user data.
+- `<input />` element is the most used form element.
+- `<label>` element is used for labelling form elements. It helps the form elements accessible byguiding the screen reader. `<label for="name">` element has `for=""` attribute which value should be equal to `<input id="name"/>` element's id value.
+- `<select>` - helps to create dropdown menu.
+- `<option>` - helps to create options for dropdown menu.
+- `<textarea>` - helps to create multiple lines text input field.
+- `<button>` - helps to create button.
+- `<fieldset>`
+- `<legend>`
+- `<output>`
+- `<datalist>` & `list=""` attributes
+
+  <br/>
+
+form attributes:
+
+- `<form action="/home" method="post" autocomplete="on">`-> enable the autocomplete option.
+- `<form action="/home" method="post" autocomplete="on" enctype="text/plain">`-> sends data without encoding.
+- `name=""` attribute is used to set the name of any element which is essential for getting data in server side especially.
+
+  <br/>
+
+`<input />` element types
+
+- `type=""` attribute can change the visualization of `<input />` element.
+- `<input type="text"/>` creates a single line text input field.
+- `<input type="email"/>` creates a single line email input field.
+- `<input type="password"/>` creates a single line password input field.
+- `<input type="number"/>` creates a single line number input field.
+- `<input type="checkbox"/>` creates a checkbox input field.
+- `<input type="radio"/>` creates a radio button input field.
+- `<input type="button"/>` creates a clikable button.
+- `<input type="submit"/>` creates a submit button for form.
+- `<input type="color"/>` creates a color picker input field.
+- `<input type="date"/>` creates a date picker.
+- `<input type="month"/>` creates a month picker.
+- `<input type="time"/>` creates a time picker.
+- `<input type="week"/>` creates a week picker.
+- `<input type="image"/>` creates a image selector.
+- `<input type="file"/>` creates a file selector.
+- `<input type="url"/>` creates a url selector.
+- `<input type="tel"/>` creates a input field for telephone number.
+- `<input type="search"/>` is used for searching.
+- `<input type="hidden"/>` creates a input field which is not visible to user.
+- `<input type="range" min="" max=""/>` creates a range by setting min and max value, default range is 0 to 100.
+
+  <br/>
+
+Input attributes:
+
+- `value=""` attribute is used to set initial value for input field.
+- `readonly` attribute is used to set an input field as readonly.
+- `checked` attribute is used to set an input field already checked.
+- `disabled` attribute is used to make a input field disable.
+- `size=""` attribute is used to set the number of characters for an input field.
+- `maxlength=""` attribute is used to set the maximum number of characters for an input field.
+- `max=""` attribute is used to set the maximum input value for an input field.
+- `min=""` attribute is used to set the minimum input value for an input field.
+- `pattern=""` attribute is used to set a regular expression for validating an input field.
+- `placeholder=""` attribute is used to give a hint to the users.
+- `required` attribute specifies that an input element must be filled before submitting the form.
+- `step=""` attribute specifies steps for input field.
+- `autofocus` attribute makes an input field automatically focus when the page is loaded.
+- `height="" width=""` attribute is used to set input elements height and width.
+- `list="id_of_datalist"` attribute is used to set input elements height and width.
+
+  <br/>
+
+A form example is given below:
 
   <br/>
 
