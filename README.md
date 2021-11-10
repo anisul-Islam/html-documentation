@@ -376,6 +376,10 @@ W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
     Software, Web & cloud at Tampere University, Finland.
   </details>
   ```
+  output of the heading style code  
+  <img src="./images/details1.png" width="60%"/>
+  <img src="./images/details2.png" width="60%"/>
+     <!-- various links -->
 
 <br/>
 
