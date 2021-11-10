@@ -361,52 +361,6 @@ W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
 
   output of the heading style code  
   <img src="./images/style.png" width="60%"/>
-     <!-- various links -->
-
-<br/>
-
-### [2.8 details & summary]()
-
-- `<details>` elements have tewo states: closed, open
-- `<summary>` a short summary of details is provided by summary element
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>Document</title>
-      <style>
-        details[open] > summary {
-          background-color: aqua;
-        }
-      </style>
-    </head>
-    <body>
-      <details>
-        <summary>Anisul Islam</summary>
-        My Name is Anisul Islam. I am 31 years old. I have done my masters in
-        Software, Web & cloud at Tampere University, Finland.
-      </details>
-
-      <!-- no need to understand this part cause I just tested using javascript here -->
-      <!-- <script>
-        const details = document.querySelector("details");
-        details.addEventListener("toggle", () => {
-          if (details.open) {
-            console.log("open");
-          } else {
-            console.log("close");
-          }
-        });
-      </script> -->
-    </body>
-  </html>
-  ```
-
-  output of the heading style code  
-   <img src="./images/details1.png" width="60%"/>
-  <img src="./images/details2.png" width="60%"/>
-  <!-- various links -->
 
 <br/>
 
@@ -1121,6 +1075,52 @@ Input attributes:
     <img src="./images/semantic.png" alt="table" width="90%">
 
   <br/>
+
+  ### [5.2 details and figure elements]()
+
+  - `<details>` elements have tewo states: closed, open
+  - `<summary>` a short summary of details is provided by summary element
+  - `<figure>` can have diagram, photos inside of it.
+  - `<figcaption>` can set the figure caption.
+
+    An example of details, summary elements are given below:
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Document</title>
+        <style>
+          details[open] > summary {
+            background-color: aqua;
+          }
+        </style>
+      </head>
+      <body>
+        <details>
+          <summary>Anisul Islam</summary>
+          My Name is Anisul Islam. I am 31 years old. I have done my masters in
+          Software, Web & cloud at Tampere University, Finland.
+        </details>
+
+        <!-- no need to understand this part cause I just tested using javascript here -->
+        <!-- <script>
+          const details = document.querySelector("details");
+          details.addEventListener("toggle", () => {
+            if (details.open) {
+              console.log("open");
+            } else {
+              console.log("close");
+            }
+          });
+        </script> -->
+      </body>
+    </html>
+    ```
+
+    output of the heading style code  
+    <img src="./images/details1.png" width="60%"/>
+    <img src="./images/details2.png" width="60%"/>
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
