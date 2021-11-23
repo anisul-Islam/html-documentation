@@ -302,8 +302,6 @@ output of the text-formatting tags is below:
 
 <br/>
 
-<br/>
-
 ### [2.4 How to write bangla in html documentation](https://youtu.be/cTdMbPHvH68)
 
 <br/>
@@ -332,11 +330,11 @@ Entity syntax example
 
 <br/>
 
-### [2.6 How to add symbol and emoji](https://youtu.be/_LVzF0XMAqc)
+### [2.6 How to add symbol, icons and emoji](https://youtu.be/_LVzF0XMAqc)
 
 Unicode character website: https://unicode-table.com/en/  
-W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
-
+W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp  
+iconfinder icon link: https://www.iconfinder.com/
 <br/>
 
 ### [2.7 Font Style](https://youtu.be/NEJnq8ir-TY)
