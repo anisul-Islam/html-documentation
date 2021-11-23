@@ -339,7 +339,7 @@ iconfinder icon link: https://www.iconfinder.com/
 
 ### [2.7 Font Style](https://youtu.be/NEJnq8ir-TY)
 
-- Some common style property such as font-size, font-family, color, background-color, for styling text
+- Some common style property such as font-size, font-family, color, background-color, font-weight, font-style for styling text
 - In the following example, we are setting the h1's background color as green, font color as white, font size 5rem or 80px and font family is fantasy
 
   ```html
@@ -1049,7 +1049,11 @@ Input attributes:
 
 ## Chapter 5: HTML5 Sematic Elements
 
-### [5.1 Introduction to HTML5](https://youtu.be/7vaU86CFaWs)
+### [5.1 div - non semantic tag](https://youtu.be/zfRv9NyIVRg)
+
+- div can help to divide screen
+
+### [5.2 Introduction to HTML5](https://youtu.be/7vaU86CFaWs)
 
 - HTML5 developed in 2014
 - HTML5'S Objectives
@@ -1074,7 +1078,7 @@ Input attributes:
 
   <br/>
 
-  ### [5.2 details and figure elements](https://youtu.be/nkLd4qAFwzg)
+  ### [5.3 details and figure elements](https://youtu.be/nkLd4qAFwzg)
 
   - `<details>` elements have tewo states: closed, open
   - `<summary>` a short summary of details is provided by summary element
