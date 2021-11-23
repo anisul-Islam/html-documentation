@@ -724,9 +724,12 @@ video Example
   output of the above html code
   <img src="./images/table5.png" alt="table" width="90%">
 
-    <br />
+ <br />
 
-  An example of accessible table using scope is given below:
+### [4.3 Accessible table]()
+
+- `<th scope="col/row">`
+- An example of accessible table using scope is given below:
 
   ```html
   <!DOCTYPE html>
@@ -831,7 +834,7 @@ video Example
 
   <br />
 
-### [4.3 HTML Form](https://youtu.be/HoV2LR3-Izo)
+### [4.4 HTML Form](https://youtu.be/HoV2LR3-Izo)
 
 HTML `<form>` Elements:
 
@@ -1166,17 +1169,32 @@ Input attributes:
      - `<html lang="en">`
   6. Meaningful Link txt
      - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
-  7. Clear Link test
-     - make link text understandable and clear `<html lang="en">`
-  8. Form related matters
+  7. Form related matters
      - use label and bind input elements with label by using id and for value same. example is given below:
        ```html
        <label for="email">Email: </label> <input type="email" id="email" />
        ```
 
 - References:
+
   - https://www.w3.org/WAI/fundamentals/accessibility-intro/
   - https://www.w3schools.com/html/html_accessibility.asp
+
+  <br/>
+
+## Chapter 7: Graphics
+
+### [7.1 progress bar and svg](https://youtu.be/jXW7Fq2neow)
+
+- `<img src="imageName.svg">`
+- `<progress min="0" max="100" value="70"> </progress>`  
+  <progress min="0" max="100" value="70"> </progress>
+- you will learn more about svg and canvas in CSS and Javascript playlist
+  <br/>
+
+## Chapter 8: Projects
+
+### [8.1 A simple project](https://youtu.be/C3NTM5vZ_Ao)
 
 [colorzilla]: https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
 [colorhunt]: https://colorhunt.co/
