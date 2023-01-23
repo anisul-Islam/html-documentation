@@ -1,6 +1,6 @@
 # My HTML Documentation
 
-### Total Chapters are following
+## Total Chapters are following
 
 1. Introduction
 2. Typography
@@ -75,9 +75,11 @@
 
 - Attribute helps tag to extend its capabilities
 - In the following example, `<img/>` is tag; src, height, width are the attributes
+
   ```html
   <img src="anis.jpg" height="200" width="200" />
   ```
+
 - Attribute Syntax: `attributeName="attributeValue"`
 
 <br />
@@ -292,6 +294,9 @@ output of the text-formatting tags is below:
       Read,learn, enjoy
         ofcourse share with others
   </pre>
+
+  <abbr title="google is a search engine">Google</abbr>
+  <address>Anisul Islam 192 anis road, London United Kingdom</address>
 </body>
 ```
 
@@ -317,7 +322,7 @@ Comment syntax example
 Entity syntax example
 
 ```html
-&copy; &lt; &gt; &gt; &hearts;
+&copy; &lt; &gt; &gt; &hearts; &nbsp;
 ```
 
 - First example shows the example of a html comment
@@ -366,9 +371,10 @@ iconfinder icon link: https://www.iconfinder.com/
 
 ### [3.1 HTML List](https://youtu.be/o5LRFPZrA7Y)
 
-- Mainly there are 2 types of list available in html: ordered list, unordered list
+- Mainly there are 3 types of list available in html: ordered list, unordered list, description list
 - `ol` (ordered list) tag is used for creating ordered list
 - `ul` (unordered list) tag is used for creating unordered list
+- `dl` (description list) tag is used for creating description list, dt (description term), dd (description details)
 - `li` (list) tag is a common tag for both ordered and unordered list
   example
 
@@ -382,12 +388,11 @@ iconfinder icon link: https://www.iconfinder.com/
       <li>CSS</li>
       <li>Tailwind CSS / Bootstrap</li>
     </ol>
-    <ul>
-      <li>JS</li>
-      <li>sass</li>
-      <li>React.js</li>
-      <li>Typescript.js</li>
-    </ul>
+
+    <dl>
+      <dt>Google</dt>
+      <dd>Google is a search engine</dd>
+    </dl>
   </body>
   ```
 
@@ -438,6 +443,7 @@ iconfinder icon link: https://www.iconfinder.com/
 - `alt` attribute shows some text about image if image is not found
 - `title` attribute shows some tooltip text when we hover over the image
 - `height` and `width` attribute helps us to set the height and width of image
+- `loading="lazy"` if you have too many images and you want to load them lazily (after loading the other things first then you want to load images)
 - we can use `<img>` tag inside of `<a>` tag so that when we click an image it will take us to a link. `<a href="" target="_blank"> <img src="" alt="" /> </a>`
 
 <br />
@@ -842,6 +848,7 @@ HTML `<form>` Elements:
 - `<input />` element is the most used form element.
 - `<label>` element is used for labelling form elements. It helps the form elements accessible byguiding the screen reader. `<label for="name">` element has `for=""` attribute which value should be equal to `<input id="name"/>` element's id value.
 - `<select>` - helps to create dropdown menu.
+- `<optgroup label="programming">` - helps to create options for dropdown menu.
 - `<option>` - helps to create options for dropdown menu.
 - `<textarea>` - helps to create multiple lines text input field.
 - `<button>` - helps to create button.
@@ -883,6 +890,14 @@ form attributes:
 - `<input type="search"/>` is used for searching.
 - `<input type="hidden"/>` creates a input field which is not visible to user.
 - `<input type="range" min="" max=""/>` creates a range by setting min and max value, default range is 0 to 100.
+
+```html
+<fieldset>
+  <legend>Contact Me</legend>
+  <label for="email"> Email: </label>
+  <input type="email" id="email" />
+</fieldset>
+```
 
   <br/>
 
@@ -1139,99 +1154,126 @@ Input attributes:
 
 - what is web accessibility?
   - making website supportive for disable people and search engine
-  
 - how to check web accessibility?
   - inspect -> lighthouse -> accessibility
   - axe Devtools for accessibility testing
   - chromeVox for screen reading
-  
 - Tips for making website accessible:
 
-  1. Use Semantic elements over non semantic elements. 
-    - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
-    - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
-    - In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
+  1. Use Semantic elements over non semantic elements.
 
-     ```html
-     <div>Click me</div>
-     <button>Click me</button>
-     ```
-    - Example of explicit semantic vs implicit sematic element
-     ```html
-     <div role="button">Click me</div>
-     <button>Click me</button>
-     ```
-    - landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer 
-    
+  - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
+  - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
+  - In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
+
+  ```html
+  <div>Click me</div>
+  <button>Click me</button>
+  ```
+
+  - Example of explicit semantic vs implicit sematic element
+
+  ```html
+  <div role="button">Click me</div>
+  <button>Click me</button>
+  ```
+
+  - landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer
+
   2. Use Heading tags in order
-    - use one h1 element in a webpage
-    - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
+
+  - use one h1 element in a webpage
+  - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
 
   3. Use alt attribute
-    - use alt attribute for `<img />` element
-    - alt attribute provides more info to the blind people
-    - low bandwidth might not render the image so the alt will help here
-    - alt attributes helps technologies like search engines
-    - title attribute can be used when we hover over image to get extra information
+
+  - use alt attribute for `<img />` element
+  - alt attribute provides more info to the blind people
+  - low bandwidth might not render the image so the alt will help here
+  - alt attributes helps technologies like search engines
+  - title attribute can be used when we hover over image to get extra information
 
   4. Contrast ratio checker
-    - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
-  5. Declare the languages
-    - `<html lang="en">`
-  6. Meaningful Link txt
-    - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
-  7. Form related matters
-    - use label and bind input elements with label by using id and for value same. example is given below:
-       ```html
-       <label for="email">Email: </label> <input type="email" id="email" />
-      
-        <div class="form-control">
-        <fieldset>
-          <legend>Choose Gender:</legend>
-          <div class="form-control">
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label>
-        </div>
-        <div class="form-control">
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Female</label>
-        </div>
-        </fieldset>
-        </div>
-      ```
-   8. use aria-label vs aria-labelby vs aria-descriptionby 
-    - these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
-    - The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
-    - using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
-     - aria-label add accessible name directly to an element and it has higher priority than the element value. In  
-     the following example screen reader will say learn more about me instead of learn more
-           ```html 
-            <button aria-label="Learn more about me">
-              Learn more
-            </button>
-            ```
-      - aria-labelby create a relationship between elements       
-            ```html 
-            <h3 id="hobbies">Hobbies</h3>
-            <ul aria-labelledby="hobbies">
-              <li>Playing Football</li>
-              <li>Playing Badminton</li>
-              <li>Swimming</li>
-            </ul>
-          ```
 
-     - aria-descriptionby       
-            ```html 
-            <div>
-           <label for="password"> Password </label>
-            <input type="password" name="password" id="password" aria-describedby="help" required />
-            <div id="help">Pasword must be at least 8 character long</div>
-          </div>
-          ```
+  - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
+
+  5. Declare the languages
+
+  - `<html lang="en">`
+
+  6. Meaningful Link txt
+
+  - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
+
+  7. Form related matters
+
+  - use label and bind input elements with label by using id and for value same. example is given below:
+
+    ```html
+    <label for="email">Email: </label> <input type="email" id="email" />
+
+    <div class="form-control">
+      <fieldset>
+        <legend>Choose Gender:</legend>
+        <div class="form-control">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div class="form-control">
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+    </div>
+    ```
+
+  8.  use aria-label vs aria-labelby vs aria-descriptionby
+
+  - these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
+  - The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
+  - using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
+  - aria-label add accessible name directly to an element and it has higher priority than the element value. In  
+     the following example screen reader will say learn more about me instead of learn more
+    `html 
+<button aria-label="Learn more about me">
+  Learn more
+</button>
+`
+  - aria-labelby create a relationship between elements
+
+    ```html
+    <h3 id="hobbies">Hobbies</h3>
+    <ul aria-labelledby="hobbies">
+      <li>Playing Football</li>
+      <li>Playing Badminton</li>
+      <li>Swimming</li>
+    </ul>
+    ```
+
+    ```
+
+    ```
+
+  - aria-descriptionby
+    ```html
+    <div>
+      <label for="password"> Password </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        aria-describedby="help"
+        required
+      />
+      <div id="help">Pasword must be at least 8 character long</div>
+    </div>
+    ```
+
   9. role and tabindex -> tabindex can start from 0 then -1, -2 for lesser priority so that you can navigate by keyboard one after one in an order
-  ```    
+
+  ```
     <!-- use nav, role, tabindex, aria-label for an accessible navbar  -->
-    
+
     <!-- NOT ACCESSIBLE -->
     <div id="nav">
       <a href="#">Home</a>
@@ -1239,8 +1281,8 @@ Input attributes:
       <a href="#tutorial">Tutorials</a>
       <a href="#contact">Contact Me</a>
     </div>
-    
-    <!-- ACCESSIBLE  -->   
+
+    <!-- ACCESSIBLE  -->
     <nav aria-label="navigation menu">
       <ul id="menubar" role="menubar" aria-label="navigation menu">
         <li role="none">
@@ -1268,11 +1310,10 @@ Input attributes:
       </ul>
     </nav>
   ```
-    
-    
- - References:
-  - https://www.w3.org/WAI/fundamentals/accessibility-intro/
-  - https://www.w3schools.com/html/html_accessibility.asp
+
+- References:
+- https://www.w3.org/WAI/fundamentals/accessibility-intro/
+- https://www.w3schools.com/html/html_accessibility.asp
 
   <br/>
 
