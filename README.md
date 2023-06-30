@@ -1,5 +1,9 @@
 # HTML Documentation
 
+- [HTML English Video Tutorial](https://youtu.be/TWUf6eSi2K8)
+- [Learn HTML by building a project](https://youtu.be/mgO9ObbVeJ8)
+- [html complete course Bangla (Beginner to Advanced)](https://youtube.com/playlist?list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3)
+
 ## Table of Contents
 
 1. [Introduction to HTML](#1-introduction-to-html)
@@ -11,7 +15,7 @@
    - [Tags, contents, elements, attributes](#21-tag-content-attribute-element)
    - [Debugging](#22-debugging)
    - [Text Formatting tags](#23-text-formatting-tags)
-   - [Entity, comment, Symbol, Color](#24-entity-comment-symbol)
+   - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
    - [List - Ordered, Unordered, Description](#25-list---ordered-unordered-description)
    - [Link](#26-link)
    - [Image and iframe](#27-image-and-iframe)
