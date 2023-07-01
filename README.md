@@ -4,6 +4,8 @@
 - [Learn HTML by building a project](https://youtu.be/mgO9ObbVeJ8)
 - [html complete course Bangla (Beginner to Advanced)](https://youtube.com/playlist?list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3)
 
+![html course plan](images/html.png)
+
 ## Table of Contents
 
 1. [Introduction to HTML](#1-introduction-to-html)
@@ -204,8 +206,8 @@
 </body>
 ```
 
-- output of the text-formatting tags is below:  
-  <img src="./images/headings.png" width="60%"/>
+- output of the text-formatting tags is below:
+  ![headings](images/headings.png)
 
 - There are 6 HTML heading levels. `<h1>` is the largest level and `<h6>` is the smallest level.
 - by default, heading tags and paragraph tag create new line (block level element)
@@ -246,11 +248,6 @@
 - style attribute in HTML: style="property: value; property: value..." (from the example you can see that `<p>` tag has style attribute where paragraph color is set as green)
 - style tag in HTML: `<style> ... </style>` tag must be used inside the head tag as shown in this example. In this example you can see that `<h1>` and `<body>` tag has styling property like color, text-align, background-color.
 - To set color of an html element we can use color name / hexadecimal color code / rgb color / hsl code as a value of color property as shown in this example for h1 tag.
-- some tools for selecting color
-  - [htmlcolorcodes][htmlcolorcodes]
-  - [imagecolorpicker][imagecolorpicker]
-  - [colorhunt][colorhunt]
-  - [colorzilla][colorzilla]
 
 ### 2.2 Debugging
 
@@ -307,8 +304,8 @@
 </body>
 ```
 
-output of the text-formatting tags is below:  
- <img src="./images/text-formatting.png" width="60%"/>
+output of the text-formatting tags is below:
+![text formatting](images/text-formatting.png)
 
 - The `<blockquote>` tag is used to enclose a block of quoted text. It is commonly used to represent quotations, excerpts, or highlighted text. The `<p>` element inside the `<blockquote>` represents the quoted text, and the `<footer>` element provides attribution or the source of the quote.
 
@@ -383,9 +380,8 @@ output of the text-formatting tags is below:
   </body>
   ```
 
-  output of the list code  
-   <img src="./images/list.png" width="60%"/>
-  <!-- various links -->
+  output of the list code
+  ![list](images/list.png)
 
 ### 2.6 Link
 
@@ -413,9 +409,8 @@ output of the text-formatting tags is below:
   </body>
   ```
 
-  output of the html link code  
-  <img src="./images/link.png" width="60%"/>
-     <!-- various links -->
+  output of the html link code
+  ![link](images/link.png)
 
 ### 2.7 Image and iframe
 
@@ -423,7 +418,7 @@ output of the text-formatting tags is below:
 
 - For adding image on webpage we use `<img />` tag as shown in the following example.
 - some common attribute for `<img />` tag: `src, alt, height, width, title`
-- syntax for adding image: `<img src="imagename" alt="alternative" title="profile image"> `
+- syntax for adding image: `<img src="imagename" alt="alternative" title="profile image">`
 - `src` attribute needs the image address
 - `alt` attribute shows some text about image if image is not found
 - `title` attribute shows some tooltip text when we hover over the image
@@ -463,7 +458,7 @@ output of the text-formatting tags is below:
 - `<caption>` tag is used to create table caption.
 
 - Follow the image to understand td, tr,
-  <img src="./images/table.png" alt="table" width="90%">
+  ![table](images/table.png)
 
   ```html
   <body>
@@ -500,7 +495,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table2.png" alt="table" width="90%">
+  ![table2](images/table2.png)
 
 #### HTML Table rowspan, colspan
 
@@ -557,7 +552,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table3.png" alt="table" width="90%">
+  ![table3](images/table3.png)
 
 - An example of rowspan is given below:
 
@@ -608,7 +603,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table4.png" alt="table" width="90%">
+  ![table4](images/table4.png)
 
 - An example of colspan and rowspan is given below:
 
@@ -668,7 +663,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table5.png" alt="table" width="90%">
+  ![table5](images/table5.png)
 
 #### Accessible table
 
@@ -720,7 +715,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table6.png" alt="table" width="90%">
+  ![table6](images/table6.png)
 
   An example of table using `<colgroup> & <col>` tags is given below:
 
@@ -772,7 +767,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/table7.png" alt="table" width="90%">
+  ![table7](images/table7.png)
 
 ### 2.9 Form
 
@@ -993,7 +988,7 @@ output of the text-formatting tags is below:
   ```
 
   output of the above html code
-  <img src="./images/form.png" alt="table" width="90%">
+  ![form](images/form.png)
 
 ## 3. Advanced HTML
 
@@ -1084,7 +1079,7 @@ video Example
   - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
   - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
   - sematic tags vs non semantic tags example is given below:
-    <img src="./images/semantic.png" alt="table" width="90%">
+    ![semantic](images/semantic.png)
 
 #### details and figure elements
 
@@ -1133,10 +1128,8 @@ video Example
   ```
 
   output of the heading style code  
-  <img src="./images/details1.png" width="60%"/>
-  <img src="./images/details2.png" width="60%"/>
-
-    <br/>
+   ![details1](images/details1.png)
+  ![details2](images/details2.png)
 
 ### 3.4 Web accessibility
 
@@ -1315,7 +1308,8 @@ video Example
 
    - The Geolocation API allows you to retrieve the user's geographic location information.
    - Example:
-     ```javascript
+
+     ```js
      if (navigator.geolocation) {
        navigator.geolocation.getCurrentPosition(function (position) {
          var latitude = position.coords.latitude;
