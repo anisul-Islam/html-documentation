@@ -8,14 +8,24 @@
 
 ## Table of Contents
 
-1. [Introduction to HTML](#1-introduction-to-html)
-   - [What is HTML & Why HTML?](#11-what-is-html--why-html)
-   - [History of HTML](#12-history-of-html)
-   - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
-2. [Basic HTML](#2-basic-html)
+- [Beginner Level](#beginner-level)
 
-   - [Tags, contents, elements, attributes](#21-tag-content-attribute-element)
-   - [Debugging](#22-debugging)
+    1. [Introduction to HTML](#1-introduction-to-html)
+      - [What is HTML & Why HTML?](#11-what-is-html--why-html)
+      - [History of HTML](#12-history-of-html)
+      - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
+      - [Setup Environment](#14-setup-environment)
+      - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
+
+    2. [Tags, contents, elements, attributes](#2-tag-content-attribute-element)
+
+
+- [Intermediate Level](#intermdiate-level)
+- [Advanced Level](#advanced-level)
+
+
+2. [Basic HTML](#2-basic-html)
+  
    - [Text Formatting tags](#23-text-formatting-tags)
    - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
    - [List - Ordered, Unordered, Description](#25-list---ordered-unordered-description)
@@ -34,18 +44,18 @@
    - [HTML5 API](#36-html5-api)
    - [HTML Templates and Web Components](#37-html-templates-and-web-components)
 
-## 1. Introduction to html
+## Beginner Level
 
-- What is HTML and its role in web development?
-- History of HTML
-- Advantages & disadvantages of HTML
+### 1. Introduction to html
 
-### 1.1 What is HTML & Why HTML
+In this chapter we will discuss what is HTML, why do we need HTML, advantages and disadvantages of HTML, History of HTML, environment setup for HTML, basic structure of HTML
+
+#### 1.1 What is HTML & Why HTML
 
 - HTML stands for HyperText Markup Language
 - It is not a **programming language** but markup language where tags are responsible for defining the elements and layout of a webpage, including headings, paragraphs, images, links, and more.
 
-### 1.2 History of HTML
+#### 1.2 History of HTML
 
 - Tim Berners-Lee created HTML in 1990
 - HTML 1.0 - 1990
@@ -56,7 +66,7 @@
   HTML 4.01 - 1999
   HTML5 - 2014 (Ongoing development with subsequent versions like HTML5.1, HTML5.2, etc.)
 
-### 1.3 Advantages and disadvantages of HTML
+#### 1.3 Advantages and disadvantages of HTML
 
 - Advantages of HTML:
 
@@ -76,11 +86,177 @@
 
 4. **Security Risks**: HTML alone does not provide built-in security features. Web developers must implement security measures and follow best practices to protect against vulnerabilities, such as cross-site scripting (XSS) attacks.
 
-## 2. Basic HTML
+#### 1.4 Setup Environment
 
-- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
+- Editor: VScode / Notepad++ / Sublime
+- Browser: Google Chrome / Firefox
+- Version Control: GitHub
 
-### 2.1 Tag content attribute element
+Setting up a development environment for HTML involves choosing the right tools and configuring them properly to streamline your web development process. Here’s a step-by-step guide to get you started:
+
+##### Step 1: Choose a Text Editor or IDE
+
+A good text editor or Integrated Development Environment (IDE) is essential for writing HTML. Here are some popular options:
+
+1. **Visual Studio Code (VS Code)**:
+   - Lightweight and highly customizable.
+   - Supports extensions for various languages and tools.
+
+2. **Sublime Text**:
+   - Fast and lightweight.
+   - Supports many plugins for added functionality.
+
+3. **Atom**:
+   - Open-source and highly customizable.
+   - Has a large community and many packages available.
+
+4. **WebStorm**:
+   - A powerful IDE specifically for web development.
+   - Offers many built-in features for HTML, CSS, and JavaScript.
+
+##### Step 2: Install Your Chosen Text Editor or IDE
+
+###### Visual Studio Code (VS Code)
+
+1. **Download**:
+   - Go to the [VS Code website](https://code.visualstudio.com/).
+   - Download the installer for your operating system.
+
+2. **Install**:
+   - Run the installer and follow the instructions to install VS Code.
+
+##### Step 3: Install Extensions
+
+To enhance your development environment, install extensions that help with HTML, CSS, and JavaScript development. Here are some recommended extensions for VS Code:
+
+1. **HTML Boilerplate**:
+   - Provides basic HTML templates.
+
+2. **Live Server**:
+   - Launches a local development server with live reload feature.
+
+3. **Prettier - Code formatter**:
+   - Formats your code for better readability.
+
+4. **Emmet**:
+   - Provides shorthand syntax for writing HTML and CSS.
+
+###### Installing Extensions in VS Code
+
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for the desired extensions and click **Install**.
+
+##### Step 4: Set Up a Project Folder
+
+1. **Create a Project Folder**:
+   - Create a folder on your computer where you will store your project files. For example, `html-project`.
+
+2. **Open the Project Folder in VS Code**:
+   - Open VS Code.
+   - Go to `File` > `Open Folder` and select your project folder.
+
+##### Step 5: Create Your First HTML File
+
+1. **Create a New File**:
+   - In VS Code, go to `File` > `New File` or press `Ctrl+N`.
+
+2. **Save the File**:
+   - Save the file as `index.html` in your project folder by going to `File` > `Save As` and typing `index.html`.
+
+3. **Add Basic HTML Boilerplate**:
+   - Type `html:5` and press `Tab` to automatically generate a basic HTML boilerplate using Emmet.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+```
+
+##### Step 6: Set Up Live Server
+
+1. **Open Live Server**:
+   - With your `index.html` file open, right-click on the editor and select `Open with Live Server`.
+   - Alternatively, click on the **Go Live** button at the bottom right of the status bar.
+
+2. **View Your Page**:
+   - Your default web browser should open, displaying your `index.html` file. Any changes you make to the file will automatically reload in the browser.
+
+##### Step 7: Version Control with Git
+
+1. **Install Git**:
+   - Download and install Git from the [official Git website](https://git-scm.com/).
+
+2. **Initialize a Git Repository**:
+   - Open a terminal in VS Code by pressing `Ctrl+`` (backtick) or going to`View` > `Terminal`.
+   - Initialize a new Git repository in your project folder:
+
+     ```bash
+     git init
+     ```
+
+3. **Add Files and Commit**:
+   - Add your files to the repository and commit your changes:
+
+     ```bash
+     git add .
+     git commit -m "Initial commit"
+     ```
+
+4. **Set Up a Remote Repository**:
+   - Create a new repository on GitHub, GitLab, or Bitbucket.
+   - Link the local repository to the remote repository:
+
+     ```bash
+     git remote add origin https://github.com/yourusername/yourrepository.git
+     git push -u origin main
+     ```
+
+##### Step 8: Learning Resources
+
+1. **MDN Web Docs**:
+   - Comprehensive resource for learning HTML, CSS, and JavaScript.
+   - [MDN Web Docs](https://developer.mozilla.org/)
+
+2. **W3Schools**:
+   - Tutorial website for learning web technologies.
+   - [W3Schools](https://www.w3schools.com/)
+
+3. **FreeCodeCamp**:
+   - Free coding curriculum with a focus on web development.
+   - [FreeCodeCamp](https://www.freecodecamp.org/)
+
+#### 1.5 Basic Structure of HTML Document
+
+- HTML document has 2 important part: head, body
+- In the following example a basic structure of a HTML document
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      TITLE, META TAG ETC.
+    </head>
+    <body>
+      CONTENT OF THE WEBPAGE
+    </body>
+  </html>
+  ```
+
+- Always use `<!DOCTYPE html>` to tell the browser what type of document to expect; remember it is not a tag, just a declaration
+- Every HTML document must have `<html>` pair tag and Inside `<html>` tag we use `<head>` and `<body>` as the example shows above.
+- Inside head tag we use meta tag, set title etc.
+- Inside body tag we write everything that we want to display on web page.
+
+### 2 Tag content attribute element
 
 - [Tag, element, attribute Video Link](https://youtu.be/SEZ7YCF141I)
 
@@ -138,55 +314,7 @@
 
 - Attribute Syntax: `attributeName="attributeValue"`
 
-#### HTML basic structure
-
-- HTML document has 2 important part: head, body
-- In the following example a basic structure of a HTML document
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      TITLE, META TAG ETC.
-    </head>
-    <body>
-      CONTENT OF THE WEBPAGE
-    </body>
-  </html>
-  ```
-
-- Always use `<!DOCTYPE html>` to tell the browser what type of document to expect; remember it is not a tag, just a declaration
-- Every HTML document must have `<html>` pair tag and Inside `<html>` tag we use `<head>` and `<body>` as the example shows above.
-- Inside head tag we use meta tag, set title etc.
-- Inside body tag we write everything that we want to display on web page.
-
-#### Environment setup
-
-- Editor: VScode / Notepad++ / Sublime
-- Browser: Google Chrome / Firefox
-- Version Control: GitHub
-
-#### First HTML Program
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Document</title>
-  </head>
-  <body>
-    This is my first webpage <br />
-    I am Anisul Islam <br />
-    A full stack web developer & passionate computer science teacher<br />
-  </body>
-</html>
-```
-
-- Here, lang attribute refers to the language; attribute value en refers to english
-- Inside `<head>` tag we have set title of the webpage using `<title>` tag
-- Inside `<body>` tag we are displaying some text. here `<br/>` tag creates a line break
-
-#### Headings, Paragraph, Horizontal rule
+#### Headings, Paragraph, Line breaks, Horizontal rule
 
 ```html
 <body>
@@ -253,7 +381,16 @@
 
 - Inspect Element: Within the browser developer tools, the "Inspect Element" feature allows you to examine and modify the HTML structure in real-time. You can navigate through the document tree, view CSS styles, and experiment with changes to identify and fix layout or formatting issues.
 - Use Comments: Insert comments (`<!-- ... -->`) within your HTML code to temporarily remove or isolate sections of code that might be causing issues. This helps you narrow down the problematic area and identify the source of the problem.
-- After writing your html code you can check the validity on this website https://validator.w3.org/
+- After writing your html code you can check the validity on this website <https://validator.w3.org/>
+
+
+## Intermdiate Level
+
+## Advanced Level
+
+## 2. Basic HTML
+
+- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
 
 ### 2.3 Text Formatting tags
 
