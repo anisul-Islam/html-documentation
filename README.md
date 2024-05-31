@@ -260,7 +260,7 @@ To enhance your development environment, install extensions that help with HTML,
 
 - [Tag, element, attribute Video Link](https://youtu.be/SEZ7YCF141I)
 
-#### What is Tag & its syntax?
+#### Tag, Attribute
 
 - Tag is the heart of html; HTML document is mainly built with tag.
 - Tag Syntax: `<keyword>` ; Inside the angular brackets we need to write predefined keywords to use html tag.
@@ -268,7 +268,7 @@ To enhance your development environment, install extensions that help with HTML,
 - Example: `<p> This is a paragraph </p>`
   In the example, `<p>` is an opening tag, `</p>` is a closing tag and `This is a paragraph` is called content. In between the starting tag to end tag we have content. Everything from starting tag to end tag is called Element
 
-#### What are the types of Tag?
+##### Types of Tag
 
 - There are 2 types of html tag: Pair/container tag and empty tag
 - Pair tag has starting and ending; However, empty tag has no closing tag.
@@ -303,7 +303,7 @@ To enhance your development environment, install extensions that help with HTML,
   ...
   ```
 
-#### What is attribute & how to use attribute?
+##### Attribute
 
 - Attribute helps tag to extend its capabilities
 - In the following example, `<img/>` is tag; src, height, width are the attributes
