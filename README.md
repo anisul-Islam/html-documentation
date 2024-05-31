@@ -17,7 +17,13 @@
       - [Setup Environment](#14-setup-environment)
       - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
 
-    2. [Tags, contents, elements, attributes](#2-tag-content-attribute-element)
+    2. [Basic Tags, Styling, Debugging](#2-basic-tags-styling-debugging)
+      - [Tag, Attribute](#21-tag-attribute)
+      - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
+      - [Styling HTML Elements](#23-styling-html-elemnts)
+      - [Debugging](#24-debugging)
+
+    3. [Text Formatting Tags](#3-text-formatting-tags)
 
 
 - [Intermediate Level](#intermdiate-level)
@@ -256,11 +262,9 @@ To enhance your development environment, install extensions that help with HTML,
 - Inside head tag we use meta tag, set title etc.
 - Inside body tag we write everything that we want to display on web page.
 
-### 2 Tag content attribute element
+### 2. Basic Tags, Styling, Debugging
 
-- [Tag, element, attribute Video Link](https://youtu.be/SEZ7YCF141I)
-
-#### Tag, Attribute
+#### 2.1 Tag, Attribute
 
 - Tag is the heart of html; HTML document is mainly built with tag.
 - Tag Syntax: `<keyword>` ; Inside the angular brackets we need to write predefined keywords to use html tag.
@@ -314,7 +318,7 @@ To enhance your development environment, install extensions that help with HTML,
 
 - Attribute Syntax: `attributeName="attributeValue"`
 
-#### Headings, Paragraph, Line breaks, Horizontal rule
+#### 2.2 Headings, Paragraph, Line breaks, Horizontal rule
 
 ```html
 <body>
@@ -341,7 +345,7 @@ To enhance your development environment, install extensions that help with HTML,
 - by default, heading tags and paragraph tag create new line (block level element)
 - `<hr size="2"/>` here `<hr/>` is an empty tag responsible for creating horizontal rule and size attribute set the heights of the horizontal rule in pixel
 
-#### Styling html elemnts
+#### 2.3 Styling html elemnts
 
 ```html
 <!DOCTYPE html>
@@ -377,22 +381,13 @@ To enhance your development environment, install extensions that help with HTML,
 - style tag in HTML: `<style> ... </style>` tag must be used inside the head tag as shown in this example. In this example you can see that `<h1>` and `<body>` tag has styling property like color, text-align, background-color.
 - To set color of an html element we can use color name / hexadecimal color code / rgb color / hsl code as a value of color property as shown in this example for h1 tag.
 
-### 2.2 Debugging
+#### 2.4 Debugging
 
 - Inspect Element: Within the browser developer tools, the "Inspect Element" feature allows you to examine and modify the HTML structure in real-time. You can navigate through the document tree, view CSS styles, and experiment with changes to identify and fix layout or formatting issues.
 - Use Comments: Insert comments (`<!-- ... -->`) within your HTML code to temporarily remove or isolate sections of code that might be causing issues. This helps you narrow down the problematic area and identify the source of the problem.
 - After writing your html code you can check the validity on this website <https://validator.w3.org/>
 
-
-## Intermdiate Level
-
-## Advanced Level
-
-## 2. Basic HTML
-
-- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
-
-### 2.3 Text Formatting tags
+### 3. Text Formatting tags
 
 - Text Formatting tags: Applying formatting to text using tags like strong, em, u, s, sup, sub, blockquote, and code.
 
@@ -447,6 +442,15 @@ output of the text-formatting tags is below:
 - The `<blockquote>` tag is used to enclose a block of quoted text. It is commonly used to represent quotations, excerpts, or highlighted text. The `<p>` element inside the `<blockquote>` represents the quoted text, and the `<footer>` element provides attribution or the source of the quote.
 
 - The `<code>` tag is used to define a section of code or programming instructions. It is commonly used for displaying code snippets or highlighting code within a paragraph.
+
+## Intermdiate Level
+
+## Advanced Level
+
+## 2. Basic HTML
+
+- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
+
 
 ### 2.4 Entity, comment, Symbol, Color
 
