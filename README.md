@@ -16,7 +16,8 @@
       - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
       - [Setup Environment](#14-setup-environment)
       - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
-    2. [Tags, contents, elements, attributes](#21-tag-content-attribute-element)
+
+    2. [Tags, contents, elements, attributes](#2-tag-content-attribute-element)
 
 
 - [Intermediate Level](#intermdiate-level)
@@ -24,7 +25,7 @@
 
 
 2. [Basic HTML](#2-basic-html)
-   - [Debugging](#22-debugging)
+  
    - [Text Formatting tags](#23-text-formatting-tags)
    - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
    - [List - Ordered, Unordered, Description](#25-list---ordered-unordered-description)
@@ -47,9 +48,7 @@
 
 ### 1. Introduction to html
 
-- What is HTML and its role in web development?
-- History of HTML
-- Advantages & disadvantages of HTML
+In this chapter we will discuss what is HTML, why do we need HTML, advantages and disadvantages of HTML, History of HTML, environment setup for HTML, basic structure of HTML
 
 #### 1.1 What is HTML & Why HTML
 
@@ -88,6 +87,10 @@
 4. **Security Risks**: HTML alone does not provide built-in security features. Web developers must implement security measures and follow best practices to protect against vulnerabilities, such as cross-site scripting (XSS) attacks.
 
 #### 1.4 Setup Environment
+
+- Editor: VScode / Notepad++ / Sublime
+- Browser: Google Chrome / Firefox
+- Version Control: GitHub
 
 Setting up a development environment for HTML involves choosing the right tools and configuring them properly to streamline your web development process. Here’s a step-by-step guide to get you started:
 
@@ -233,110 +236,27 @@ To enhance your development environment, install extensions that help with HTML,
 
 #### 1.5 Basic Structure of HTML Document
 
-Understanding the structure of an HTML document is fundamental to web development. HTML (HyperText Markup Language) is the standard language used to create and design documents on the web. Here is a detailed explanation of the structure of an HTML document:
+- HTML document has 2 important part: head, body
+- In the following example a basic structure of a HTML document
 
-##### Basic Structure of an HTML Document
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      TITLE, META TAG ETC.
+    </head>
+    <body>
+      CONTENT OF THE WEBPAGE
+    </body>
+  </html>
+  ```
 
-An HTML document is made up of various elements that define the structure and content of a webpage. Here’s a simple example of an HTML document:
+- Always use `<!DOCTYPE html>` to tell the browser what type of document to expect; remember it is not a tag, just a declaration
+- Every HTML document must have `<html>` pair tag and Inside `<html>` tag we use `<head>` and `<body>` as the example shows above.
+- Inside head tag we use meta tag, set title etc.
+- Inside body tag we write everything that we want to display on web page.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
-</html>
-```
-
-##### Explanation of Key Components
-
-##### 1. `<!DOCTYPE html>`
-
-- **Declaration**: This line is a document type declaration that tells the browser the document type and version of HTML. The `<!DOCTYPE html>` declaration is for HTML5.
-
-##### 2. `<html>`
-
-- **Root Element**: The `<html>` element is the root element of an HTML document. It encompasses all the content of the webpage.
-
-##### 3. `<head>`
-
-- **Metadata Container**: The `<head>` element contains meta-information about the HTML document, such as the title, character set, styles, and scripts.
-- **Common Elements**:
-  - `<meta charset="UTF-8">`: Specifies the character encoding for the document, ensuring that it displays correctly.
-  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Ensures proper scaling on mobile devices.
-  - `<title>`: Sets the title of the webpage, which appears in the browser tab.
-  - `<link rel="stylesheet" href="styles.css">`: Links an external CSS file for styling the webpage.
-
-##### 4. `<body>`
-
-- **Main Content Container**: The `<body>` element contains the content of the HTML document that is visible to the user, including text, images, links, and other media.
-
-##### 5. `<header>`
-
-- **Header Section**: The `<header>` element represents introductory content or a set of navigational links. It usually contains the site’s logo, title, and navigation menu.
-
-##### 6. `<nav>`
-
-- **Navigation Bar**: The `<nav>` element contains the navigation menu of the webpage. It typically includes a list of links (`<ul>` with `<li>` and `<a>`).
-
-##### 7. `<main>`
-
-- **Main Content Area**: The `<main>` element represents the dominant content of the `<body>`. It typically contains the core information of the webpage.
-
-##### 8. `<section>`
-
-- **Sectioning Content**: The `<section>` element defines sections within the main content, such as the home, about, and contact sections. Each section can have its own heading (`<h2>`).
-
-##### 9. `<footer>`
-
-- **Footer Section**: The `<footer>` element represents the footer of the document. It usually contains information such as the author of the document, copyright information, and links to related documents.
-
-##### 10. External Resources
-
-- **CSS and JavaScript**: The `<link rel="stylesheet" href="styles.css">` in the `<head>` links to an external CSS file for
-
-## Intermdiate Level
-
-## Advanced Level
-
-## 2. Basic HTML
-
-- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
-
-### 2.1 Tag content attribute element
+### 2 Tag content attribute element
 
 - [Tag, element, attribute Video Link](https://youtu.be/SEZ7YCF141I)
 
@@ -394,55 +314,7 @@ An HTML document is made up of various elements that define the structure and co
 
 - Attribute Syntax: `attributeName="attributeValue"`
 
-#### HTML basic structure
-
-- HTML document has 2 important part: head, body
-- In the following example a basic structure of a HTML document
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      TITLE, META TAG ETC.
-    </head>
-    <body>
-      CONTENT OF THE WEBPAGE
-    </body>
-  </html>
-  ```
-
-- Always use `<!DOCTYPE html>` to tell the browser what type of document to expect; remember it is not a tag, just a declaration
-- Every HTML document must have `<html>` pair tag and Inside `<html>` tag we use `<head>` and `<body>` as the example shows above.
-- Inside head tag we use meta tag, set title etc.
-- Inside body tag we write everything that we want to display on web page.
-
-#### Environment setup
-
-- Editor: VScode / Notepad++ / Sublime
-- Browser: Google Chrome / Firefox
-- Version Control: GitHub
-
-#### First HTML Program
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Document</title>
-  </head>
-  <body>
-    This is my first webpage <br />
-    I am Anisul Islam <br />
-    A full stack web developer & passionate computer science teacher<br />
-  </body>
-</html>
-```
-
-- Here, lang attribute refers to the language; attribute value en refers to english
-- Inside `<head>` tag we have set title of the webpage using `<title>` tag
-- Inside `<body>` tag we are displaying some text. here `<br/>` tag creates a line break
-
-#### Headings, Paragraph, Horizontal rule
+#### Headings, Paragraph, Line breaks, Horizontal rule
 
 ```html
 <body>
@@ -509,7 +381,16 @@ An HTML document is made up of various elements that define the structure and co
 
 - Inspect Element: Within the browser developer tools, the "Inspect Element" feature allows you to examine and modify the HTML structure in real-time. You can navigate through the document tree, view CSS styles, and experiment with changes to identify and fix layout or formatting issues.
 - Use Comments: Insert comments (`<!-- ... -->`) within your HTML code to temporarily remove or isolate sections of code that might be causing issues. This helps you narrow down the problematic area and identify the source of the problem.
-- After writing your html code you can check the validity on this website https://validator.w3.org/
+- After writing your html code you can check the validity on this website <https://validator.w3.org/>
+
+
+## Intermdiate Level
+
+## Advanced Level
+
+## 2. Basic HTML
+
+- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
 
 ### 2.3 Text Formatting tags
 
