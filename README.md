@@ -8,6 +8,10 @@
 
 ## Table of Contents
 
+- [Beginner Level](#beginner-level)
+- [Intermediate Level](#intermdiate-level)
+- [Advanced Level](#advanced-level)
+
 1. [Introduction to HTML](#1-introduction-to-html)
    - [What is HTML & Why HTML?](#11-what-is-html--why-html)
    - [History of HTML](#12-history-of-html)
@@ -33,6 +37,12 @@
    - [Graphics](#35-graphics)
    - [HTML5 API](#36-html5-api)
    - [HTML Templates and Web Components](#37-html-templates-and-web-components)
+
+## Beginner Level
+
+## Intermdiate Level
+
+## Advanced Level
 
 ## 1. Introduction to html
 
