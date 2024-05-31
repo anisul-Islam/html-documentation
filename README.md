@@ -9,16 +9,21 @@
 ## Table of Contents
 
 - [Beginner Level](#beginner-level)
+
+    1. [Introduction to HTML](#1-introduction-to-html)
+      - [What is HTML & Why HTML?](#11-what-is-html--why-html)
+      - [History of HTML](#12-history-of-html)
+      - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
+      - [Setup Environment](#14-setup-environment)
+      - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
+    2. [Tags, contents, elements, attributes](#21-tag-content-attribute-element)
+
+
 - [Intermediate Level](#intermdiate-level)
 - [Advanced Level](#advanced-level)
 
-1. [Introduction to HTML](#1-introduction-to-html)
-   - [What is HTML & Why HTML?](#11-what-is-html--why-html)
-   - [History of HTML](#12-history-of-html)
-   - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
-2. [Basic HTML](#2-basic-html)
 
-   - [Tags, contents, elements, attributes](#21-tag-content-attribute-element)
+2. [Basic HTML](#2-basic-html)
    - [Debugging](#22-debugging)
    - [Text Formatting tags](#23-text-formatting-tags)
    - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
@@ -40,22 +45,18 @@
 
 ## Beginner Level
 
-## Intermdiate Level
-
-## Advanced Level
-
-## 1. Introduction to html
+### 1. Introduction to html
 
 - What is HTML and its role in web development?
 - History of HTML
 - Advantages & disadvantages of HTML
 
-### 1.1 What is HTML & Why HTML
+#### 1.1 What is HTML & Why HTML
 
 - HTML stands for HyperText Markup Language
 - It is not a **programming language** but markup language where tags are responsible for defining the elements and layout of a webpage, including headings, paragraphs, images, links, and more.
 
-### 1.2 History of HTML
+#### 1.2 History of HTML
 
 - Tim Berners-Lee created HTML in 1990
 - HTML 1.0 - 1990
@@ -66,7 +67,7 @@
   HTML 4.01 - 1999
   HTML5 - 2014 (Ongoing development with subsequent versions like HTML5.1, HTML5.2, etc.)
 
-### 1.3 Advantages and disadvantages of HTML
+#### 1.3 Advantages and disadvantages of HTML
 
 - Advantages of HTML:
 
@@ -85,6 +86,251 @@
 3. **Browser Compatibility Issues**: Different web browsers may interpret HTML code differently, leading to potential compatibility issues. Developers must test and ensure cross-browser compatibility.
 
 4. **Security Risks**: HTML alone does not provide built-in security features. Web developers must implement security measures and follow best practices to protect against vulnerabilities, such as cross-site scripting (XSS) attacks.
+
+#### 1.4 Setup Environment
+
+Setting up a development environment for HTML involves choosing the right tools and configuring them properly to streamline your web development process. Here’s a step-by-step guide to get you started:
+
+##### Step 1: Choose a Text Editor or IDE
+
+A good text editor or Integrated Development Environment (IDE) is essential for writing HTML. Here are some popular options:
+
+1. **Visual Studio Code (VS Code)**:
+   - Lightweight and highly customizable.
+   - Supports extensions for various languages and tools.
+
+2. **Sublime Text**:
+   - Fast and lightweight.
+   - Supports many plugins for added functionality.
+
+3. **Atom**:
+   - Open-source and highly customizable.
+   - Has a large community and many packages available.
+
+4. **WebStorm**:
+   - A powerful IDE specifically for web development.
+   - Offers many built-in features for HTML, CSS, and JavaScript.
+
+##### Step 2: Install Your Chosen Text Editor or IDE
+
+###### Visual Studio Code (VS Code)
+
+1. **Download**:
+   - Go to the [VS Code website](https://code.visualstudio.com/).
+   - Download the installer for your operating system.
+
+2. **Install**:
+   - Run the installer and follow the instructions to install VS Code.
+
+##### Step 3: Install Extensions
+
+To enhance your development environment, install extensions that help with HTML, CSS, and JavaScript development. Here are some recommended extensions for VS Code:
+
+1. **HTML Boilerplate**:
+   - Provides basic HTML templates.
+
+2. **Live Server**:
+   - Launches a local development server with live reload feature.
+
+3. **Prettier - Code formatter**:
+   - Formats your code for better readability.
+
+4. **Emmet**:
+   - Provides shorthand syntax for writing HTML and CSS.
+
+###### Installing Extensions in VS Code
+
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for the desired extensions and click **Install**.
+
+##### Step 4: Set Up a Project Folder
+
+1. **Create a Project Folder**:
+   - Create a folder on your computer where you will store your project files. For example, `html-project`.
+
+2. **Open the Project Folder in VS Code**:
+   - Open VS Code.
+   - Go to `File` > `Open Folder` and select your project folder.
+
+##### Step 5: Create Your First HTML File
+
+1. **Create a New File**:
+   - In VS Code, go to `File` > `New File` or press `Ctrl+N`.
+
+2. **Save the File**:
+   - Save the file as `index.html` in your project folder by going to `File` > `Save As` and typing `index.html`.
+
+3. **Add Basic HTML Boilerplate**:
+   - Type `html:5` and press `Tab` to automatically generate a basic HTML boilerplate using Emmet.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+```
+
+##### Step 6: Set Up Live Server
+
+1. **Open Live Server**:
+   - With your `index.html` file open, right-click on the editor and select `Open with Live Server`.
+   - Alternatively, click on the **Go Live** button at the bottom right of the status bar.
+
+2. **View Your Page**:
+   - Your default web browser should open, displaying your `index.html` file. Any changes you make to the file will automatically reload in the browser.
+
+##### Step 7: Version Control with Git
+
+1. **Install Git**:
+   - Download and install Git from the [official Git website](https://git-scm.com/).
+
+2. **Initialize a Git Repository**:
+   - Open a terminal in VS Code by pressing `Ctrl+`` (backtick) or going to`View` > `Terminal`.
+   - Initialize a new Git repository in your project folder:
+
+     ```bash
+     git init
+     ```
+
+3. **Add Files and Commit**:
+   - Add your files to the repository and commit your changes:
+
+     ```bash
+     git add .
+     git commit -m "Initial commit"
+     ```
+
+4. **Set Up a Remote Repository**:
+   - Create a new repository on GitHub, GitLab, or Bitbucket.
+   - Link the local repository to the remote repository:
+
+     ```bash
+     git remote add origin https://github.com/yourusername/yourrepository.git
+     git push -u origin main
+     ```
+
+##### Step 8: Learning Resources
+
+1. **MDN Web Docs**:
+   - Comprehensive resource for learning HTML, CSS, and JavaScript.
+   - [MDN Web Docs](https://developer.mozilla.org/)
+
+2. **W3Schools**:
+   - Tutorial website for learning web technologies.
+   - [W3Schools](https://www.w3schools.com/)
+
+3. **FreeCodeCamp**:
+   - Free coding curriculum with a focus on web development.
+   - [FreeCodeCamp](https://www.freecodecamp.org/)
+
+#### 1.5 Basic Structure of HTML Document
+
+Understanding the structure of an HTML document is fundamental to web development. HTML (HyperText Markup Language) is the standard language used to create and design documents on the web. Here is a detailed explanation of the structure of an HTML document:
+
+##### Basic Structure of an HTML Document
+
+An HTML document is made up of various elements that define the structure and content of a webpage. Here’s a simple example of an HTML document:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+```
+
+##### Explanation of Key Components
+
+##### 1. `<!DOCTYPE html>`
+
+- **Declaration**: This line is a document type declaration that tells the browser the document type and version of HTML. The `<!DOCTYPE html>` declaration is for HTML5.
+
+##### 2. `<html>`
+
+- **Root Element**: The `<html>` element is the root element of an HTML document. It encompasses all the content of the webpage.
+
+##### 3. `<head>`
+
+- **Metadata Container**: The `<head>` element contains meta-information about the HTML document, such as the title, character set, styles, and scripts.
+- **Common Elements**:
+  - `<meta charset="UTF-8">`: Specifies the character encoding for the document, ensuring that it displays correctly.
+  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Ensures proper scaling on mobile devices.
+  - `<title>`: Sets the title of the webpage, which appears in the browser tab.
+  - `<link rel="stylesheet" href="styles.css">`: Links an external CSS file for styling the webpage.
+
+##### 4. `<body>`
+
+- **Main Content Container**: The `<body>` element contains the content of the HTML document that is visible to the user, including text, images, links, and other media.
+
+##### 5. `<header>`
+
+- **Header Section**: The `<header>` element represents introductory content or a set of navigational links. It usually contains the site’s logo, title, and navigation menu.
+
+##### 6. `<nav>`
+
+- **Navigation Bar**: The `<nav>` element contains the navigation menu of the webpage. It typically includes a list of links (`<ul>` with `<li>` and `<a>`).
+
+##### 7. `<main>`
+
+- **Main Content Area**: The `<main>` element represents the dominant content of the `<body>`. It typically contains the core information of the webpage.
+
+##### 8. `<section>`
+
+- **Sectioning Content**: The `<section>` element defines sections within the main content, such as the home, about, and contact sections. Each section can have its own heading (`<h2>`).
+
+##### 9. `<footer>`
+
+- **Footer Section**: The `<footer>` element represents the footer of the document. It usually contains information such as the author of the document, copyright information, and links to related documents.
+
+##### 10. External Resources
+
+- **CSS and JavaScript**: The `<link rel="stylesheet" href="styles.css">` in the `<head>` links to an external CSS file for
+
+## Intermdiate Level
+
+## Advanced Level
 
 ## 2. Basic HTML
 
