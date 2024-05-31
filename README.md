@@ -11,6 +11,7 @@
 - [Beginner Level](#beginner-level)
 
     1. [Introduction to HTML](#1-introduction-to-html)
+      - [How website works](#10-how-website-works)
       - [What is HTML & Why HTML?](#11-what-is-html--why-html)
       - [History of HTML](#12-history-of-html)
       - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
@@ -21,9 +22,16 @@
       - [Tag, Attribute](#21-tag-attribute)
       - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
       - [Styling HTML Elements](#23-styling-html-elemnts)
-      - [Debugging](#24-debugging)
+      - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
+      - [Debugging](#25-debugging)
 
     3. [Text Formatting Tags](#3-text-formatting-tags)
+    4. [Lists](#4-lists)
+    5. [Links and Navigation](#5-links-and-navigation)
+    6. [Image and iframe](#6-image-and-iframe)
+    7. [Table](#7-table)
+    8. [Form Basic](#8-form-basics)
+    9. [Semantic HTML](#9-semantic-html)
 
 
 - [Intermediate Level](#intermdiate-level)
@@ -31,11 +39,6 @@
 
 
 2. [Basic HTML](#2-basic-html)
-  
-   - [Text Formatting tags](#23-text-formatting-tags)
-   - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
-   - [List - Ordered, Unordered, Description](#25-list---ordered-unordered-description)
-   - [Link](#26-link)
    - [Image and iframe](#27-image-and-iframe)
    - [Table](#28-table)
    - [Form](#29-form)
@@ -55,6 +58,13 @@
 ### 1. Introduction to html
 
 In this chapter we will discuss what is HTML, why do we need HTML, advantages and disadvantages of HTML, History of HTML, environment setup for HTML, basic structure of HTML
+
+#### 1.0 How website works?
+
+- client, server model
+- http request + http response
+- web design - html, css, js, js libraries/frameworks
+- give a demo for this
 
 #### 1.1 What is HTML & Why HTML
 
@@ -143,9 +153,6 @@ To enhance your development environment, install extensions that help with HTML,
 
 3. **Prettier - Code formatter**:
    - Formats your code for better readability.
-
-4. **Emmet**:
-   - Provides shorthand syntax for writing HTML and CSS.
 
 ###### Installing Extensions in VS Code
 
@@ -381,7 +388,42 @@ To enhance your development environment, install extensions that help with HTML,
 - style tag in HTML: `<style> ... </style>` tag must be used inside the head tag as shown in this example. In this example you can see that `<h1>` and `<body>` tag has styling property like color, text-align, background-color.
 - To set color of an html element we can use color name / hexadecimal color code / rgb color / hsl code as a value of color property as shown in this example for h1 tag.
 
-#### 2.4 Debugging
+#### 2.4 Entity, comment, Symbol, Color
+
+##### Comment syntax example
+
+```html
+<!-- This is a comment -->
+```
+
+##### Entity syntax example
+
+```html
+&copy; &lt; &gt; &gt; &hearts; &nbsp;
+```
+
+- First example shows the example of a html comment
+- second example shows an example of entity
+- To create an entity first write & then give a keyword and then give a semicolon
+- `&copy;` will create copyright symbol
+- `&lt;` will create less than symbol
+- `&gt;` will create greater than symbol
+- `&hearts;` will create hearts symbol
+
+##### Sources for adding symbol, icons and emoji
+
+- Unicode character website: <https://unicode-table.com/en/>
+- W3School emoji link: <https://www.w3schools.com/charsets/ref_emoji.asp>
+- iconfinder icon link: <https://www.iconfinder.com/>
+
+- Pick image from [unsplash](https://unsplash.com/)
+- Choose color from
+
+  - [colorhunt](https://colorhunt.co/)
+  - [imagecolorpicker](https://imagecolorpicker.com/)
+  - [htmlcolorcodes](https://htmlcolorcodes.com/)
+
+#### 2.5 Debugging
 
 - Inspect Element: Within the browser developer tools, the "Inspect Element" feature allows you to examine and modify the HTML structure in real-time. You can navigate through the document tree, view CSS styles, and experiment with changes to identify and fix layout or formatting issues.
 - Use Comments: Insert comments (`<!-- ... -->`) within your HTML code to temporarily remove or isolate sections of code that might be causing issues. This helps you narrow down the problematic area and identify the source of the problem.
@@ -443,65 +485,188 @@ output of the text-formatting tags is below:
 
 - The `<code>` tag is used to define a section of code or programming instructions. It is commonly used for displaying code snippets or highlighting code within a paragraph.
 
-## Intermdiate Level
+### 4. Lists
 
-## Advanced Level
+#### Lists in HTML with Attributes
 
-## 2. Basic HTML
+Lists in HTML are used to group related items together. HTML provides various types of lists to represent different kinds of information: ordered lists, unordered lists, and definition lists. Each type of list has attributes that can modify its behavior or appearance. Here’s a detailed explanation of each type with relevant attributes:
 
-- Tags, element, attributes, basic strcuture of HTML, text formatting tags, links, images, lists, tables, basic forms
+##### 1. Ordered Lists (`<ol>`)
 
+Ordered lists are used when the order of the items is important. Each item in an ordered list is numbered automatically by the browser.
 
-### 2.4 Entity, comment, Symbol, Color
+**Attributes**:
+- `type`: Specifies the type of numbering (e.g., "1" for numbers, "A" for uppercase letters, "a" for lowercase letters, "I" for uppercase Roman numerals, "i" for lowercase Roman numerals).
+- `start`: Specifies the starting number of the list.
+- `reversed`: Reverses the order of the list items.
 
-#### Comment syntax example
-
-```html
-<!-- This is a comment -->
-```
-
-#### Entity syntax example
+**Syntax**:
 
 ```html
-&copy; &lt; &gt; &gt; &hearts; &nbsp;
+<ol type="A" start="3" reversed>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
 ```
 
-- First example shows the example of a html comment
-- second example shows an example of entity
-- To create an entity first write & then give a keyword and then give a semicolon
-- `&copy;` will create copyright symbol
-- `&lt;` will create less than symbol
-- `&gt;` will create greater than symbol
-- `&hearts;` will create hearts symbol
+**Example**:
 
-#### Sources for adding symbol, icons and emoji
+```html
+<ol type="I" start="5">
+  <li>Install Visual Studio Code</li>
+  <li>Install necessary extensions</li>
+  <li>Create a new project folder</li>
+  <li>Create an index.html file</li>
+  <li>Write HTML content</li>
+</ol>
+```
 
-- Unicode character website: https://unicode-table.com/en/
-- W3School emoji link: https://www.w3schools.com/charsets/ref_emoji.asp
-- iconfinder icon link: https://www.iconfinder.com/
+In this example, the list items are numbered starting from V (5) in uppercase Roman numerals.
 
-- Pick image from [unsplash](https://unsplash.com/)
-- Choose color from
+##### 2. Unordered Lists (`<ul>`)
 
-  - [colorhunt](https://colorhunt.co/)
-  - [imagecolorpicker](https://imagecolorpicker.com/)
-  - [htmlcolorcodes](https://htmlcolorcodes.com/)
+Unordered lists are used when the order of the items does not matter. Each item in an unordered list is typically marked with a bullet point.
 
-### 2.5 List - Ordered, Unordered, Description
+**Attributes**:
+- `type`: Specifies the type of bullet (e.g., "disc", "circle", "square" - note that this attribute is deprecated and not recommended for use).
 
-- Adding list items (li) to organize and present information.
-- Mainly there are 3 types of list available in html: ordered list, unordered list, description list
+**Syntax**:
 
-  - `ol` (ordered list) tag is used for creating ordered list.
-    - `<ol type="...">`: Specifies the type of ordered list markers. Values: "1" (default) for numeric markers, "A", "a", "I" for uppercase Roman numerals, and "i".
-    - `<ol start="...">`: Specifies the starting value of an ordered list.
-    - `<ol reversed>`: Reverses the order of the items in an ordered list.
-  - `ul` (unordered list) tag is used for creating unordered list.
-    - `<ul compact>: Sets the spacing between list items to be more compact.`
-    - type Values: "circle" for circular markers, "square" for square markers, or "disc" for filled round markers.
-  - `dl` (description list) tag is used for creating description list, dt (description term), dd (description details)
-  - `li` (list) tag is a common tag for both ordered and unordered list
-    example
+```html
+<ul type="circle">
+  <li>Milk</li>
+  <li>Bread</li>
+  <li>Eggs</li>
+</ul>
+```
+
+**Example**:
+
+```html
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+```
+
+In this example, the list items are marked with default bullet points.
+
+##### 3. List Items (`<li>`)
+
+The `<li>` element is used to define each item in both ordered and unordered lists. It can also have attributes to modify its behavior.
+
+**Attributes**:
+- `value`: Specifies the value of the list item in an ordered list.
+
+**Syntax**:
+
+```html
+<ol>
+  <li value="10">Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+**Example**:
+
+```html
+<ol>
+  <li value="10">Step 10</li>
+  <li>Step 2</li>
+  <li>Step 3</li>
+</ol>
+```
+
+In this example, the first list item will start with the number 10, followed by 2 and 3.
+
+##### 4. Nested Lists
+
+Lists can be nested inside each other to create sub-lists. This is useful for representing hierarchical data.
+
+**Syntax**:
+
+```html
+<ul>
+  <li>Item 1
+    <ul>
+      <li>Sub-item 1.1</li>
+      <li>Sub-item 1.2</li>
+    </ul>
+  </li>
+  <li>Item 2</li>
+</ul>
+```
+
+**Example**:
+
+```html
+<ul>
+  <li>Frontend Development
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>Backend Development
+    <ul>
+      <li>Node.js</li>
+      <li>Express.js</li>
+      <li>Databases
+        <ul>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+```
+
+In this example, the main list contains items related to frontend and backend development, and each of these items contains nested lists.
+
+##### 5. Definition Lists (`<dl>`)
+
+Definition lists are used to represent a list of terms and their definitions. Each term is enclosed in a `<dt>` (definition term) element, and each definition is enclosed in a `<dd>` (definition description) element.
+
+**Syntax**:
+
+```html
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition for Term 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition for Term 2</dd>
+</dl>
+```
+
+**Example**:
+
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets, used to style HTML elements.</dd>
+  <dt>JavaScript</dt>
+  <dd>A programming language used to create dynamic and interactive effects on web pages.</dd>
+</dl>
+```
+
+In this example, the terms "HTML", "CSS", and "JavaScript" are defined with their respective descriptions.
+
+#### Summary
+
+- **Ordered Lists (`<ol>`)**: Use for items that have a specific order. Items are numbered. Attributes include `type`, `start`, and `reversed`.
+- **Unordered Lists (`<ul>`)**: Use for items that do not have a specific order. Items are marked with bullet points. Attributes include `type` (deprecated).
+- **List Items (`<li>`)**: Define individual items in both ordered and unordered lists. The `value` attribute specifies the value of the list item in an ordered list.
+- **Nested Lists**: Create hierarchical structures by nesting lists inside each other.
+- **Definition Lists (`<dl>`)**: Use for terms and their definitions. Contains `<dt>` for terms and `<dd>` for definitions.
+
+#### example
 
   ```html
   <body>
@@ -524,7 +689,164 @@ output of the text-formatting tags is below:
   output of the list code
   ![list](images/list.png)
 
-### 2.6 Link
+### 5. Links and Navigation
+
+Links are a fundamental aspect of web navigation, enabling users to move from one webpage to another or to different sections within a page. HTML uses anchor tags (`<a>`) to create hyperlinks. Here’s an in-depth look at links and navigation:
+
+#### Anchor Tags (`<a>`)
+
+The anchor tag (`<a>`) is used to define hyperlinks in HTML. The content inside the anchor tag is typically clickable and directs the user to another location when clicked.
+
+**Syntax**:
+
+```html
+<a href="URL">Link Text</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.example.com">Visit Example.com</a>
+```
+
+In this example, the text "Visit Example.com" is a clickable link that directs the user to `https://www.example.com`.
+
+#### Absolute vs. Relative Links
+
+Links can be either absolute or relative, depending on how they reference the target URL.
+
+**Absolute Links**:
+
+An absolute link provides the full URL, including the protocol (http or https), domain name, and path. Absolute links are used to link to external websites or resources.
+
+**Syntax**:
+
+```html
+<a href="https://www.example.com/page.html">Example Page</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.google.com">Go to Google</a>
+```
+
+In this example, clicking the link will take the user to Google's homepage.
+
+**Relative Links**:
+
+A relative link provides a path relative to the current document or the root of the website. Relative links are commonly used to link to other pages within the same website.
+
+**Syntax**:
+
+```html
+<a href="page.html">Example Page</a>
+```
+
+**Example**:
+
+```html
+<a href="about.html">About Us</a>
+<a href="/contact.html">Contact</a>
+<a href="../index.html">Home</a>
+```
+
+- `about.html` links to a page in the same directory as the current document.
+- `/contact.html` links to a page at the root level of the website.
+- `../index.html` links to a page one directory level up from the current document.
+
+#### Link Attributes
+
+Anchor tags can include various attributes that define the link's behavior and provide additional information. The most commonly used attributes are `href`, `target`, and `title`.
+
+**1. `href` Attribute**:
+
+The `href` (Hypertext REFerence) attribute specifies the URL of the page the link goes to. Without this attribute, the `<a>` tag will not function as a hyperlink.
+
+**Syntax**:
+
+```html
+<a href="URL">Link Text</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.example.com">Visit Example.com</a>
+```
+
+**2. `target` Attribute**:
+
+The `target` attribute specifies where to open the linked document. Common values include:
+
+- `_self`: Opens the link in the same tab or window (default behavior).
+- `_blank`: Opens the link in a new tab or window.
+- `_parent`: Opens the link in the parent frame.
+- `_top`: Opens the link in the full body of the window.
+
+**Syntax**:
+
+```html
+<a href="URL" target="_blank">Link Text</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
+```
+
+In this example, clicking the link will open `https://www.example.com` in a new browser tab.
+
+**3. `title` Attribute**:
+
+The `title` attribute provides additional information about the link, typically displayed as a tooltip when the user hovers over the link.
+
+**Syntax**:
+
+```html
+<a href="URL" title="Tooltip Text">Link Text</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.example.com" title="Go to Example.com">Visit Example.com</a>
+```
+
+In this example, hovering over the link will display the tooltip "Go to Example.com".
+
+#### Putting It All Together
+
+Here’s an example that combines all the elements discussed:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Navigation</title>
+</head>
+<body>
+    <h1>Navigation Links</h1>
+    <p>
+        <a href="https://www.example.com" target="_blank" title="Go to Example.com">Visit Example.com</a>
+    </p>
+    <p>
+        <a href="about.html" title="Learn more about us">About Us</a>
+    </p>
+    <p>
+        <a href="/contact.html" title="Get in touch with us">Contact</a>
+    </p>
+    <p>
+        <a href="../index.html" title="Return to homepage">Home</a>
+    </p>
+</body>
+</html>
+```
+
+#### previous doc
 
 - Linking to other pages within the website and external websites.
 - Creating hyperlinks using the `<a> ... </a>` tag and understanding attributes like href, target, and rel.
@@ -553,7 +875,145 @@ output of the text-formatting tags is below:
   output of the html link code
   ![link](images/link.png)
 
-### 2.7 Image and iframe
+### 6. Image and iframe
+
+Images are an essential part of web pages, adding visual appeal and context to the content. In HTML, images are inserted using the `<img>` tag. Here's a detailed explanation of how to work with images in HTML, including inserting images, using image attributes, and linking images.
+
+#### Inserting Images (`<img>`)
+
+The `<img>` tag is used to embed images in an HTML document. This tag is an empty element, meaning it does not have a closing tag.
+
+**Syntax**:
+
+```html
+<img src="image_url" alt="description">
+```
+
+**Example**:
+
+```html
+<img src="https://www.example.com/image.jpg" alt="Example Image">
+```
+
+In this example, an image from `https://www.example.com/image.jpg` is displayed, and "Example Image" is used as alternative text.
+
+#### Image Attributes
+
+The `<img>` tag supports several attributes that define the source of the image, provide alternative text, and control the display of the image.
+
+**1. `src` Attribute**:
+
+The `src` (source) attribute specifies the path to the image file. This can be a relative URL, an absolute URL, or a data URL.
+
+**Syntax**:
+
+```html
+<img src="image_url">
+```
+
+**Example**:
+
+```html
+<img src="https://www.example.com/logo.png">
+```
+
+**2. `alt` Attribute**:
+
+The `alt` (alternative text) attribute provides a textual description of the image. This text is displayed if the image cannot be loaded and is also used by screen readers to describe the image to visually impaired users. Providing descriptive alt text improves accessibility and SEO.
+
+**Syntax**:
+
+```html
+<img src="image_url" alt="description">
+```
+
+**Example**:
+
+```html
+<img src="https://www.example.com/logo.png" alt="Company Logo">
+```
+
+**3. `width` and `height` Attributes**:
+
+The `width` and `height` attributes specify the dimensions of the image in pixels. Setting these attributes can help ensure that the layout of the page remains consistent even if the image takes time to load.
+
+**Syntax**:
+
+```html
+<img src="image_url" width="width_value" height="height_value">
+```
+
+**Example**:
+
+```html
+<img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+```
+
+In this example, the image is displayed with a width of 200 pixels and a height of 100 pixels.
+
+#### Image Linking
+
+Images can also be used as hyperlinks. To create a clickable image, wrap the `<img>` tag inside an anchor (`<a>`) tag.
+
+**Syntax**:
+
+```html
+<a href="link_url">
+  <img src="image_url" alt="description">
+</a>
+```
+
+**Example**:
+
+```html
+<a href="https://www.example.com">
+  <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+</a>
+```
+
+In this example, clicking on the image will take the user to `https://www.example.com`.
+
+#### Putting It All Together for Image
+
+Here’s an example that combines inserting images, using image attributes, and creating clickable images:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+
+    <!-- Inserting an Image -->
+    <p>Here is an example of an image:</p>
+    <img src="https://www.example.com/image.jpg" alt="Example Image">
+
+    <!-- Using Image Attributes -->
+    <p>This image has specified width and height:</p>
+    <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+
+    <!-- Image Linking -->
+    <p>Click on the image to visit Example.com:</p>
+    <a href="https://www.example.com">
+      <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+    </a>
+</body>
+</html>
+```
+
+#### Summary for Image
+
+- **Inserting Images (`<img>`)**: Use the `<img>` tag to embed images in HTML.
+- **`src` Attribute**: Specifies the path to the image file.
+- **`alt` Attribute**: Provides alternative text for the image, improving accessibility and SEO.
+- **`width` and `height` Attributes**: Define the dimensions of the image in pixels.
+- **Image Linking**: Wrap the `<img>` tag in an `<a>` tag to create clickable images.
+
+By understanding and utilizing these features, you can effectively incorporate and manage images within your web pages, enhancing both the visual appeal and functionality of your content.
 
 #### image
 
@@ -583,7 +1043,7 @@ output of the text-formatting tags is below:
   </iframe>
   ```
 
-### 2.8 Table
+### 7. Table
 
 - Understanding table structure, headers, rows, colspan, rowspan and data cells.
 
@@ -909,6 +1369,301 @@ output of the text-formatting tags is below:
 
   output of the above html code
   ![table7](images/table7.png)
+
+### 8. Form Basics
+
+Forms are essential for collecting user input on web pages. HTML provides a variety of elements to create forms and handle user input effectively. Here’s a detailed explanation of the form elements, input types, and form attributes:
+
+#### Form Elements
+
+Forms are created using the `<form>` element, and various input controls can be placed inside it to collect data from the user.
+
+**1. `<form>` Element**:
+
+The `<form>` element defines a form that collects user input. It can contain various input elements like text fields, checkboxes, radio buttons, and more.
+
+**Syntax**:
+
+```html
+<form action="submit_url" method="post">
+  <!-- Form elements go here -->
+</form>
+```
+
+**Example**:
+
+```html
+<form action="/submit-form" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <button type="submit">Submit</button>
+</form>
+```
+
+**2. `<input>` Element**:
+
+The `<input>` element is used to create various types of input fields, such as text, password, email, etc.
+
+**Syntax**:
+
+```html
+<input type="input_type" name="name">
+```
+
+**Example**:
+
+```html
+<input type="text" name="username" placeholder="Enter your username">
+```
+
+**3. `<textarea>` Element**:
+
+The `<textarea>` element is used for multi-line text input.
+
+**Syntax**:
+
+```html
+<textarea name="name" rows="number" cols="number"></textarea>
+```
+
+**Example**:
+
+```html
+<textarea name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+```
+
+**4. `<button>` Element**:
+
+The `<button>` element represents a clickable button. It can be used to submit a form.
+
+**Syntax**:
+
+```html
+<button type="button_type">Button Text</button>
+```
+
+**Example**:
+
+```html
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+```
+
+**5. `<select>` and `<option>` Elements**:
+
+The `<select>` element creates a dropdown list, and the `<option>` elements define the options within the dropdown list.
+
+**Syntax**:
+
+```html
+<select name="name">
+  <option value="value1">Option 1</option>
+  <option value="value2">Option 2</option>
+</select>
+```
+
+**Example**:
+
+```html
+<select name="country">
+  <option value="us">United States</option>
+  <option value="ca">Canada</option>
+  <option value="uk">United Kingdom</option>
+</select>
+```
+
+#### Input Types
+
+The `<input>` element supports various types, each suitable for different kinds of data.
+
+**Common Input Types**:
+
+- `text`: Single-line text input.
+- `password`: Password input (masked characters).
+- `email`: Email address input.
+- `number`: Numeric input.
+- `date`: Date input.
+- `checkbox`: Checkbox input.
+- `radio`: Radio button input.
+- `submit`: Submit button.
+- `reset`: Reset button.
+
+**Example**:
+
+```html
+<form action="/submit-form" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="1" max="100">
+  
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob">
+  
+  <label for="newsletter">Subscribe to newsletter:</label>
+  <input type="checkbox" id="newsletter" name="newsletter">
+  
+  <p>Gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+```
+
+#### Form Attributes
+
+Forms have several attributes that define how the data is sent and handled.
+
+**1. `action` Attribute**:
+
+The `action` attribute specifies the URL to which the form data will be sent when the form is submitted.
+
+**Syntax**:
+
+```html
+<form action="submit_url">
+  <!-- Form elements go here -->
+</form>
+```
+
+**Example**:
+
+```html
+<form action="/submit-form" method="post">
+  <!-- Form elements go here -->
+</form>
+```
+
+**2. `method` Attribute**:
+
+The `method` attribute specifies the HTTP method to be used when submitting the form. Common values are `GET` and `POST`.
+
+**Syntax**:
+
+```html
+<form method="method_type">
+  <!-- Form elements go here -->
+</form>
+```
+
+**Example**:
+
+```html
+<form action="/submit-form" method="post">
+  <!-- Form elements go here -->
+</form>
+```
+
+- **GET**: Appends the form data to the URL, suitable for form submissions where data is not sensitive.
+- **POST**: Sends the form data in the request body, suitable for form submissions where data is sensitive.
+
+**3. `name` Attribute**:
+
+The `name` attribute specifies the name of the form element. It is used to identify form data after submission.
+
+**Syntax**:
+
+```html
+<input type="text" name="name">
+```
+
+**Example**:
+
+```html
+<form action="/submit-form" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <button type="submit">Submit</button>
+</form>
+```
+
+#### Putting It All Together for form
+
+Here’s an example form that includes various input types, form elements, and attributes:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+```
+
+#### Summary for form
+
+- **Form Elements**: Use `<form>` to define a form, and `<input>`, `<textarea>`, `<button>`, `<select>`, and `<option>` for various input controls.
+- **Input Types**: Common types include `text`, `password`, `email`, `number`, `date`, `checkbox`, `radio`, `submit`, and `reset`.
+- **Form Attributes**: Use `action` to specify the form submission URL, `method` to specify the HTTP method, and `name` to identify form elements.
+
+By understanding and utilizing these form elements, input types, and attributes, you can create effective and user-friendly forms for collecting and processing user input on your web pages.
+
+### 9. Semantic HTML
+
+- Semantic tags (<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>)
+- Benefits of semantic HTML
+
+## Intermdiate Level
+
+## Advanced Level
+
+## 2. Basic HTML
+
+
 
 ### 2.9 Form
 
