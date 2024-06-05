@@ -32,22 +32,26 @@
     7. [Table](#7-table)
     8. [Form Basic](#8-form-basics)
     9. [Semantic HTML](#9-semantic-html)
-
+    10. [Demo for basic HTML](#10-demo-for-basic-html)
+    11. [Assignment for basic HTML](#11-assignment-for-basic-html)
 
 - [Intermediate Level](#intermdiate-level)
+
+  1. [Meta Tag and SEO](#31-meta-tags--seo)
+  2. [Adding font-awesome icon & google font](#32-adding-font-awesome-icon--google-font)
+  3. [Advanced Table](#33-advanced-table)
+  4. [Advanced Form](#34-advanced-form)
+  5. [Send form data to your email](#35-send-form-data-to-your-email-using-third-party-api)
+  6. [Multimedia Elements in HTML](#36-multimedia-elements-in-html)
+  7. [Send form data to your email](#35-send-form-data-to-your-email-using-third-party-api)
+  8. [HTML5 Elements](#38-html5-elements)
+
 - [Advanced Level](#advanced-level)
 
-
-2. [Basic HTML](#2-basic-html)
-   - [Image and iframe](#27-image-and-iframe)
-   - [Table](#28-table)
-   - [Form](#29-form)
 
 3. [Advanced HTML](#3-advanced-html)
 
    - [Multimedia - audio, video](#31-multimedia---audio-video)
-   - [Meta tags & SEO](#32-meta-tags--seo)
-   - [Semantic HTML](#33-sematic-html)
    - [Web accessibility](#34-web-accessibility)
    - [Graphics](#35-graphics)
    - [HTML5 API](#36-html5-api)
@@ -1058,6 +1062,11 @@ By understanding and utilizing these features, you can effectively incorporate a
 - `<th>` tag is used to create table header cell.
 - `<caption>` tag is used to create table caption.
 
+- Table Attributes:
+  border: Specifies the width of the table's border.
+  cellpadding: Specifies the space between the cell content and its borders.
+  cellspacing: Specifies the space between cells.
+
 - Follow the image to understand td, tr,
   ![table](images/table.png)
 
@@ -1654,18 +1663,341 @@ By understanding and utilizing these form elements, input types, and attributes,
 
 ### 9. Semantic HTML
 
-- Semantic tags (<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>)
-- Benefits of semantic HTML
+Semantic HTML
+
+Semantic Tags:
+- `<header>`: Represents the introductory content or a group of navigational links.
+- `<nav>`: Represents a section of navigation links.
+- `<main>`: Represents the dominant content of the `<body>`.
+- `<article>`: Represents a self-contained composition in a document (e.g., a blog post).
+- `<section>`: Represents a standalone section of content.
+- `<footer>`: Represents the footer for a section or document.
+- Importance of Semantic HTML:
+  - Enhances the accessibility of web content.
+  - Improves SEO (Search Engine Optimization) by providing meaningful context to search engines.
+  - Helps developers understand the structure and purpose of different sections of a web page.
+
+- div can help to divide screen but it is not semantic
+- purpose of HTML5
+
+  - adding more semantic tags
+  - more form types
+  - improve accessibility
+  - improved storage facilities
+  - improved graphics & media
+  - remove few things
+
+- HTML5 Semantic elements: `<header> <nav> <main> <article> <aside> <section> <footer> <figure> <figcaption> <details> <summary> <mark> <time>`
+
+- sematic tags vs non semantic tags
+
+  - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
+  - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
+  - sematic tags vs non semantic tags example is given below:
+    ![semantic](images/semantic.png)
+
+### 10. Demo for basic HTML
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!--Section: navbar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#skills">My Skills</a>
+        </li>
+        <li>
+          <a href="#projects">My Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Section: intro -->
+    <header id="intro">
+      <h1>Anisul Islam</h1>
+      <p><em>Web developer and Lecturer of Computer Sceience</em></p>
+      <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
+        <img src="./images/anis.jpeg" alt="Anisul Islam" height="150" />
+      </a>
+
+      <hr />
+    </header>
+
+    <!--Section: about me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p><strong>Experience:</strong> 5 years expercince in web development</p>
+      <p>
+        <strong>Education:</strong> Master's in Software, Web and cloud
+        computing
+      </p>
+    </section>
+
+    <!--Section: Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Section: Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/anisul-Islam/portfolio-html"
+            >portfolio website</a
+          >
+        </li>
+        <li>Blog website</li>
+        <li>E-commerce website</li>
+      </ol>
+    </section>
+
+    <!--Section: Contacts -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <div>
+          <label for="name">Name : </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email : </label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Meassage : </label>
+          <textarea name="message" id="message" cols="20" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+
+    <!--Section: footer -->
+    <footer>
+      <p>Copyright reserved by &copy; Anisul2024</p>
+      <p>Developed with &hearts;</p>
+      <a href="tel:01710444700"> Call me</a>
+      <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+    </footer>
+  </body>
+</html>
+
+```
+
+### 11. [Assignment for basic HTML](https://github.com/anisul-Islam/full-stack-assignment-3-html)
 
 ## Intermdiate Level
 
-## Advanced Level
+### 3.1 Meta tags & SEO
 
-## 2. Basic HTML
+- Using meta tags (`<meta>`) to define page metadata, such as title, description, and keywords.
+  Understanding the impact of meta tags on search engine optimization (SEO).
 
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free complete html tutorials 2021" />
+  <meta name="keywords" content="HTML, html, html5" />
+  <meta name="author" content="Anisul Islam" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: aquamarine;
+    }
+  </style>
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+```
 
+- Inside `<head>` tag we can define metadata(document title, character set, links, scripts, styles), other information that will not be visible to the users
+- meta tag provides information to the browsers and search engines about the webpage
+- `<meta charset="UTF-8" />` defines the character encoding for the HTML document.
+- `<meta http-equiv="X-UA-Compatible" content="IE=edge" />` for supporting older version of IE.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` defines that webpage width is related to devices width and initial zoom level is 1.
+- `<link rel="stylesheet" href="style.css">` generally connects css file to html. Inside of href attribute we give the css file name.
+- `<style> ... </style>` we can use `<style> ... </style>` tag directly inside the head tag for designing html elements.
+- `<script src="index.js"></script>` generally connects js file to html. we can also use `<script> ... </script>` tag directly inside the body tag.
 
-### 2.9 Form
+### 3.2 Adding font-awesome icon & google font
+
+Adding Font Awesome icons and Google Fonts to your HTML project enhances the visual appeal and usability of your website. Here's an explanation of how to include both in your project:
+
+#### Adding Font Awesome Icons
+
+**Font Awesome** is a popular library for scalable vector icons that can be customized with CSS. To add Font Awesome icons to your HTML project, follow these steps:
+
+1. **Include the Font Awesome CDN:**
+   Add the Font Awesome CSS file to your HTML document's `<head>` section using the Content Delivery Network (CDN). This allows you to use Font Awesome icons without downloading any files.
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Font Awesome and Google Fonts</title>
+       <!-- Font Awesome CDN -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   </head>
+   <body>
+       <!-- Add an icon -->
+       <i class="fas fa-home"></i>
+   </body>
+   </html>
+   ```
+
+   The `<link>` tag above includes the Font Awesome CSS file, allowing you to use icons in your HTML document. The `i` tag with the classes `fas fa-home` adds a home icon to your page.
+
+2. **Use Icons:**
+   To use an icon, insert an `<i>` or `<span>` element and apply the relevant classes for the icon you want to use. Font Awesome uses class names to identify icons.
+
+   ```html
+   <!-- Example of using Font Awesome icons -->
+   <i class="fas fa-home"></i> <!-- Home icon -->
+   <i class="fas fa-envelope"></i> <!-- Envelope icon -->
+   <i class="fas fa-phone"></i> <!-- Phone icon -->
+   ```
+
+#### Adding Google Fonts
+
+**Google Fonts** provides a library of free and open-source fonts that you can use in your web projects. To add Google Fonts to your HTML project, follow these steps:
+
+1. **Select a Font:**
+   Visit [Google Fonts](https://fonts.google.com/), browse the available fonts, and select the ones you want to use. For example, let's select "Roboto."
+
+2. **Include the Google Fonts Link:**
+   Copy the `<link>` tag provided by Google Fonts and add it to the `<head>` section of your HTML document.
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Font Awesome and Google Fonts</title>
+       <!-- Font Awesome CDN -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       <!-- Google Fonts -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+       <style>
+           body {
+               font-family: 'Roboto', sans-serif;
+           }
+       </style>
+   </head>
+   <body>
+       <h1>Using Google Fonts and Font Awesome Icons</h1>
+       <p>This is an example of using Google Fonts (Roboto) and Font Awesome icons.</p>
+       <i class="fas fa-home"></i> <!-- Home icon -->
+   </body>
+   </html>
+   ```
+
+   The `<link>` tag above includes the Google Fonts stylesheet, which allows you to use the "Roboto" font in your HTML document.
+
+3. **Apply the Font:**
+   Use CSS to apply the selected font to your HTML elements. In this example, we've set the body to use the "Roboto" font.
+
+   ```css
+   body {
+       font-family: 'Roboto', sans-serif;
+   }
+   ```
+
+#### use this in the portfolio project's footer
+
+```html
+<!--Section: footer -->
+<footer>
+  <p>Copyright reserved by &copy; Anisul2024</p>
+  <p>Developed with &hearts;</p>
+  <a href="tel:01710444700">Call me</a>
+  <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+
+  <!-- Social Media Section -->
+  <h3>Follow Me</h3>
+  <ul class="social-media">
+    <li>
+      <a href="https://www.facebook.com/yourprofile" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com/yourprofile" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/yourprofile" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  </ul>
+</footer>
+```
+
+### 3.3 Advanced Table
+
+- `<caption class="table-caption">My Skills and Proficiency</caption>`
+
+#### rowspan, colspan
+
+### 3.4 Advanced Form
+
+- Advanced form elements (`<select>, <option>, <textarea>`)
+- Form validation attributes (required, pattern, min, max)
+- Form submission (method, action)
 
 - Using form controls like text inputs, checkboxes, radio buttons, dropdowns, and submit buttons.
 - HTML `<form>` Elements:
@@ -1743,6 +2075,60 @@ By understanding and utilizing these form elements, input types, and attributes,
   - `autofocus` attribute makes an input field automatically focus when the page is loaded.
   - `height="" width=""` attribute is used to set input elements height and width.
   - `list="id_of_datalist"` attribute is used to set input elements height and width.
+
+- update the portfolio project
+
+```html
+ <!--Section: Contacts -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+                <label for="subject">Subject : </label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="inquiry">Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="job">Job Opportunity</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message : </label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div>
+                <label for="age">Age : </label>
+                <input type="number" id="age" name="age" min="1" max="100" />
+            </div>
+
+            <div>
+                <label for="website">Website : </label>
+                <input type="url" id="website" name="website" pattern="https?://.+" />
+            </div>
+
+            <div>
+                <label for="image">Upload Image : </label>
+                <input type="file" id="image" name="image" accept="image/*" />
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </section>
+
+```
 
 - A form example is given below:
 
@@ -1886,98 +2272,343 @@ By understanding and utilizing these form elements, input types, and attributes,
   output of the above html code
   ![form](images/form.png)
 
-## 3. Advanced HTML
+### 3.5 Send form data to your email using third-party API
 
-### 3.1 Multimedia - audio, video
+- https://formspree.io/
+- add the endpoint
 
-#### audio
+### 3.6 Multimedia Elements in HTML
 
-- `<audio> ... </audio>` tag helps us to add audio in our webpage
-- `<audio> ... </audio>` tag has some attributes such as `controls autoplay muted height width`
-- audio example shows how to add aduio source by using `<source />` tag
-- Inside `<source />` tag we must define the `src=""` src address/name and also the `type=""` of audio
-- as the example shows there are 2 `<source />` tag is used if the first format is not supported by the browser then second one will work. if first and second both is not supported by the browser then `Your browser does not support the audio element.` will work.
+Multimedia elements in HTML allow you to embed and manage various media types such as videos, audio, and other media objects. Here's an overview of the main multimedia elements and how to use them:
 
-  audio Example
+#### Embedding Videos: `<video>`
 
-  ```html
-  <audio controls autoplay muted height="300" width="300">
-    <source src="anis.mp3" type="audio/mp3">
-    <source src="anis.wav" type="audio/wav">
-    Your browser does not support the audio element.
-  </audio
-  ```
+The `<video>` element is used to embed video content in an HTML document. It supports various attributes to control playback, including `controls`, `autoplay`, `loop`, and more.
 
-#### video
-
-- `<video> ... </video>` tag helps us to add video in our webpage
-- `<video> ... </video>` tag has some attributes such as `controls autoplay muted height width`
-
-video Example
+**Example:**
 
 ```html
-<video controls autoplay muted height="300" width="300">
-  <source src="anis.mp4" type="video/mp4">
-  <source src="anis.ogg" type="audio/ogg">
-  Your browser does not support the video element.
-</video
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 ```
 
-### 3.2 Meta tags & SEO
+- **`src`**: Specifies the path to the video file.
+- **`type`**: Specifies the MIME type of the video file.
+- **`controls`**: Adds play, pause, and volume controls.
+- **`autoplay`**: Starts playing the video automatically (not recommended for user experience).
+- **`loop`**: Loops the video playback.
 
-- Using meta tags (`<meta>`) to define page metadata, such as title, description, and keywords.
-  Understanding the impact of meta tags on search engine optimization (SEO).
+#### Embedding Audio: `<audio>`
+
+The `<audio>` element is used to embed sound content in an HTML document. It can also be controlled with various attributes similar to the `<video>` element.
+
+**Example:**
 
 ```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+- **`src`**: Specifies the path to the audio file.
+- **`type`**: Specifies the MIME type of the audio file.
+- **`controls`**: Adds play, pause, and volume controls.
+- **`autoplay`**: Starts playing the audio automatically.
+- **`loop`**: Loops the audio playback.
+
+#### Embedding Other Media Objects: `<embed>`, `<object>`, and `<iframe>`
+
+These tags allow you to embed different types of media and interactive content, such as Flash, PDF files, other web pages, and more.
+
+**Example of `<embed>`:**
+
+```html
+<embed src="example.pdf" width="600" height="500" type="application/pdf">
+```
+
+- **`src`**: Specifies the path to the media file.
+- **`type`**: Specifies the MIME type of the embedded content.
+- **`width`** and **`height`**: Specify the dimensions of the embedded content.
+
+**Example of `<object>`:**
+
+```html
+<object data="example.pdf" type="application/pdf" width="600" height="500">
+  <p>Alternative text for browsers that do not support embedded objects.</p>
+</object>
+```
+
+- **`data`**: Specifies the path to the media file.
+- **`type`**: Specifies the MIME type of the embedded content.
+- **`width`** and **`height`**: Specify the dimensions of the embedded content.
+
+**Example of `<iframe>`:**
+
+```html
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+```
+
+- **`src`**: Specifies the URL of the page to embed.
+- **`width`** and **`height`**: Specify the dimensions of the embedded iframe.
+- **`frameborder`**: Specifies whether the iframe should have a border (1 or 0).
+- **`allowfullscreen`**: Allows the iframe content to be displayed in fullscreen mode.
+
+#### Summary of multimedia
+
+- **`<video>`**: Embed video files with various playback controls.
+- **`<audio>`**: Embed audio files with playback controls.
+- **`<embed>`**: Embed other media types like PDFs and Flash.
+- **`<object>`**: Embed various media types, providing fallback content.
+- **`<iframe>`**: Embed another HTML page or content into the current document.
+
+These elements and tags enhance the multimedia experience on web pages, allowing you to present a rich variety of content seamlessly.
+
+### 3.7 Download PDF button
+
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free complete html tutorials 2021" />
-  <meta name="keywords" content="HTML, html, html5" />
-  <meta name="author" content="Anisul Islam" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: aquamarine;
-    }
-  </style>
-  <script src="index.js"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF Example</title>
+    <style>
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+<body>
+    <h1>Download PDF Example</h1>
+    <a href="path/to/yourfile.pdf" download="YourFileName.pdf" class="download-btn">
+        Download PDF
+    </a>
+</body>
+</html>
+
 ```
 
-- Inside `<head>` tag we can define metadata(document title, character set, links, scripts, styles), other information that will not be visible to the users
-- meta tag provides information to the browsers and search engines about the webpage
-- `<meta charset="UTF-8" />` defines the character encoding for the HTML document.
-- `<meta http-equiv="X-UA-Compatible" content="IE=edge" />` for supporting older version of IE.
-- `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` defines that webpage width is related to devices width and initial zoom level is 1.
-- `<link rel="stylesheet" href="style.css">` generally connects css file to html. Inside of href attribute we give the css file name.
-- `<style> ... </style>` we can use `<style> ... </style>` tag directly inside the head tag for designing html elements.
-- `<script src="index.js"></script>` generally connects js file to html. we can also use `<script> ... </script>` tag directly inside the body tag.
+### 3.8 HTML5 Elements
 
-### 3.3 Sematic HTML
+1. **`<canvas>`**:
+   - The `<canvas>` element is used to draw graphics on the web using JavaScript. It provides a resolution-dependent bitmap canvas which can be used for rendering graphs, game graphics, or other visual images.
 
-- div can help to divide screen but it is not semantic
-- purpose of HTML5
+2. **`<svg>`**:
+   - The `<svg>` element is used to define vector-based graphics. Unlike bitmaps, SVG images can be scaled indefinitely without losing quality. This makes SVG ideal for logos, icons, and complex graphics that require high resolution.
 
-  - adding more semantic tags
-  - more form types
-  - improve accessibility
-  - improved storage facilities
-  - improved graphics & media
-  - remove few things
+3. **`<progress>`**:
+   - The `<progress>` element represents the completion progress of a task, such as a download or file upload. It is typically used to show how much of the task has been completed.
 
-- HTML5 Semantic elements: `<header> <nav> <main> <article> <aside> <section> <footer> <figure> <figcaption> <details> <summary> <mark> <time>`
+4. **`<meter>`**:
+   - The `<meter>` element represents a scalar measurement within a known range, such as disk usage, temperature, or battery level. It is useful for displaying values that have a known maximum and minimum.
 
-- sematic tags vs non semantic tags
+### Adding these Elements to the Portfolio Project
 
-  - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
-  - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
-  - sematic tags vs non semantic tags example is given below:
-    ![semantic](images/semantic.png)
+Here's how you can integrate these HTML5 elements into your existing portfolio project:
 
-#### details and figure elements
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--Section: Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Section: Main content -->
+    <main>
+        <!--Section: Intro -->
+        <section id="intro">
+            <h1>Anisul Islam</h1>
+            <p><em>Web developer and Lecturer of Computer Science</em></p>
+            <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
+                <img src="./images/anis.jpeg" alt="Anisul Islam" height="150">
+            </a>
+            <hr>
+        </section>
+
+        <!--Section: About me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p><strong>Experience:</strong> 5 years experience in web development</p>
+            <p><strong>Education:</strong> Master's in Software, Web and Cloud Computing</p>
+        </section>
+
+        <!--Section: Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Expert</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Using <progress> to show skill level completion -->
+            <h3>Skill Progress</h3>
+            <label for="htmlProgress">HTML:</label>
+            <progress id="htmlProgress" value="90" max="100">90%</progress><br>
+            <label for="cssProgress">CSS:</label>
+            <progress id="cssProgress" value="80" max="100">80%</progress><br>
+            <label for="jsProgress">JavaScript:</label>
+            <progress id="jsProgress" value="70" max="100">70%</progress>
+
+            <!-- Using <meter> to show experience level -->
+            <h3>Experience Level</h3>
+            <label for="experienceLevel">Experience:</label>
+            <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
+        </section>
+
+        <!--Section: Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://github.com/anisul-Islam/portfolio-html">Portfolio Website</a>
+                </li>
+                <li>Blog Website</li>
+                <li>E-commerce Website</li>
+            </ol>
+        </section>
+
+        <!--Section: Drawing and Graphics -->
+        <section id="graphics">
+            <h2>Graphics</h2>
+            <!-- Using <canvas> for drawing -->
+            <h3>Canvas Example</h3>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            <script>
+                const canvas = document.getElementById('myCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#FF0000';
+                ctx.fillRect(10, 10, 150, 75);
+            </script>
+
+            <!-- Using <svg> for vector graphics -->
+            <h3>SVG Example</h3>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">SVG</text>
+            </svg>
+        </section>
+
+        <!--Section: Contacts -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="subject">Subject: </label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job">Job Opportunity</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <label for="age">Age: </label>
+                    <input type="number" id="age" name="age" min="1" max="100">
+                </div>
+
+                <div>
+                    <label for="website">Website: </label>
+                    <input type="url" id="website" name="website" pattern="https?://.+">
+                </div>
+
+                <div>
+                    <label for="file">Upload CV: </label>
+                    <input type="file" id="file" name="file" accept=".pdf">
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Section: Footer -->
+    <footer>
+        <p>Copyright reserved by &copy; Anisul2024</p>
+        <p>Developed with &hearts;</p>
+        <a href="tel:01710444700"> Call me</a>
+        <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+        <div class="social-media">
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+#### Explanation
+
+1. **`<canvas>`**: Added to the "Graphics" section to draw a simple red rectangle using JavaScript.
+2. **`<svg>`**: Added to the "Graphics" section to create a scalable vector graphic (SVG) with a red circle and white text.
+3. **`<progress>`**: Added to the "Skills" section to display the progress of proficiency levels for different skills.
+4. **`<meter>`**: Added to the "Skills" section to show the experience level as a scalar measurement.
+
+By incorporating these elements, you can showcase the capabilities of HTML5 in handling graphics, progress indicators, and scalar measurements, enhancing the interactivity and visual appeal of your portfolio.
+
+### details and figure elements
 
 - `<details>` elements have tewo states: closed, open
 - `<summary>` a short summary of details is provided by summary element
@@ -2026,6 +2657,8 @@ video Example
   output of the heading style code  
    ![details1](images/details1.png)
   ![details2](images/details2.png)
+
+## Advanced Level
 
 ### 3.4 Web accessibility
 
