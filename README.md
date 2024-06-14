@@ -11,12 +11,12 @@
 - [Beginner Level](#beginner-level)
 
     1. [Introduction to HTML](#1-introduction-to-html)
-      - [How website works](#10-how-website-works)
-      - [What is HTML & Why HTML?](#11-what-is-html--why-html)
-      - [History of HTML](#12-history-of-html)
-      - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
-      - [Setup Environment](#14-setup-environment)
-      - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
+        - [How website works](#10-how-website-works)
+        - [What is HTML & Why HTML?](#11-what-is-html--why-html)
+        - [History of HTML](#12-history-of-html)
+        - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
+        - [Setup Environment](#14-setup-environment)
+        - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
 
     2. [Basic Tags, Styling, Debugging](#2-basic-tags-styling-debugging)
       - [Tag, Attribute](#21-tag-attribute)
@@ -2399,7 +2399,7 @@ These elements and tags enhance the multimedia experience on web pages, allowing
 
 ```
 
-### 3.8 HTML5 Elements
+### 3.8 [HTML5 Elements](https://www.tutorialrepublic.com/html-reference/html5-tags.php)
 
 1. **`<canvas>`**:
    - The `<canvas>` element is used to draw graphics on the web using JavaScript. It provides a resolution-dependent bitmap canvas which can be used for rendering graphs, game graphics, or other visual images.
