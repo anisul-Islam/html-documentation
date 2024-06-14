@@ -19,11 +19,11 @@
         - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
 
     2. [Basic Tags, Styling, Debugging](#2-basic-tags-styling-debugging)
-      - [Tag, Attribute](#21-tag-attribute)
-      - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
-      - [Styling HTML Elements](#23-styling-html-elemnts)
-      - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
-      - [Debugging](#25-debugging)
+        - [Tag, Attribute](#21-tag-attribute)
+        - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
+        - [Styling HTML Elements](#23-styling-html-elemnts)
+        - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
+        - [Debugging](#25-debugging)
 
     3. [Text Formatting Tags](#3-text-formatting-tags)
     4. [Lists](#4-lists)
