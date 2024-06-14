@@ -47,15 +47,12 @@
   8. [HTML5 Elements](#38-html5-elements)
 
 - [Advanced Level](#advanced-level)
-
-
-3. [Advanced HTML](#3-advanced-html)
-
-   - [Multimedia - audio, video](#31-multimedia---audio-video)
-   - [Web accessibility](#34-web-accessibility)
-   - [Graphics](#35-graphics)
-   - [HTML5 API](#36-html5-api)
-   - [HTML Templates and Web Components](#37-html-templates-and-web-components)
+   1. [More Advanced Form](#1-more-advanced-form)
+   2. [Web accessibility](#2-web-accessibility)
+   3. [HTML5 API](#3-html5-api)
+   4. [HTML Templates and Web Components](#4-html-templates-and-web-components)
+   5. [Learning Resources](#5-learning-resources)
+   6. [Sources for Symbols,Icons, emojis and colors]()
 
 ## Beginner Level
 
@@ -2660,7 +2657,93 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
 ## Advanced Level
 
-### 3.4 Web accessibility
+### 1. More Advanced Form
+
+1. **Input Types**
+   - **Date Input (`<input type="date">`):**
+     This allows users to select a date from a date picker.
+
+     ```html
+     <label for="birthday">Birthday:</label>
+     <input type="date" id="birthday" name="birthday">
+     ```
+
+   - **Color Input (`<input type="color">`):**
+     This allows users to choose a color from a color picker.
+
+     ```html
+     <label for="favcolor">Favorite Color:</label>
+     <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+     ```
+
+   - **Range Input (`<input type="range">`):**
+     This creates a slider control for selecting a value from a range.
+
+     ```html
+     <label for="volume">Volume:</label>
+     <input type="range" id="volume" name="volume" min="0" max="100">
+     ```
+
+   - **Number Input (`<input type="number">`):**
+     This allows users to enter a number, with optional `min`, `max`, and `step` attributes.
+
+     ```html
+     <label for="quantity">Quantity:</label>
+     <input type="number" id="quantity" name="quantity" min="1" max="10">
+     ```
+
+2. **Datalist (`<datalist>`):**
+   This element provides an "autocomplete" feature for input fields. It contains a set of `<option>` elements that represent the predefined values.
+
+   ```html
+   <label for="browser">Choose a browser:</label>
+   <input list="browsers" id="browser" name="browser">
+   <datalist id="browsers">
+     <option value="Chrome">
+     <option value="Firefox">
+     <option value="Safari">
+     <option value="Edge">
+     <option value="Opera">
+   </datalist>
+   ```
+
+3. **Output (`<output>`):**
+   This element represents the result of a calculation or user action.
+
+   ```html
+   <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+     <input type="range" id="a" value="50"> +
+     <input type="number" id="b" value="50">
+     <output name="result" for="a b">100</output>
+   </form>
+   ```
+
+4. **Fieldset (`<fieldset>`) and Legend (`<legend>`):**
+   The `<fieldset>` element is used to group related elements in a form, and the `<legend>` element represents a caption for the `<fieldset>`.
+
+   ```html
+   <fieldset>
+     <legend>Personal Information</legend>
+     <label for="fname">First name:</label>
+     <input type="text" id="fname" name="fname"><br><br>
+     <label for="lname">Last name:</label>
+     <input type="text" id="lname" name="lname">
+   </fieldset>
+   ```
+
+#### Explanation for more advanced form
+
+- **Date Input:** The `<input type="date">` provides a graphical date picker in most browsers, making it easier for users to select a date.
+- **Color Input:** The `<input type="color">` opens a color picker that allows users to select a color visually.
+- **Range Input:** The `<input type="range">` creates a slider that lets users select a value from a specified range, providing a more interactive way to choose numbers.
+- **Number Input:** The `<input type="number">` includes arrows for incrementing and decrementing values, and can enforce `min` and `max` constraints.
+- **Datalist:** The `<datalist>` element, when linked to an input field, provides predefined options that the user can select from, similar to a dropdown but with autocomplete functionality.
+- **Output:** The `<output>` element is used to display the result of a calculation within a form.
+- **Fieldset and Legend:** The `<fieldset>` groups related form controls together, and the `<legend>` provides a caption for the group, which is useful for organizing complex forms.
+
+These advanced form elements and attributes enhance the functionality and user experience of forms by providing more interactive and semantically meaningful controls.
+
+### 2. Web accessibility
 
 - what is web accessibility?
   - making website supportive for disable people and search engine
@@ -2671,108 +2754,108 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
 1. Use Semantic elements over non semantic elements.
 
-- semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
-- non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
-- In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
+    - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
+    - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
+    - In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
 
-```html
-<div>Click me</div>
-<button>Click me</button>
-```
+    ```html
+    <div>Click me</div>
+    <button>Click me</button>
+    ```
 
-- Example of explicit semantic vs implicit sematic element
+    - Example of explicit semantic vs implicit sematic element
 
-```html
-<div role="button">Click me</div>
-<button>Click me</button>
-```
+    ```html
+    <div role="button">Click me</div>
+    <button>Click me</button>
+    ```
 
-- landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer
+    - landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer
 
 2. Use Heading tags in order
 
-- use one h1 element in a webpage
-- keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
+    - use one h1 element in a webpage
+    - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
 
 3. Use alt attribute
 
-- use alt attribute for `<img />` element
-- alt attribute provides more info to the blind people
-- low bandwidth might not render the image so the alt will help here
-- alt attributes helps technologies like search engines
-- title attribute can be used when we hover over image to get extra information
+    - use alt attribute for `<img />` element
+    - alt attribute provides more info to the blind people
+    - low bandwidth might not render the image so the alt will help here
+    - alt attributes helps technologies like search engines
+    - title attribute can be used when we hover over image to get extra information
 
 4. Contrast ratio checker
 
-- use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
+    - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
 
 5. Declare the languages
 
-- `<html lang="en">`
+    - `<html lang="en">`
 
 6. Meaningful Link txt
 
-- make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
+    - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
 
 7. Form related matters
 
-- use label and bind input elements with label by using id and for value same. example is given below:
+    - use label and bind input elements with label by using id and for value same. example is given below:
 
-  ```html
-  <label for="email">Email: </label> <input type="email" id="email" />
+    ```html
+    <label for="email">Email: </label> <input type="email" id="email" />
 
-  <div class="form-control">
-    <fieldset>
-      <legend>Choose Gender:</legend>
-      <div class="form-control">
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
+    <div class="form-control">
+      <fieldset>
+        <legend>Choose Gender:</legend>
+        <div class="form-control">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div class="form-control">
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+    </div>
+    ```
+
+8. Use aria-label vs aria-labelby vs aria-descriptionby
+
+    - these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
+    - The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
+    - using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
+    - **_aria-label_** add accessible name directly to an element and it has higher priority than the element value. In the following example screen reader will say learn more about me instead of learn more
+
+      ```html
+      <button aria-label="Learn more about me">Learn more</button>
+      ```
+
+    - **_aria-labelby_** create a relationship between elements
+
+      ```html
+      <h3 id="hobbies">Hobbies</h3>
+      <ul aria-labelledby="hobbies">
+        <li>Playing Football</li>
+        <li>Playing Badminton</li>
+        <li>Swimming</li>
+      </ul>
+      ```
+
+    - **_aria-descriptionby_**
+
+      ```html
+      <div>
+        <label for="password"> Password </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          aria-describedby="help"
+          required
+        />
+        <div id="help">Pasword must be at least 8 character long</div>
       </div>
-      <div class="form-control">
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
-      </div>
-    </fieldset>
-  </div>
-  ```
-
-8.  use aria-label vs aria-labelby vs aria-descriptionby
-
-- these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
-- The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
-- using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
-- **_aria-label_** add accessible name directly to an element and it has higher priority than the element value. In the following example screen reader will say learn more about me instead of learn more
-
-  ```html
-  <button aria-label="Learn more about me">Learn more</button>
-  ```
-
-- **_aria-labelby_** create a relationship between elements
-
-  ```html
-  <h3 id="hobbies">Hobbies</h3>
-  <ul aria-labelledby="hobbies">
-    <li>Playing Football</li>
-    <li>Playing Badminton</li>
-    <li>Swimming</li>
-  </ul>
-  ```
-
-- **_aria-descriptionby_**
-
-  ```html
-  <div>
-    <label for="password"> Password </label>
-    <input
-      type="password"
-      name="password"
-      id="password"
-      aria-describedby="help"
-      required
-    />
-    <div id="help">Pasword must be at least 8 character long</div>
-  </div>
-  ```
+      ```
 
 9. role and tabindex -> tabindex can start from 0 then -1, -2 for lesser priority so that you can navigate by keyboard one after one in an order
 
@@ -2820,16 +2903,7 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 - https://www.w3.org/WAI/fundamentals/accessibility-intro/
 - https://www.w3schools.com/html/html_accessibility.asp
 
-### 3.5 Graphics
-
-#### progress bar and svg
-
-- `<img src="imageName.svg">`
-- `<progress min="0" max="100" value="70"> </progress>`
-  <progress min="0" max="100" value="70"> </progress>
-- you will learn more about svg and canvas in CSS and Javascript playlist
-
-### 3.6 HTML5 API
+### 3. HTML5 API
 
 - Exploring HTML5 APIs like Geolocation, Drag and Drop, Web Storage, and Web Workers. Understanding their usage and practical applications.
 
@@ -2915,7 +2989,7 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
      context.closePath();
      ```
 
-### 3.7 HTML Templates and Web Components
+### 4. HTML Templates and Web Components
 
 - Building reusable HTML templates and components using `<template>` and custom elements.
 
@@ -2940,3 +3014,233 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
   ```
 
 - Leveraging frameworks like Angular, React, or Vue.js for more advanced component-based development.
+
+### 5. Learning resources
+
+#### Learning Resources for HTML
+
+1. **MDN Web Docs (Mozilla Developer Network)**
+   - **URL:** [MDN HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
+   - **Description:** Comprehensive documentation and tutorials on HTML, including elements, attributes, and best practices.
+
+2. **W3Schools**
+   - **URL:** [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+   - **Description:** Beginner-friendly tutorials covering HTML basics to advanced topics, with interactive examples and exercises.
+
+3. **Codecademy**
+   - **URL:** [Codecademy HTML Course](https://www.codecademy.com/learn/learn-html)
+   - **Description:** Interactive course that teaches HTML through hands-on projects and exercises.
+
+4. **freeCodeCamp**
+   - **URL:** [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+   - **Description:** Free comprehensive course covering HTML, CSS, and responsive web design principles.
+
+5. **HTML Dog**
+   - **URL:** [HTML Dog Tutorials](https://htmldog.com/guides/html/)
+   - **Description:** Offers tutorials on HTML, CSS, and JavaScript with practical examples and best practices.
+
+#### Important VS Code Extensions
+
+1. **HTML Snippets**
+   - **Description:** Provides a collection of useful HTML snippets for faster coding.
+   - **Extension ID:** `abusaidm.html-snippets`
+
+2. **Live Server**
+   - **Description:** Launch a development local Server with live reload feature for static & dynamic pages.
+   - **Extension ID:** `ritwickdey.LiveServer`
+
+3. **Prettier - Code formatter**
+   - **Description:** An opinionated code formatter that supports many languages and integrates with VS Code.
+   - **Extension ID:** `esbenp.prettier-vscode`
+
+4. **Emmet**
+   - **Description:** Provides support for Emmet syntax for writing HTML and CSS faster.
+   - **Extension ID:** Built-in (no need to install separately)
+
+5. **Path Intellisense**
+   - **Description:** Autocompletes filenames in your HTML, CSS, and JavaScript files.
+   - **Extension ID:** `christian-kohler.path-intellisense`
+
+6. **Auto Close Tag**
+   - **Description:** Automatically adds closing tags for HTML and XML elements.
+   - **Extension ID:** `formulahendry.auto-close-tag`
+
+7. **Auto Rename Tag**
+   - **Description:** Automatically renames paired HTML/XML tags.
+   - **Extension ID:** `formulahendry.auto-rename-tag`
+
+8. **Bracket Pair Colorizer**
+   - **Description:** Colors matching brackets to make code more readable.
+   - **Extension ID:** `CoenraadS.bracket-pair-colorizer-2`
+
+9. **Beautify**
+    - **Description:** Beautify your code in place for HTML, CSS, and JavaScript files.
+    - **Extension ID:** `HookyQR.beautify`
+
+These resources and extensions will help you learn HTML effectively and improve your productivity while coding in VS Code.
+
+### 6. sources for symbols, icons, emojis, colors
+
+#### Sources for Symbols
+
+1. **Unicode Character Table**
+   - **URL:** [Unicode Table](https://unicode-table.com/)
+   - **Description:** A comprehensive resource for finding Unicode characters, including symbols, special characters, and emojis. It provides the Unicode code point and various representations of each character.
+
+2. **HTML Special Characters**
+   - **URL:** [W3Schools HTML Symbols](https://www.w3schools.com/charsets/ref_html_symbols.asp)
+   - **Description:** A reference for HTML symbols and special characters, including their HTML codes and descriptions.
+
+3. **CopyChar**
+   - **URL:** [CopyChar](https://copychar.cc/)
+   - **Description:** A simple tool to copy special characters and symbols. Categories include punctuation, currency symbols, arrows, and more.
+
+#### Sources for Icons
+
+1. **Font Awesome**
+   - **URL:** [Font Awesome](https://fontawesome.com/)
+   - **Description:** A popular icon library offering scalable vector icons that can be customized with CSS. Free and Pro versions are available.
+   - **Usage:**
+
+     ```html
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <i class="fas fa-camera"></i>
+     ```
+
+2. **Material Icons**
+   - **URL:** [Material Icons](https://material.io/resources/icons/)
+   - **Description:** A set of icons from Google designed for use with Material Design. Available as font and SVG.
+   - **Usage:**
+
+     ```html
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <i class="material-icons">face</i>
+     ```
+
+3. **Ionicons**
+   - **URL:** [Ionicons](https://ionicons.com/)
+   - **Description:** A beautiful set of premium icons for use in web, iOS, Android, and desktop apps. Available as font and SVG.
+   - **Usage:**
+
+     ```html
+     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+     <i class="ion-md-heart"></i>
+     ```
+
+4. **Bootstrap Icons**
+   - **URL:** [Bootstrap Icons](https://icons.getbootstrap.com/)
+   - **Description:** Official open-source SVG icon library for Bootstrap.
+   - **Usage:**
+
+     ```html
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+     <i class="bi bi-alarm"></i>
+     ```
+
+#### Sources for Emojis
+
+1. **Emojipedia**
+   - **URL:** [Emojipedia](https://emojipedia.org/)
+   - **Description:** A comprehensive emoji reference website that provides detailed information about each emoji, including how it appears on different platforms.
+
+2. **Get Emoji**
+   - **URL:** [Get Emoji](https://getemoji.com/)
+   - **Description:** A simple website to copy and paste emojis. Categories include smileys, animals, food, activities, and more.
+
+3. **EmojiCopy**
+   - **URL:** [EmojiCopy](https://www.emojicopy.com/)
+   - **Description:** Allows you to copy emojis with a single click. It features a search function and categories for easy browsing.
+
+4. **JoyPixels (formerly EmojiOne)**
+   - **URL:** [JoyPixels](https://www.joypixels.com/)
+   - **Description:** Offers a comprehensive set of emojis for use in web projects, available as SVG and PNG.
+
+### Examples of Using Symbols, Icons, and Emojis
+
+#### Adding Symbols
+
+```html
+<p>Currency symbols: $ &euro; &yen; &pound;</p>
+<p>Check mark: &#10003;</p>
+```
+
+#### Adding Icons
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<p>Social Icons: 
+  <i class="fab fa-facebook"></i> 
+  <i class="fab fa-twitter"></i> 
+  <i class="fab fa-instagram"></i>
+</p>
+```
+
+#### Adding Emojis
+
+```html
+<p>Emojis: 😀 😃 😄 😁 😆 😅 😂 🤣 🥲</p>
+```
+
+These resources and examples should help you incorporate symbols, icons, and emojis into your web projects effectively.
+
+#### Adding colors
+
+1. **Color Palettes and Inspiration**
+
+   - **Coolors**
+     - **URL:** [Coolors](https://coolors.co/)
+     - **Description:** Generate color schemes with ease, save your favorite palettes, and explore trending palettes for inspiration.
+
+   - **Adobe Color**
+     - **URL:** [Adobe Color](https://color.adobe.com/)
+     - **Description:** Create, explore, and save color schemes. You can also extract color themes from images.
+
+   - **Colormind**
+     - **URL:** [Colormind](http://colormind.io/)
+     - **Description:** A color scheme generator that uses deep learning to generate color palettes based on color theory.
+
+   - **Color Hunt**
+     - **URL:** [Color Hunt](https://colorhunt.co/)
+     - **Description:** A free and open platform for color inspiration with curated color palettes.
+
+   - **Paletton**
+     - **URL:** [Paletton](https://paletton.com/)
+     - **Description:** Create color schemes based on color wheel theory, including monochromatic, analogous, triadic, and tetradic schemes.
+
+2. **Color Picker Tools**
+
+   - **HTML Color Picker by W3Schools**
+     - **URL:** [HTML Color Picker](https://www.w3schools.com/colors/colors_picker.asp)
+     - **Description:** Simple color picker tool to select and preview colors in different formats (HEX, RGB, HSL).
+
+   - **CSS Color Picker by CSS-TRICKS**
+     - **URL:** [CSS-TRICKS Color Picker](https://css-tricks.com/accessible-color-picker/)
+     - **Description:** An accessible color picker that ensures the colors you choose meet contrast standards.
+
+   - **Canva Color Palette Generator**
+     - **URL:** [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
+     - **Description:** Upload an image and Canva will generate a color palette from it.
+
+3. **Color Libraries and Systems**
+
+   - **Material Design Colors**
+     - **URL:** [Material Design Colors](https://material.io/design/color/the-color-system.html)
+     - **Description:** Official Material Design color palette by Google, offering a wide range of primary and accent colors.
+
+   - **Flat UI Colors**
+     - **URL:** [Flat UI Colors](https://flatuicolors.com/)
+     - **Description:** A collection of color palettes based on the flat design trend, featuring vibrant and muted colors.
+
+   - **Tailwind CSS Color Palette**
+     - **URL:** [Tailwind CSS Colors](https://tailwindcss.com/docs/customizing-colors)
+     - **Description:** Extensive color palette used in Tailwind CSS, great for designing modern web interfaces.
+
+4. **Accessibility Tools**
+
+   - **Contrast Ratio**
+     - **URL:** [Contrast Ratio](https://contrast-ratio.com/)
+     - **Description:** Check the contrast ratio between two colors to ensure text is readable for users with visual impairments.
+
+   - **Accessible Colors**
+     - **URL:** [Accessible Colors](https://accessible-colors.com/)
+     - **Description:** A color palette generator that ensures your colors meet WCAG contrast guidelines.
