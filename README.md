@@ -3,6 +3,7 @@
 - [HTML English Video Tutorial](https://youtu.be/TWUf6eSi2K8)
 - [Learn HTML by building a project](https://youtu.be/mgO9ObbVeJ8)
 - [html complete course Bangla (Beginner to Advanced)](https://youtube.com/playlist?list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3)
+- [You can learn HTML from here](https://htmldog.com/guides/html/)
 
 ![html course plan](images/html.png)
 
@@ -51,8 +52,8 @@
    2. [Web accessibility](#2-web-accessibility)
    3. [HTML5 API](#3-html5-api)
    4. [HTML Templates and Web Components](#4-html-templates-and-web-components)
-   5. [Learning Resources](#5-learning-resources)
-   6. [Sources for Symbols,Icons, emojis and colors]()
+   5. [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
+   6. [Learning Resources](#6-learning-resources)
 
 ## Beginner Level
 
@@ -76,48 +77,47 @@ In this chapter we will discuss what is HTML, why do we need HTML, advantages an
 
 - Tim Berners-Lee created HTML in 1990
 - HTML 1.0 - 1990
-  HTML 2.0 - 1993
-  HTML 3.0 - 1995 (Not fully implemented)
-  HTML 3.2 - 1997
-  HTML 4.0 - 1997
-  HTML 4.01 - 1999
-  HTML5 - 2014 (Ongoing development with subsequent versions like HTML5.1, HTML5.2, etc.)
+- HTML 2.0 - 1993
+- HTML 3.0 - 1995 (Not fully implemented)
+- HTML 3.2 - 1997
+- HTML 4.0 - 1997
+- HTML 4.01 - 1999
+- HTML5 - 2014 (Ongoing development with subsequent versions like HTML5.1, HTML5.2, etc.)
 
 #### 1.3 Advantages and disadvantages of HTML
 
 - Advantages of HTML:
 
-1. **Easy to Learn**: HTML has a simple and straightforward syntax, making it easy for beginners to learn and understand.
+  1. **Easy to Learn**: HTML has a simple and straightforward syntax, making it easy for beginners to learn and understand.
 
-2. **Platform Independent**: HTML is platform-independent and can be used on any operating system or device that has a web browser.
+  2. **Platform Independent**: HTML is platform-independent and can be used on any operating system or device that has a web browser.
 
-3. **Wide Browser Support**: HTML is supported by all major web browsers, ensuring compatibility and accessibility across different platforms.
+  3. **Wide Browser Support**: HTML is supported by all major web browsers, ensuring compatibility and accessibility across different platforms.
 
 - Disadvantages of HTML:
 
-1. **Limited Styling Options**: HTML has limited styling capabilities compared to CSS (Cascading Style Sheets). While HTML can define basic styles, more complex and detailed styling is better achieved using CSS.
+  1. **Limited Styling Options**: HTML has limited styling capabilities compared to CSS (Cascading Style Sheets). While HTML can define basic styles, more complex and detailed styling is better achieved using CSS.
 
-2. **Lack of Interactivity**: HTML on its own is static and lacks interactivity. To add dynamic behavior or functionality to web pages, additional technologies such as JavaScript or server-side languages are required.
+  2. **Lack of Interactivity**: HTML on its own is static and lacks interactivity. To add dynamic behavior or functionality to web pages, additional technologies such as JavaScript or server-side languages are required.
 
-3. **Browser Compatibility Issues**: Different web browsers may interpret HTML code differently, leading to potential compatibility issues. Developers must test and ensure cross-browser compatibility.
+  3. **Browser Compatibility Issues**: Different web browsers may interpret HTML code differently, leading to potential compatibility issues. Developers must test and ensure cross-browser compatibility.
 
-4. **Security Risks**: HTML alone does not provide built-in security features. Web developers must implement security measures and follow best practices to protect against vulnerabilities, such as cross-site scripting (XSS) attacks.
+  4. **Security Risks**: HTML alone does not provide built-in security features. Web developers must implement security measures and follow best practices to protect against vulnerabilities, such as cross-site scripting (XSS) attacks.
 
 #### 1.4 Setup Environment
-
-- Editor: VScode / Notepad++ / Sublime
-- Browser: Google Chrome / Firefox
-- Version Control: GitHub
 
 Setting up a development environment for HTML involves choosing the right tools and configuring them properly to streamline your web development process. Here’s a step-by-step guide to get you started:
 
 ##### Step 1: Choose a Text Editor or IDE
 
-A good text editor or Integrated Development Environment (IDE) is essential for writing HTML. Here are some popular options:
-
 1. **Visual Studio Code (VS Code)**:
    - Lightweight and highly customizable.
    - Supports extensions for various languages and tools.
+   - **Download**:
+      - Go to the [VS Code website](https://code.visualstudio.com/).
+      - Download the installer for your operating system.
+      - **Install**:
+        - Run the installer and follow the instructions to install VS Code.
 
 2. **Sublime Text**:
    - Fast and lightweight.
@@ -131,55 +131,298 @@ A good text editor or Integrated Development Environment (IDE) is essential for 
    - A powerful IDE specifically for web development.
    - Offers many built-in features for HTML, CSS, and JavaScript.
 
-##### Step 2: Install Your Chosen Text Editor or IDE
+##### Step 2: Install VSCode Extensions
 
-###### Visual Studio Code (VS Code)
+- [Part-1 Visual studio Code extensions for web developer | Bangla Tutorial](https://youtu.be/Hm9eZqRbt24?si=X91d1iFPF7lA2Ars)
+- [Part-2 Visual studio Code extensions for web developer | Bangla Tutorial](https://youtu.be/8o6XSVwA4xw?si=csjphqSn1gtOhNve)
+- [Visual studio Code extensions for web developer | English Tutorial]()
 
-1. **Download**:
-   - Go to the [VS Code website](https://code.visualstudio.com/).
-   - Download the installer for your operating system.
+- Installing Extensions in VS Code
 
-2. **Install**:
-   - Run the installer and follow the instructions to install VS Code.
+  1. Open VS Code.
+  2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+  3. Search for the desired extensions and click **Install**.
 
-##### Step 3: Install Extensions
+Following extensions enhance the functionality of Visual Studio Code, making it a more powerful and enjoyable tool for development. These extensions significantly enhance the functionality, usability, and efficiency of Visual Studio Code, making it an even more powerful tool for developers.
 
-To enhance your development environment, install extensions that help with HTML, CSS, and JavaScript development. Here are some recommended extensions for VS Code:
+1. **Live Server:** The Live Server extension launches a local development server with a live reload feature for static and dynamic pages. This means that every time you save your HTML, CSS, or JavaScript file, the browser will automatically refresh to show the changes.
 
-1. **HTML Boilerplate**:
-   - Provides basic HTML templates.
+    **Benefits:**
 
-2. **Live Server**:
-   - Launches a local development server with live reload feature.
+    - Instant feedback on changes
+    - Great for testing and debugging
+    - Works with any file type that a browser can open
 
-3. **Prettier - Code formatter**:
-   - Formats your code for better readability.
+2. **Live Preview:**** The Live Preview extension provides an in-editor browser preview. This allows you to see your web application in action side-by-side with your code. It updates in real-time as you edit your files.
 
-###### Installing Extensions in VS Code
+    **Benefits:**
 
-1. Open VS Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
-3. Search for the desired extensions and click **Install**.
+    - Convenient for quick checks
+    - Saves time switching between the editor and the browser
+    - Integrated with the VSCode interface
 
-##### Step 4: Set Up a Project Folder
+3. **VSCode Pets:** VSCode Pets adds a fun element to your coding environment by allowing you to adopt a virtual pet that lives in your status bar. The pet can perform various actions and is customizable.
 
-1. **Create a Project Folder**:
+    **Benefits:**
+
+    - Adds a fun, motivational element to coding
+    - Can reduce stress and make coding sessions more enjoyable
+
+4. **Code Spell Checker:** Code Spell Checker is a basic spell checker that works well with code and plain text. It helps you catch spelling mistakes in your comments, strings, and plain text.
+
+    **Benefits:**
+
+    - Improves code documentation and readability
+    - Reduces spelling errors in comments and strings
+    - Supports custom dictionaries and language settings
+
+5. **Prettier Code Formatter:** Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules. It supports many languages and integrates with most editors, including VSCode.
+
+    **Benefits:**
+
+    - Ensures code consistency
+    - Reduces the amount of code style discussions in code reviews
+    - Configurable to match your project's style guide
+
+6. **Indent Rainbow:** Indent Rainbow colorizes the indentation levels in your code. Each level of indentation is given a different color, which helps in visualizing the structure of the code.
+
+    **Benefits:**
+
+    - Improves readability of indented code
+    - Helps to quickly identify misaligned or incorrect indentation
+    - Useful for languages with significant indentation (e.g., Python)
+
+7. **Image Preview:** The Image Preview extension allows you to see image previews directly in your VSCode editor. When you hover over an image file path in your code, a preview of the image is displayed.
+
+    **Benefits:**
+
+    - Quick access to image previews without leaving the editor
+    - Useful for web development when working with images
+    - Enhances the visual aspect of coding with images
+
+8. **CodeSnap:** CodeSnap allows you to take beautiful screenshots of your code. It lets you highlight the portion of code you want to capture and then generates an image that can be shared or saved.
+
+    **Benefits:**
+
+    - Creates clean and professional-looking code snippets
+    - Useful for sharing code on social media, blogs, or presentations
+    - Customizable appearance to match your preferences
+
+9. **GitHub Themes:** GitHub Themes extension provides a collection of themes based on GitHub's color schemes. This extension allows you to apply GitHub's dark and light themes to your VSCode editor.
+
+    **Benefits:**
+
+    - Brings the familiar GitHub look to your editor
+    - Offers both dark and light themes to match your preference
+    - Enhances the visual consistency for developers who work with GitHub frequently
+
+10. **Material Icon Theme:** The Material Icon Theme extension changes the default file icons in VSCode to Material Design icons. This makes it easier to differentiate between file types and improves the visual appearance of the editor.
+
+    **Benefits:**
+
+    - Enhanced visual differentiation between file types
+    - Modern, clean design that aligns with Material Design principles
+    - Improved aesthetics and user experience
+
+11. **Better Comments:** (HTML,CSS,JS etc.) The Better Comments extension helps you create more readable and organized comments in your code. It allows you to colorize comments to differentiate between different types of comments, such as alerts, queries, to-dos, and highlights.
+
+    **Benefits:**
+
+    - Improves code readability and organization
+    - Helps to quickly identify different types of comments
+    - Useful for collaboration and documentation
+
+12. **Excalidraw:** Excalidraw is an extension for creating hand-drawn style diagrams directly within VSCode. It is great for visualizing ideas, planning, and creating sketches without leaving the editor.
+
+    **Benefits:**
+
+    - Easy to create and share diagrams and sketches
+    - Integrated with VSCode for a seamless workflow
+    - Useful for brainstorming and planning
+
+13. **Live Share:** Live Share enables real-time collaboration in VSCode. It allows multiple developers to edit and debug the same codebase simultaneously, sharing the same session with live changes.
+
+    **Benefits:**
+
+    - Real-time collaborative coding and debugging
+    - Enhances team productivity and remote collaboration
+    - Secure and easy to set up
+
+14. **Auto Rename Tag:** (HTML) The Auto Rename Tag extension automatically renames paired HTML/XML tags. When you edit an opening tag, the closing tag is updated to match, and vice versa.
+
+    **Benefits:**
+
+    - Saves time and reduces errors when renaming tags
+    - Increases efficiency when editing HTML/XML structures
+
+15. **HTML End Tag Labels:** (HTML) HTML End Tag Labels adds labels to the end of HTML tags to help you see the corresponding opening tag. This is especially useful for deeply nested HTML structures.
+
+    **Benefits:**
+
+    - Enhances readability of HTML code
+    - Makes it easier to identify matching opening and closing tags
+    - Useful for debugging and editing large HTML files
+
+16. **BEM Helper:** (CSS)
+
+17. **axe accessibility linter:** (HTML)
+
+18. **Color Highlight:** (CSS)The Color Highlight extension highlights color codes in your code editor, displaying the actual color next to the code. It supports various color formats, including hex, RGB, and HSL.
+
+    **Benefits:**
+
+    - Immediate visual feedback for color values
+    - Simplifies the process of working with colors in CSS and design
+    - Supports multiple color formats
+
+19. **HTML To CSS Autocompletion:** (CSS)
+
+20. **CSS Flexbox cheatsheet:** (CSS)
+
+21. **CSS Navigation (CSS):** CSS Navigation allows you to navigate to CSS rules directly from your HTML or JSX files. You can jump to the CSS definition of a class or ID by clicking on it.
+
+    **Benefits:**
+
+    - Easy navigation to CSS definitions
+    - Reduces context switching between files
+    - Enhances code readability and maintainability
+
+22. **JavaScript (ES6) Code Snippets:** This extension provides a collection of useful code snippets for ES6 (ECMAScript 2015). It includes shortcuts for common JavaScript syntax and constructs, making it quicker to write standard code patterns.
+
+    **Benefits:**
+
+    - Increases coding speed with predefined snippets
+    - Reduces repetitive typing
+    - Helps with learning and using ES6 features
+
+23. **DOM Code Snippets:** (JS)
+
+    gid→ const var = document.getElementById('id')
+    dqs→ const var = document.querySelector('selector');
+    dqa→ const var = document.querySelectorAll('selector');
+    dce→ const var = document.createElement('element');
+
+24. **Error Lens:** (JS) The Error Lens extension enhances the visibility of errors, warnings, and other diagnostics by highlighting them directly in the code editor. It overlays error messages next to the code lines where the issues occur.
+
+    **Benefits:**
+
+    - Immediate visual feedback on errors and warnings
+    - Reduces the time spent searching for issues in the code
+    - Enhances the debugging and development process
+
+25. **ESLint:** (JS) ESLint is a linter for identifying and reporting on patterns in JavaScript. The ESLint extension integrates with VSCode to provide real-time feedback on code quality and style issues.
+
+    **Benefits:**
+
+    - Enforces code quality and consistency
+    - Helps to catch potential errors and bugs early
+    - Configurable to match your project's coding standards
+
+26. **Path Intellisense:** (JS) (13.1 M installed) Path Intellisense provides autocompletion for file paths in VSCode. It helps you quickly find and insert file paths while coding, reducing errors and saving time.
+
+    **Benefits:**
+
+    - Autocompletion for file paths
+    - Reduces errors and speeds up development
+    - Improves productivity when working with file imports and references
+
+27. **Import Cost:** (JS) (3.8 M) Import Cost displays the size of the imported package inline in the editor. It helps you understand the impact of your dependencies on your application's bundle size.
+
+    **Benefits:**
+
+    - Provides real-time feedback on import sizes
+    - Helps to optimize and manage dependencies
+    - Reduces the risk of bloating your application's bundle size
+
+28. **Quokka.js** (3.2M) quokka.js is a live scratchpad for JavaScript that provides real-time feedback as you type. It shows the results of code execution inline within the editor.
+
+    **Benefits:**
+
+    - Real-time code execution feedback
+    - Helps with rapid prototyping and debugging
+    - Improves learning and exploration of JavaScript
+
+29. **Npm Intellisense:** (8M installed) Npm Intellisense provides autocompletion for npm modules in your import statements. It helps you quickly add dependencies to your JavaScript projects.
+
+    **Benefits:**
+
+    - Autocompletion for npm modules
+    - Speeds up dependency management
+    - Reduces errors in import statements
+
+30. **JavaScript Booster:** JavaScript Booster provides various code actions to improve your JavaScript code, including extracting variables, simplifying expressions, and converting to arrow functions.
+
+    **Benefits:**
+
+    - Enhances JavaScript code with one-click actions
+    - Improves code quality and readability
+    - Speeds up refactoring
+
+31. **REST Client:** (JS) The REST Client extension allows you to send HTTP requests and view responses directly within VSCode. It supports various HTTP methods and provides a convenient way to test and debug APIs.
+
+    **Benefits:**
+
+    - Convenient API testing and debugging
+    - Eliminates the need for external tools like Postman
+    - Supports multiple HTTP methods and environments
+
+32. **Thunder Client:** (JS) Thunder Client is a lightweight alternative to Postman integrated within VSCode. It provides a simple and intuitive interface for testing REST APIs, with features like collections, environments, and request history.
+
+    **Benefits:**
+
+    - Integrated API client within VSCode
+    - Lightweight and easy to use
+    - Supports collections and environments for organized testing
+
+33. **Debugger for Chrome:** This extension allows you to debug your JavaScript code running in Google Chrome directly from VSCode. It provides a seamless debugging experience with breakpoints, call stacks, and variable inspection.
+
+    **Benefits:**
+
+    - Integrated debugging within VSCode
+    - Supports setting breakpoints, inspecting variables, and stepping through code
+
+34. **Jest:** The Jest extension integrates the Jest testing framework into VSCode. It provides features like running tests, viewing test results, and debugging tests directly within the editor.
+
+    **Benefits:**
+
+    - Integrated test running and debugging
+    - Improves test-driven development workflow
+    - Provides real-time feedback on test status
+
+35. **ES7 + React/redux/react-native snippet:** (React)
+36. **ERD Editor:** (ERD)
+
+37. **GitLens — Git supercharged** GitLens supercharges the Git capabilities built into VSCode. It helps you visualize code authorship, track changes, and understand the history of your codebase.
+
+    **Benefits:**
+
+    - Visualize code authorship and history
+    - Track changes and navigate Git repositories
+    - Improves collaboration and code understanding
+
+38. Markdown previewer
+39. Markdown Lint
+40. Fluent Icons (change the vscode activiy bar icons)
+41. Themes extension: Dark vision < Fleety < Andromeda < Framer dark < Cyberpunk < pro hacker theme < Github theme
+
+[&#8593; Back to Top](#table-of-contents)
+
+##### Step 3: Set Up a Project Folder
+
+1. Create a Project Folder:
    - Create a folder on your computer where you will store your project files. For example, `html-project`.
 
-2. **Open the Project Folder in VS Code**:
+2. Open the Project Folder in VS Code:
    - Open VS Code.
    - Go to `File` > `Open Folder` and select your project folder.
 
-##### Step 5: Create Your First HTML File
+##### Step 4: Create Your First HTML File
 
-1. **Create a New File**:
-   - In VS Code, go to `File` > `New File` or press `Ctrl+N`.
+- Create a New File: In VS Code, go to `File` > `New File` or press `Ctrl+N`.
 
-2. **Save the File**:
-   - Save the file as `index.html` in your project folder by going to `File` > `Save As` and typing `index.html`.
+- Save the File: Save the file as `index.html` in your project folder by going to `File` > `Save As` and typing `index.html`.
 
-3. **Add Basic HTML Boilerplate**:
-   - Type `html:5` and press `Tab` to automatically generate a basic HTML boilerplate using Emmet.
+- Add Basic HTML Boilerplate: Type `html:5` and press `Tab` to automatically generate a basic HTML boilerplate using Emmet.
 
 ```html
 <!DOCTYPE html>
@@ -195,7 +438,7 @@ To enhance your development environment, install extensions that help with HTML,
 </html>
 ```
 
-##### Step 6: Set Up Live Server
+##### Step 5: Set Up Live Server
 
 1. **Open Live Server**:
    - With your `index.html` file open, right-click on the editor and select `Open with Live Server`.
@@ -204,12 +447,12 @@ To enhance your development environment, install extensions that help with HTML,
 2. **View Your Page**:
    - Your default web browser should open, displaying your `index.html` file. Any changes you make to the file will automatically reload in the browser.
 
-##### Step 7: Version Control with Git
+##### Step 6: Version Control with Git
 
-1. **Install Git**:
+1. Install Git:
    - Download and install Git from the [official Git website](https://git-scm.com/).
 
-2. **Initialize a Git Repository**:
+2. Initialize a Git Repository:
    - Open a terminal in VS Code by pressing `Ctrl+`` (backtick) or going to`View` > `Terminal`.
    - Initialize a new Git repository in your project folder:
 
@@ -217,7 +460,7 @@ To enhance your development environment, install extensions that help with HTML,
      git init
      ```
 
-3. **Add Files and Commit**:
+3. Add Files and Commit:
    - Add your files to the repository and commit your changes:
 
      ```bash
@@ -225,7 +468,7 @@ To enhance your development environment, install extensions that help with HTML,
      git commit -m "Initial commit"
      ```
 
-4. **Set Up a Remote Repository**:
+4. Set Up a Remote Repository:
    - Create a new repository on GitHub, GitLab, or Bitbucket.
    - Link the local repository to the remote repository:
 
@@ -234,19 +477,17 @@ To enhance your development environment, install extensions that help with HTML,
      git push -u origin main
      ```
 
-##### Step 8: Learning Resources
+##### Step 7: Learning Resources
 
-1. **MDN Web Docs**:
+1. MDN Web Docs:
    - Comprehensive resource for learning HTML, CSS, and JavaScript.
    - [MDN Web Docs](https://developer.mozilla.org/)
 
-2. **W3Schools**:
+2. W3Schools:
    - Tutorial website for learning web technologies.
    - [W3Schools](https://www.w3schools.com/)
 
-3. **FreeCodeCamp**:
-   - Free coding curriculum with a focus on web development.
-   - [FreeCodeCamp](https://www.freecodecamp.org/)
+[&#8593; Back to Top](#table-of-contents)
 
 #### 1.5 Basic Structure of HTML Document
 
@@ -430,6 +671,8 @@ To enhance your development environment, install extensions that help with HTML,
 - Use Comments: Insert comments (`<!-- ... -->`) within your HTML code to temporarily remove or isolate sections of code that might be causing issues. This helps you narrow down the problematic area and identify the source of the problem.
 - After writing your html code you can check the validity on this website <https://validator.w3.org/>
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 3. Text Formatting tags
 
 - Text Formatting tags: Applying formatting to text using tags like strong, em, u, s, sup, sub, blockquote, and code.
@@ -485,6 +728,8 @@ output of the text-formatting tags is below:
 - The `<blockquote>` tag is used to enclose a block of quoted text. It is commonly used to represent quotations, excerpts, or highlighted text. The `<p>` element inside the `<blockquote>` represents the quoted text, and the `<footer>` element provides attribution or the source of the quote.
 
 - The `<code>` tag is used to define a section of code or programming instructions. It is commonly used for displaying code snippets or highlighting code within a paragraph.
+
+[&#8593; Back to Top](#table-of-contents)
 
 ### 4. Lists
 
@@ -690,6 +935,8 @@ In this example, the terms "HTML", "CSS", and "JavaScript" are defined with thei
   output of the list code
   ![list](images/list.png)
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 5. Links and Navigation
 
 Links are a fundamental aspect of web navigation, enabling users to move from one webpage to another or to different sections within a page. HTML uses anchor tags (`<a>`) to create hyperlinks. Here’s an in-depth look at links and navigation:
@@ -876,6 +1123,8 @@ Here’s an example that combines all the elements discussed:
   output of the html link code
   ![link](images/link.png)
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 6. Image and iframe
 
 Images are an essential part of web pages, adding visual appeal and context to the content. In HTML, images are inserted using the `<img>` tag. Here's a detailed explanation of how to work with images in HTML, including inserting images, using image attributes, and linking images.
@@ -1043,6 +1292,8 @@ By understanding and utilizing these features, you can effectively incorporate a
   >
   </iframe>
   ```
+
+[&#8593; Back to Top](#table-of-contents)
 
 ### 7. Table
 
@@ -1376,6 +1627,8 @@ By understanding and utilizing these features, you can effectively incorporate a
   output of the above html code
   ![table7](images/table7.png)
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 8. Form Basics
 
 Forms are essential for collecting user input on web pages. HTML provides a variety of elements to create forms and handle user input effectively. Here’s a detailed explanation of the form elements, input types, and form attributes:
@@ -1658,9 +1911,9 @@ Here’s an example form that includes various input types, form elements, and a
 
 By understanding and utilizing these form elements, input types, and attributes, you can create effective and user-friendly forms for collecting and processing user input on your web pages.
 
-### 9. Semantic HTML
+[&#8593; Back to Top](#table-of-contents)
 
-Semantic HTML
+### 9. Semantic HTML
 
 Semantic Tags:
 - `<header>`: Represents the introductory content or a group of navigational links.
@@ -1692,6 +1945,8 @@ Semantic Tags:
   - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
   - sematic tags vs non semantic tags example is given below:
     ![semantic](images/semantic.png)
+
+[&#8593; Back to Top](#table-of-contents)
 
 ### 10. Demo for basic HTML
 
@@ -1824,7 +2079,11 @@ Semantic Tags:
 
 ```
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 11. [Assignment for basic HTML](https://github.com/anisul-Islam/full-stack-assignment-3-html)
+
+[&#8593; Back to Top](#table-of-contents)
 
 ## Intermdiate Level
 
@@ -1983,6 +2242,8 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
   </ul>
 </footer>
 ```
+
+[&#8593; Back to Top](#table-of-contents)
 
 ### 3.3 Advanced Table
 
@@ -2396,6 +2657,8 @@ These elements and tags enhance the multimedia experience on web pages, allowing
 
 ```
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 3.8 [HTML5 Elements](https://www.tutorialrepublic.com/html-reference/html5-tags.php)
 
 1. **`<canvas>`**:
@@ -2655,6 +2918,8 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
    ![details1](images/details1.png)
   ![details2](images/details2.png)
 
+[&#8593; Back to Top](#table-of-contents)
+
 ## Advanced Level
 
 ### 1. More Advanced Form
@@ -2743,8 +3008,11 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
 These advanced form elements and attributes enhance the functionality and user experience of forms by providing more interactive and semantically meaningful controls.
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 2. Web accessibility
 
+- [check this repo for web accessibility](https://github.com/anisul-Islam/accessibility-example)
 - what is web accessibility?
   - making website supportive for disable people and search engine
 - how to check web accessibility?
@@ -2903,6 +3171,8 @@ These advanced form elements and attributes enhance the functionality and user e
 - https://www.w3.org/WAI/fundamentals/accessibility-intro/
 - https://www.w3schools.com/html/html_accessibility.asp
 
+[&#8593; Back to Top](#table-of-contents)
+
 ### 3. HTML5 API
 
 - Exploring HTML5 APIs like Geolocation, Drag and Drop, Web Storage, and Web Workers. Understanding their usage and practical applications.
@@ -3015,71 +3285,7 @@ These advanced form elements and attributes enhance the functionality and user e
 
 - Leveraging frameworks like Angular, React, or Vue.js for more advanced component-based development.
 
-### 5. Learning resources
-
-#### Learning Resources for HTML
-
-1. **MDN Web Docs (Mozilla Developer Network)**
-   - **URL:** [MDN HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
-   - **Description:** Comprehensive documentation and tutorials on HTML, including elements, attributes, and best practices.
-
-2. **W3Schools**
-   - **URL:** [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
-   - **Description:** Beginner-friendly tutorials covering HTML basics to advanced topics, with interactive examples and exercises.
-
-3. **Codecademy**
-   - **URL:** [Codecademy HTML Course](https://www.codecademy.com/learn/learn-html)
-   - **Description:** Interactive course that teaches HTML through hands-on projects and exercises.
-
-4. **freeCodeCamp**
-   - **URL:** [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
-   - **Description:** Free comprehensive course covering HTML, CSS, and responsive web design principles.
-
-5. **HTML Dog**
-   - **URL:** [HTML Dog Tutorials](https://htmldog.com/guides/html/)
-   - **Description:** Offers tutorials on HTML, CSS, and JavaScript with practical examples and best practices.
-
-#### Important VS Code Extensions
-
-1. **HTML Snippets**
-   - **Description:** Provides a collection of useful HTML snippets for faster coding.
-   - **Extension ID:** `abusaidm.html-snippets`
-
-2. **Live Server**
-   - **Description:** Launch a development local Server with live reload feature for static & dynamic pages.
-   - **Extension ID:** `ritwickdey.LiveServer`
-
-3. **Prettier - Code formatter**
-   - **Description:** An opinionated code formatter that supports many languages and integrates with VS Code.
-   - **Extension ID:** `esbenp.prettier-vscode`
-
-4. **Emmet**
-   - **Description:** Provides support for Emmet syntax for writing HTML and CSS faster.
-   - **Extension ID:** Built-in (no need to install separately)
-
-5. **Path Intellisense**
-   - **Description:** Autocompletes filenames in your HTML, CSS, and JavaScript files.
-   - **Extension ID:** `christian-kohler.path-intellisense`
-
-6. **Auto Close Tag**
-   - **Description:** Automatically adds closing tags for HTML and XML elements.
-   - **Extension ID:** `formulahendry.auto-close-tag`
-
-7. **Auto Rename Tag**
-   - **Description:** Automatically renames paired HTML/XML tags.
-   - **Extension ID:** `formulahendry.auto-rename-tag`
-
-8. **Bracket Pair Colorizer**
-   - **Description:** Colors matching brackets to make code more readable.
-   - **Extension ID:** `CoenraadS.bracket-pair-colorizer-2`
-
-9. **Beautify**
-    - **Description:** Beautify your code in place for HTML, CSS, and JavaScript files.
-    - **Extension ID:** `HookyQR.beautify`
-
-These resources and extensions will help you learn HTML effectively and improve your productivity while coding in VS Code.
-
-### 6. sources for symbols, icons, emojis, colors
+### 5. sources for symbols, icons, emojis, colors
 
 #### Sources for Symbols
 
@@ -3155,7 +3361,7 @@ These resources and extensions will help you learn HTML effectively and improve 
    - **URL:** [JoyPixels](https://www.joypixels.com/)
    - **Description:** Offers a comprehensive set of emojis for use in web projects, available as SVG and PNG.
 
-### Examples of Using Symbols, Icons, and Emojis
+#### Examples of Using Symbols, Icons, and Emojis
 
 #### Adding Symbols
 
@@ -3244,3 +3450,69 @@ These resources and examples should help you incorporate symbols, icons, and emo
    - **Accessible Colors**
      - **URL:** [Accessible Colors](https://accessible-colors.com/)
      - **Description:** A color palette generator that ensures your colors meet WCAG contrast guidelines.
+
+[&#8593; Back to Top](#table-of-contents)
+
+### 6. Learning resources
+
+#### Learning Resources for HTML
+
+1. **MDN Web Docs (Mozilla Developer Network)**
+   - **URL:** [MDN HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
+   - **Description:** Comprehensive documentation and tutorials on HTML, including elements, attributes, and best practices.
+
+2. **W3Schools**
+   - **URL:** [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+   - **Description:** Beginner-friendly tutorials covering HTML basics to advanced topics, with interactive examples and exercises.
+
+3. **Codecademy**
+   - **URL:** [Codecademy HTML Course](https://www.codecademy.com/learn/learn-html)
+   - **Description:** Interactive course that teaches HTML through hands-on projects and exercises.
+
+4. **freeCodeCamp**
+   - **URL:** [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+   - **Description:** Free comprehensive course covering HTML, CSS, and responsive web design principles.
+
+5. **HTML Dog**
+   - **URL:** [HTML Dog Tutorials](https://htmldog.com/guides/html/)
+   - **Description:** Offers tutorials on HTML, CSS, and JavaScript with practical examples and best practices.
+
+#### Important VS Code Extensions
+
+1. **HTML Snippets**
+   - **Description:** Provides a collection of useful HTML snippets for faster coding.
+   - **Extension ID:** `abusaidm.html-snippets`
+
+2. **Live Server**
+   - **Description:** Launch a development local Server with live reload feature for static & dynamic pages.
+   - **Extension ID:** `ritwickdey.LiveServer`
+
+3. **Prettier - Code formatter**
+   - **Description:** An opinionated code formatter that supports many languages and integrates with VS Code.
+   - **Extension ID:** `esbenp.prettier-vscode`
+
+4. **Emmet**
+   - **Description:** Provides support for Emmet syntax for writing HTML and CSS faster.
+   - **Extension ID:** Built-in (no need to install separately)
+
+5. **Path Intellisense**
+   - **Description:** Autocompletes filenames in your HTML, CSS, and JavaScript files.
+   - **Extension ID:** `christian-kohler.path-intellisense`
+
+6. **Auto Close Tag**
+   - **Description:** Automatically adds closing tags for HTML and XML elements.
+   - **Extension ID:** `formulahendry.auto-close-tag`
+
+7. **Auto Rename Tag**
+   - **Description:** Automatically renames paired HTML/XML tags.
+   - **Extension ID:** `formulahendry.auto-rename-tag`
+
+8. **Bracket Pair Colorizer**
+   - **Description:** Colors matching brackets to make code more readable.
+   - **Extension ID:** `CoenraadS.bracket-pair-colorizer-2`
+
+9. **Beautify**
+    - **Description:** Beautify your code in place for HTML, CSS, and JavaScript files.
+    - **Extension ID:** `HookyQR.beautify`
+
+These resources and extensions will help you learn HTML effectively and improve your productivity while coding in VS Code.
