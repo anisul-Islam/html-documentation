@@ -57,6 +57,9 @@
    6. [Learning Resources](#6-learning-resources)
 
 - [Project Ideas](#project-ideas-for-html)
+  - Portfolio
+  - [Event Invitation](#project-event-invitation-page-with-html)
+  - [Documentation page]()
 
 ## Beginner Level
 
@@ -2455,6 +2458,186 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 </html>
 ```
 
+#### Project: Documentation Page
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Project Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This project is a comprehensive guide to help you understand and utilize the features of our software.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>Follow the steps below to install the software:</p>
+            <ol>
+                <li>Download the installation package from our website.</li>
+                <li>Run the installer and follow the on-screen instructions.</li>
+                <li>Once installed, open the software from the start menu.</li>
+            </ol>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Here are some basic instructions on how to use the software:</p>
+            <ul>
+                <li>Open the software and log in using your credentials.</li>
+                <li>Navigate through the menu to access different features.</li>
+                <li>Use the help section for detailed instructions on each feature.</li>
+            </ul>
+        </section>
+
+        <section id="api">
+            <h2>API</h2>
+            <p>Our software provides a robust API for developers. Here are some of the key endpoints:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Description</th>
+                        <th>Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/api/login</td>
+                        <td>Authenticate user</td>
+                        <td>POST</td>
+                    </tr>
+                    <tr>
+                        <td>/api/data</td>
+                        <td>Retrieve data</td>
+                        <td>GET</td>
+                    </tr>
+                    <tr>
+                        <td>/api/update</td>
+                        <td>Update data</td>
+                        <td>PUT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>What is this software?</summary>
+                <p>This software is a tool designed to help you manage your tasks efficiently.</p>
+            </details>
+            <details>
+                <summary>How do I reset my password?</summary>
+                <p>Click on the 'Forgot Password' link on the login page and follow the instructions.</p>
+            </details>
+            <details>
+                <summary>Who do I contact for support?</summary>
+                <p>You can reach out to our support team via the contact form on our website.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyCompany. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+```
+
 ### 3.5 Send form data to your email using third-party API
 
 - https://formspree.io/
@@ -3454,15 +3637,9 @@ These resources and extensions will help you learn HTML effectively and improve 
    - Include a list of recipes, each linking to a detailed page.
    - Use images, lists for ingredients, and steps for instructions.
 
-3. **Resume/CV**:
+3. [**Documentation Page**:]()
    - Design a digital version of your resume or CV.
-   - Use different HTML tags to structure your work experience, education, and skills.
-   - Include a contact form at the end.
 
-4. **Simple Landing Page**:
-   - Create a landing page for a fictional product or service.
-   - Use headers, paragraphs, images, and a call-to-action button.
-
-5. [**Event Invitation Page**:](#project-event-invitation-page-with-html)
+4. [**Event Invitation Page**:](#project-event-invitation-page-with-html)
    - Build a webpage to invite friends to an event.
    - Include details such as date, time, location, and RSVP form.
