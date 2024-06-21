@@ -1,9 +1,10 @@
 # HTML Documentation
 
 - [HTML English Video Tutorial](https://youtu.be/TWUf6eSi2K8)
-- [Learn HTML by building a project](https://youtu.be/mgO9ObbVeJ8)
+- [Learn HTML by building a project Bangla Tutorial](https://youtu.be/mgO9ObbVeJ8)
 - [html complete course Bangla (Beginner to Advanced)](https://youtube.com/playlist?list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3)
 - [You can learn HTML from here](https://htmldog.com/guides/html/)
+- [Assignment for HTML](https://github.com/anisul-Islam/full-stack-assignment-3-html)
 
 ![html course plan](images/html.png)
 
@@ -36,7 +37,7 @@
     10. [Demo for basic HTML](#10-demo-for-basic-html)
     11. [Assignment for basic HTML](#11-assignment-for-basic-html)
 
-- [Intermediate Level](#intermdiate-level)
+- [Intermediate Level](#intermediate-level)
 
   1. [Meta Tag and SEO](#31-meta-tags--seo)
   2. [Adding font-awesome icon & google font](#32-adding-font-awesome-icon--google-font)
@@ -54,6 +55,8 @@
    4. [HTML Templates and Web Components](#4-html-templates-and-web-components)
    5. [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
    6. [Learning Resources](#6-learning-resources)
+
+- [Project Ideas](#project-ideas-for-html)
 
 ## Beginner Level
 
@@ -168,7 +171,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
     - Adds a fun, motivational element to coding
     - Can reduce stress and make coding sessions more enjoyable
 
-4. **Code Spell Checker:** Code Spell Checker is a basic spell checker that works well with code and plain text. It helps you catch spelling mistakes in your comments, strings, and plain text.
+4. **Code Spell Checker:** (10.8M) Code Spell Checker is a basic spell checker that works well with code and plain text. It helps you catch spelling mistakes in your comments, strings, and plain text.
 
     **Benefits:**
 
@@ -358,7 +361,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
     - Improves code quality and readability
     - Speeds up refactoring
 
-31. **REST Client:** (JS) The REST Client extension allows you to send HTTP requests and view responses directly within VSCode. It supports various HTTP methods and provides a convenient way to test and debug APIs.
+31. **REST Client:** (JS) (4.6M) The REST Client extension allows you to send HTTP requests and view responses directly within VSCode. It supports various HTTP methods and provides a convenient way to test and debug APIs.
 
     **Benefits:**
 
@@ -401,9 +404,14 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
     - Improves collaboration and code understanding
 
 38. Markdown previewer
-39. Markdown Lint
-40. Fluent Icons (change the vscode activiy bar icons)
+39. Markdown Lint (7m)
+40. Fluent Icons (change the vscode activity bar icons)
 41. Themes extension: Dark vision < Fleety < Andromeda < Framer dark < Cyberpunk < pro hacker theme < Github theme
+42. JSON to TS
+43. JSON to TS + Pretty TypeScript Errors
+44. DOTENV: (5.6m) VSCode .env syntax highlighting
+45. git graph (8.3m)
+46. gitlens (32.3m)
 
 [&#8593; Back to Top](#table-of-contents)
 
@@ -2085,7 +2093,7 @@ Semantic Tags:
 
 [&#8593; Back to Top](#table-of-contents)
 
-## Intermdiate Level
+## Intermediate Level
 
 ### 3.1 Meta tags & SEO
 
@@ -2388,147 +2396,64 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 
 ```
 
-- A form example is given below:
+#### Project: Event Invitation Page with HTML
 
-  ```html
-  <form action="/" method="post">
-    <div>
-      <datalist id="usernames">
-        <option value="anis"></option>
-        <option value="linkon"></option>
-        <option value="ridoy"></option>
-      </datalist>
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Invitation</title>
+  </head>
+  <body>
+    <header>
+      <h1>You're Invited!</h1>
+    </header>
 
-      <label for="username">Username: </label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        size="30"
-        autofocus
-        required
-        list="usernames"
-      />
-    </div>
-    <br />
-    <div>
-      <label for="password">Password: </label>
-      <input type="password" id="password" name="password" required />
-    </div>
-    <br />
-    <div>
-      <label for="email">Email: </label>
-      <input type="email" id="email" name="email" autocomplete />
-    </div>
-    <br />
-    <div>
-      <label for="phone">phone: </label>
-      <input type="tel" id="phone" name="phone" />
-    </div>
-    <br />
-    <div>
-      <label for="dob">Date of birth: </label>
-      <input type="date" id="dob" name="dob" />
-    </div>
-    <br />
-    <div>
-      <label for="month">favourite Month: </label>
-      <input type="month" id="month" name="month" />
-    </div>
-    <br />
-    <div>
-      <label for="random">Select a random number from 1 to 5: </label>
-      <input
-        type="number"
-        id="random"
-        name="random"
-        min="1"
-        max="5"
-        value="3"
-      />
-    </div>
-    <br />
-    <div>
-      <label for="profile">Select your image: </label>
-      <input type="image" id="profile" name="profile" />
-    </div>
-    <br />
-    <div>
-      <label for="file">Select a file: </label>
-      <input type="file" id="file" name="file" />
-    </div>
-    <br />
-    <div>
-      <label for="color">Select favourite color: </label>
-      <input type="color" id="color" name="color" />
-    </div>
-    <br />
-    <div>
-      <label for="website">Paste your website's url: </label>
-      <input type="url" id="website" name="website" />
-    </div>
+    <div class="container">
+      <div class="main-content">
+        <div class="event-details">
+          <h2>Event Details</h2>
+          <p><strong>Date:</strong> July 24, 2024</p>
+          <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+          <p><strong>Location:</strong> 123 Main Street, Cityville</p>
+        </div>
 
-    <!-- checkbox disable-->
-    <br />
-    <div>
-      <p>Religion:</p>
-      <div>
-        <input type="checkbox" id="muslim" checked />
-        <label for="muslim">muslim</label>
-      </div>
-      <div>
-        <input type="checkbox" id="hindu" />
-        <label for="hindu">hindu</label>
-      </div>
-      <div>
-        <input type="checkbox" id="other" disabled />
-        <label for="other">other</label>
-      </div>
-    </div>
-    <!-- radiobutton -->
-    <br />
-    <div>
-      <p>Gender:</p>
-      <div>
-        <input type="radio" id="male" name="gender" />
-        <label for="male">male</label>
-      </div>
-      <div>
-        <input type="radio" id="female" name="gender" />
-        <label for="female">female</label>
-      </div>
-      <div>
-        <input type="radio" id="other" name="gender" />
-        <label for="other">other</label>
+        <div class="rsvp">
+          <h2>RSVP</h2>
+          <form action="submit_rsvp.php" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="guests">Number of Guests:</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit RSVP</button>
+          </form>
+        </div>
       </div>
     </div>
-    <!-- dropdown menu -->
-    <br />
-    <div>
-      <label for="department">Department: </label>
-      <select name="department" id="department">
-        <option value="cse">CSE</option>
-        <option value="eee">EEE</option>
-        <option value="llb">LLB</option>
-      </select>
-    </div>
-    <!-- textarea -->
-    <br />
-    <div>
-      <label for="message">Message: </label> <br />
-      <textarea name="" id="message" cols="30" rows="10"></textarea>
-    </div>
-    <!-- button -->
-    <br />
-    <div>
-      <button type="submit">Save Data</button>
-      <button type="reset">Clear</button>
-    </div>
-  </form>
-  ```
-
-  output of the above html code
-  ![form](images/form.png)
+  </body>
+</html>
+```
 
 ### 3.5 Send form data to your email using third-party API
 
@@ -3516,3 +3441,28 @@ These resources and examples should help you incorporate symbols, icons, and emo
     - **Extension ID:** `HookyQR.beautify`
 
 These resources and extensions will help you learn HTML effectively and improve your productivity while coding in VS Code.
+
+## Project Ideas for HTML
+
+1. [**Personal Portfolio Website**:](https://anisul-islam.netlify.app/)
+   - Create a simple portfolio website to showcase your projects and skills.
+   - Include sections such as "About Me", "Projects", "Skills", and "Contact".
+   - Use basic HTML tags, lists, links, images, and forms.
+
+2. **Recipe Blog**:
+   - Build a blog to share your favorite recipes.
+   - Include a list of recipes, each linking to a detailed page.
+   - Use images, lists for ingredients, and steps for instructions.
+
+3. **Resume/CV**:
+   - Design a digital version of your resume or CV.
+   - Use different HTML tags to structure your work experience, education, and skills.
+   - Include a contact form at the end.
+
+4. **Simple Landing Page**:
+   - Create a landing page for a fictional product or service.
+   - Use headers, paragraphs, images, and a call-to-action button.
+
+5. [**Event Invitation Page**:](#project-event-invitation-page-with-html)
+   - Build a webpage to invite friends to an event.
+   - Include details such as date, time, location, and RSVP form.
