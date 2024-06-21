@@ -57,9 +57,9 @@
    6. [Learning Resources](#6-learning-resources)
 
 - [Project Ideas](#project-ideas-for-html)
-  - Portfolio
+  - [Portfolio](https://anisul-islam.netlify.app/)
   - [Event Invitation](#project-event-invitation-page-with-html)
-  - [Documentation page]()
+  - [Documentation page](#project-documentation-page)
 
 ## Beginner Level
 
@@ -3637,7 +3637,7 @@ These resources and extensions will help you learn HTML effectively and improve 
    - Include a list of recipes, each linking to a detailed page.
    - Use images, lists for ingredients, and steps for instructions.
 
-3. [**Documentation Page**:]()
+3. [**Documentation Page**:](#project-documentation-page)
    - Design a digital version of your resume or CV.
 
 4. [**Event Invitation Page**:](#project-event-invitation-page-with-html)
