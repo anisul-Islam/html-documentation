@@ -2,6 +2,7 @@
 
 - [HTML English Video Tutorial](https://youtu.be/TWUf6eSi2K8)
 - [Learn HTML by building a project Bangla Tutorial](https://youtu.be/mgO9ObbVeJ8)
+- [Full HTML course in 1 video | Bangla video 2025](https://youtu.be/zsYMgmb2oCM)
 - [html complete course Bangla (Beginner to Advanced)](https://youtube.com/playlist?list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3)
 - [You can learn HTML from here](https://htmldog.com/guides/html/)
 - [Assignment for HTML](https://github.com/anisul-Islam/full-stack-assignment-3-html)
@@ -12,30 +13,32 @@
 
 - [Beginner Level](#beginner-level)
 
-    1. [Introduction to HTML](#1-introduction-to-html)
-        - [How website works](#10-how-website-works)
-        - [What is HTML & Why HTML?](#11-what-is-html--why-html)
-        - [History of HTML](#12-history-of-html)
-        - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
-        - [Setup Environment](#14-setup-environment)
-        - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
+  1. [Introduction to HTML](#1-introduction-to-html)
 
-    2. [Basic Tags, Styling, Debugging](#2-basic-tags-styling-debugging)
-        - [Tag, Attribute](#21-tag-attribute)
-        - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
-        - [Styling HTML Elements](#23-styling-html-elemnts)
-        - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
-        - [Debugging](#25-debugging)
+     - [How website works](#10-how-website-works)
+     - [What is HTML & Why HTML?](#11-what-is-html--why-html)
+     - [History of HTML](#12-history-of-html)
+     - [Advantages and disadvantages of HTML](#13-advantages-and-disadvantages-of-html)
+     - [Setup Environment](#14-setup-environment)
+     - [Basic Structure of HTML Document](#15-basic-structure-of-html-document)
 
-    3. [Text Formatting Tags](#3-text-formatting-tags)
-    4. [Lists](#4-lists)
-    5. [Links and Navigation](#5-links-and-navigation)
-    6. [Image and iframe](#6-image-and-iframe)
-    7. [Table](#7-table)
-    8. [Form Basic](#8-form-basics)
-    9. [Semantic HTML](#9-semantic-html)
-    10. [Demo for basic HTML](#10-demo-for-basic-html)
-    11. [Assignment for basic HTML](#11-assignment-for-basic-html)
+  2. [Basic Tags, Styling, Debugging](#2-basic-tags-styling-debugging)
+
+     - [Tag, Attribute](#21-tag-attribute)
+     - [Basic HTML Tags](#22-headings-paragraph-line-breaks-horizontal-rule)
+     - [Styling HTML Elements](#23-styling-html-elemnts)
+     - [Entity, comment, Symbol, Color](#24-entity-comment-symbol-color)
+     - [Debugging](#25-debugging)
+
+  3. [Text Formatting Tags](#3-text-formatting-tags)
+  4. [Lists](#4-lists)
+  5. [Links and Navigation](#5-links-and-navigation)
+  6. [Image and iframe](#6-image-and-iframe)
+  7. [Table](#7-table)
+  8. [Form Basic](#8-form-basics)
+  9. [Semantic HTML](#9-semantic-html)
+  10. [Demo for basic HTML](#10-demo-for-basic-html)
+  11. [Assignment for basic HTML](#11-assignment-for-basic-html)
 
 - [Intermediate Level](#intermediate-level)
 
@@ -49,12 +52,13 @@
   8. [HTML5 Elements](#38-html5-elements)
 
 - [Advanced Level](#advanced-level)
-   1. [More Advanced Form](#1-more-advanced-form)
-   2. [Web accessibility](#2-web-accessibility)
-   3. [HTML5 API](#3-html5-api)
-   4. [HTML Templates and Web Components](#4-html-templates-and-web-components)
-   5. [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
-   6. [Learning Resources](#6-learning-resources)
+
+  1.  [More Advanced Form](#1-more-advanced-form)
+  2.  [Web accessibility](#2-web-accessibility)
+  3.  [HTML5 API](#3-html5-api)
+  4.  [HTML Templates and Web Components](#4-html-templates-and-web-components)
+  5.  [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
+  6.  [Learning Resources](#6-learning-resources)
 
 - [Project Ideas](#project-ideas-for-html)
   - [Portfolio](https://anisul-islam.netlify.app/)
@@ -117,19 +121,22 @@ Setting up a development environment for HTML involves choosing the right tools 
 ##### Step 1: Choose a Text Editor or IDE
 
 1. **Visual Studio Code (VS Code)**:
+
    - Lightweight and highly customizable.
    - Supports extensions for various languages and tools.
    - **Download**:
-      - Go to the [VS Code website](https://code.visualstudio.com/).
-      - Download the installer for your operating system.
-      - **Install**:
-        - Run the installer and follow the instructions to install VS Code.
+     - Go to the [VS Code website](https://code.visualstudio.com/).
+     - Download the installer for your operating system.
+     - **Install**:
+       - Run the installer and follow the instructions to install VS Code.
 
 2. **Sublime Text**:
+
    - Fast and lightweight.
    - Supports many plugins for added functionality.
 
 3. **Atom**:
+
    - Open-source and highly customizable.
    - Has a large community and many packages available.
 
@@ -153,74 +160,74 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
 
 1. **Live Server:** The Live Server extension launches a local development server with a live reload feature for static and dynamic pages. This means that every time you save your HTML, CSS, or JavaScript file, the browser will automatically refresh to show the changes.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Instant feedback on changes
-    - Great for testing and debugging
-    - Works with any file type that a browser can open
+   - Instant feedback on changes
+   - Great for testing and debugging
+   - Works with any file type that a browser can open
 
-2. **Live Preview:**** The Live Preview extension provides an in-editor browser preview. This allows you to see your web application in action side-by-side with your code. It updates in real-time as you edit your files.
+2. **Live Preview:\*\*** The Live Preview extension provides an in-editor browser preview. This allows you to see your web application in action side-by-side with your code. It updates in real-time as you edit your files.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Convenient for quick checks
-    - Saves time switching between the editor and the browser
-    - Integrated with the VSCode interface
+   - Convenient for quick checks
+   - Saves time switching between the editor and the browser
+   - Integrated with the VSCode interface
 
 3. **VSCode Pets:** VSCode Pets adds a fun element to your coding environment by allowing you to adopt a virtual pet that lives in your status bar. The pet can perform various actions and is customizable.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Adds a fun, motivational element to coding
-    - Can reduce stress and make coding sessions more enjoyable
+   - Adds a fun, motivational element to coding
+   - Can reduce stress and make coding sessions more enjoyable
 
 4. **Code Spell Checker:** (10.8M) Code Spell Checker is a basic spell checker that works well with code and plain text. It helps you catch spelling mistakes in your comments, strings, and plain text.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Improves code documentation and readability
-    - Reduces spelling errors in comments and strings
-    - Supports custom dictionaries and language settings
+   - Improves code documentation and readability
+   - Reduces spelling errors in comments and strings
+   - Supports custom dictionaries and language settings
 
 5. **Prettier Code Formatter:** Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules. It supports many languages and integrates with most editors, including VSCode.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Ensures code consistency
-    - Reduces the amount of code style discussions in code reviews
-    - Configurable to match your project's style guide
+   - Ensures code consistency
+   - Reduces the amount of code style discussions in code reviews
+   - Configurable to match your project's style guide
 
 6. **Indent Rainbow:** Indent Rainbow colorizes the indentation levels in your code. Each level of indentation is given a different color, which helps in visualizing the structure of the code.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Improves readability of indented code
-    - Helps to quickly identify misaligned or incorrect indentation
-    - Useful for languages with significant indentation (e.g., Python)
+   - Improves readability of indented code
+   - Helps to quickly identify misaligned or incorrect indentation
+   - Useful for languages with significant indentation (e.g., Python)
 
 7. **Image Preview:** The Image Preview extension allows you to see image previews directly in your VSCode editor. When you hover over an image file path in your code, a preview of the image is displayed.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Quick access to image previews without leaving the editor
-    - Useful for web development when working with images
-    - Enhances the visual aspect of coding with images
+   - Quick access to image previews without leaving the editor
+   - Useful for web development when working with images
+   - Enhances the visual aspect of coding with images
 
 8. **CodeSnap:** CodeSnap allows you to take beautiful screenshots of your code. It lets you highlight the portion of code you want to capture and then generates an image that can be shared or saved.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Creates clean and professional-looking code snippets
-    - Useful for sharing code on social media, blogs, or presentations
-    - Customizable appearance to match your preferences
+   - Creates clean and professional-looking code snippets
+   - Useful for sharing code on social media, blogs, or presentations
+   - Customizable appearance to match your preferences
 
 9. **GitHub Themes:** GitHub Themes extension provides a collection of themes based on GitHub's color schemes. This extension allows you to apply GitHub's dark and light themes to your VSCode editor.
 
-    **Benefits:**
+   **Benefits:**
 
-    - Brings the familiar GitHub look to your editor
-    - Offers both dark and light themes to match your preference
-    - Enhances the visual consistency for developers who work with GitHub frequently
+   - Brings the familiar GitHub look to your editor
+   - Offers both dark and light themes to match your preference
+   - Enhances the visual consistency for developers who work with GitHub frequently
 
 10. **Material Icon Theme:** The Material Icon Theme extension changes the default file icons in VSCode to Material Design icons. This makes it easier to differentiate between file types and improves the visual appearance of the editor.
 
@@ -421,6 +428,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
 ##### Step 3: Set Up a Project Folder
 
 1. Create a Project Folder:
+
    - Create a folder on your computer where you will store your project files. For example, `html-project`.
 
 2. Open the Project Folder in VS Code:
@@ -438,20 +446,21 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello, World!</h1>
-</body>
+  </body>
 </html>
 ```
 
 ##### Step 5: Set Up Live Server
 
 1. **Open Live Server**:
+
    - With your `index.html` file open, right-click on the editor and select `Open with Live Server`.
    - Alternatively, click on the **Go Live** button at the bottom right of the status bar.
 
@@ -461,10 +470,12 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
 ##### Step 6: Version Control with Git
 
 1. Install Git:
+
    - Download and install Git from the [official Git website](https://git-scm.com/).
 
 2. Initialize a Git Repository:
-   - Open a terminal in VS Code by pressing `Ctrl+`` (backtick) or going to`View` > `Terminal`.
+
+   - Open a terminal in VS Code by pressing ` Ctrl+`` (backtick) or going to `View`>`Terminal`.
    - Initialize a new Git repository in your project folder:
 
      ```bash
@@ -472,6 +483,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
      ```
 
 3. Add Files and Commit:
+
    - Add your files to the repository and commit your changes:
 
      ```bash
@@ -480,6 +492,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
      ```
 
 4. Set Up a Remote Repository:
+
    - Create a new repository on GitHub, GitLab, or Bitbucket.
    - Link the local repository to the remote repository:
 
@@ -491,6 +504,7 @@ Following extensions enhance the functionality of Visual Studio Code, making it 
 ##### Step 7: Learning Resources
 
 1. MDN Web Docs:
+
    - Comprehensive resource for learning HTML, CSS, and JavaScript.
    - [MDN Web Docs](https://developer.mozilla.org/)
 
@@ -753,6 +767,7 @@ Lists in HTML are used to group related items together. HTML provides various ty
 Ordered lists are used when the order of the items is important. Each item in an ordered list is numbered automatically by the browser.
 
 **Attributes**:
+
 - `type`: Specifies the type of numbering (e.g., "1" for numbers, "A" for uppercase letters, "a" for lowercase letters, "I" for uppercase Roman numerals, "i" for lowercase Roman numerals).
 - `start`: Specifies the starting number of the list.
 - `reversed`: Reverses the order of the list items.
@@ -786,6 +801,7 @@ In this example, the list items are numbered starting from V (5) in uppercase Ro
 Unordered lists are used when the order of the items does not matter. Each item in an unordered list is typically marked with a bullet point.
 
 **Attributes**:
+
 - `type`: Specifies the type of bullet (e.g., "disc", "circle", "square" - note that this attribute is deprecated and not recommended for use).
 
 **Syntax**:
@@ -815,6 +831,7 @@ In this example, the list items are marked with default bullet points.
 The `<li>` element is used to define each item in both ordered and unordered lists. It can also have attributes to modify its behavior.
 
 **Attributes**:
+
 - `value`: Specifies the value of the list item in an ordered list.
 
 **Syntax**:
@@ -847,7 +864,8 @@ Lists can be nested inside each other to create sub-lists. This is useful for re
 
 ```html
 <ul>
-  <li>Item 1
+  <li>
+    Item 1
     <ul>
       <li>Sub-item 1.1</li>
       <li>Sub-item 1.2</li>
@@ -861,18 +879,21 @@ Lists can be nested inside each other to create sub-lists. This is useful for re
 
 ```html
 <ul>
-  <li>Frontend Development
+  <li>
+    Frontend Development
     <ul>
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
     </ul>
   </li>
-  <li>Backend Development
+  <li>
+    Backend Development
     <ul>
       <li>Node.js</li>
       <li>Express.js</li>
-      <li>Databases
+      <li>
+        Databases
         <ul>
           <li>MySQL</li>
           <li>MongoDB</li>
@@ -905,11 +926,16 @@ Definition lists are used to represent a list of terms and their definitions. Ea
 ```html
 <dl>
   <dt>HTML</dt>
-  <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+  <dd>
+    HyperText Markup Language, the standard language for creating web pages.
+  </dd>
   <dt>CSS</dt>
   <dd>Cascading Style Sheets, used to style HTML elements.</dd>
   <dt>JavaScript</dt>
-  <dd>A programming language used to create dynamic and interactive effects on web pages.</dd>
+  <dd>
+    A programming language used to create dynamic and interactive effects on web
+    pages.
+  </dd>
 </dl>
 ```
 
@@ -925,26 +951,26 @@ In this example, the terms "HTML", "CSS", and "JavaScript" are defined with thei
 
 #### example
 
-  ```html
-  <body>
-    <h3>Web development front end skills</h3>
-    <ol>
-      <li>HTML</li>
-      <li>GitHub</li>
-      <li>Figma</li>
-      <li>CSS</li>
-      <li>Tailwind CSS / Bootstrap</li>
-    </ol>
+```html
+<body>
+  <h3>Web development front end skills</h3>
+  <ol>
+    <li>HTML</li>
+    <li>GitHub</li>
+    <li>Figma</li>
+    <li>CSS</li>
+    <li>Tailwind CSS / Bootstrap</li>
+  </ol>
 
-    <dl>
-      <dt>Google</dt>
-      <dd>Google is a search engine</dd>
-    </dl>
-  </body>
-  ```
+  <dl>
+    <dt>Google</dt>
+    <dd>Google is a search engine</dd>
+  </dl>
+</body>
+```
 
-  output of the list code
-  ![list](images/list.png)
+output of the list code
+![list](images/list.png)
 
 [&#8593; Back to Top](#table-of-contents)
 
@@ -1052,7 +1078,9 @@ The `target` attribute specifies where to open the linked document. Common value
 **Example**:
 
 ```html
-<a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
+<a href="https://www.example.com" target="_blank"
+  >Visit Example.com in a new tab</a
+>
 ```
 
 In this example, clicking the link will open `https://www.example.com` in a new browser tab.
@@ -1070,7 +1098,9 @@ The `title` attribute provides additional information about the link, typically 
 **Example**:
 
 ```html
-<a href="https://www.example.com" title="Go to Example.com">Visit Example.com</a>
+<a href="https://www.example.com" title="Go to Example.com"
+  >Visit Example.com</a
+>
 ```
 
 In this example, hovering over the link will display the tooltip "Go to Example.com".
@@ -1082,26 +1112,31 @@ Here’s an example that combines all the elements discussed:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links and Navigation</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Navigation Links</h1>
     <p>
-        <a href="https://www.example.com" target="_blank" title="Go to Example.com">Visit Example.com</a>
+      <a
+        href="https://www.example.com"
+        target="_blank"
+        title="Go to Example.com"
+        >Visit Example.com</a
+      >
     </p>
     <p>
-        <a href="about.html" title="Learn more about us">About Us</a>
+      <a href="about.html" title="Learn more about us">About Us</a>
     </p>
     <p>
-        <a href="/contact.html" title="Get in touch with us">Contact</a>
+      <a href="/contact.html" title="Get in touch with us">Contact</a>
     </p>
     <p>
-        <a href="../index.html" title="Return to homepage">Home</a>
+      <a href="../index.html" title="Return to homepage">Home</a>
     </p>
-</body>
+  </body>
 </html>
 ```
 
@@ -1147,13 +1182,13 @@ The `<img>` tag is used to embed images in an HTML document. This tag is an empt
 **Syntax**:
 
 ```html
-<img src="image_url" alt="description">
+<img src="image_url" alt="description" />
 ```
 
 **Example**:
 
 ```html
-<img src="https://www.example.com/image.jpg" alt="Example Image">
+<img src="https://www.example.com/image.jpg" alt="Example Image" />
 ```
 
 In this example, an image from `https://www.example.com/image.jpg` is displayed, and "Example Image" is used as alternative text.
@@ -1169,13 +1204,13 @@ The `src` (source) attribute specifies the path to the image file. This can be a
 **Syntax**:
 
 ```html
-<img src="image_url">
+<img src="image_url" />
 ```
 
 **Example**:
 
 ```html
-<img src="https://www.example.com/logo.png">
+<img src="https://www.example.com/logo.png" />
 ```
 
 **2. `alt` Attribute**:
@@ -1185,13 +1220,13 @@ The `alt` (alternative text) attribute provides a textual description of the ima
 **Syntax**:
 
 ```html
-<img src="image_url" alt="description">
+<img src="image_url" alt="description" />
 ```
 
 **Example**:
 
 ```html
-<img src="https://www.example.com/logo.png" alt="Company Logo">
+<img src="https://www.example.com/logo.png" alt="Company Logo" />
 ```
 
 **3. `width` and `height` Attributes**:
@@ -1201,13 +1236,18 @@ The `width` and `height` attributes specify the dimensions of the image in pixel
 **Syntax**:
 
 ```html
-<img src="image_url" width="width_value" height="height_value">
+<img src="image_url" width="width_value" height="height_value" />
 ```
 
 **Example**:
 
 ```html
-<img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+<img
+  src="https://www.example.com/logo.png"
+  alt="Company Logo"
+  width="200"
+  height="100"
+/>
 ```
 
 In this example, the image is displayed with a width of 200 pixels and a height of 100 pixels.
@@ -1220,7 +1260,7 @@ Images can also be used as hyperlinks. To create a clickable image, wrap the `<i
 
 ```html
 <a href="link_url">
-  <img src="image_url" alt="description">
+  <img src="image_url" alt="description" />
 </a>
 ```
 
@@ -1228,7 +1268,12 @@ Images can also be used as hyperlinks. To create a clickable image, wrap the `<i
 
 ```html
 <a href="https://www.example.com">
-  <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+  <img
+    src="https://www.example.com/logo.png"
+    alt="Company Logo"
+    width="200"
+    height="100"
+  />
 </a>
 ```
 
@@ -1241,28 +1286,38 @@ Here’s an example that combines inserting images, using image attributes, and 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images in HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Images in HTML</h1>
 
     <!-- Inserting an Image -->
     <p>Here is an example of an image:</p>
-    <img src="https://www.example.com/image.jpg" alt="Example Image">
+    <img src="https://www.example.com/image.jpg" alt="Example Image" />
 
     <!-- Using Image Attributes -->
     <p>This image has specified width and height:</p>
-    <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+    <img
+      src="https://www.example.com/logo.png"
+      alt="Company Logo"
+      width="200"
+      height="100"
+    />
 
     <!-- Image Linking -->
     <p>Click on the image to visit Example.com:</p>
     <a href="https://www.example.com">
-      <img src="https://www.example.com/logo.png" alt="Company Logo" width="200" height="100">
+      <img
+        src="https://www.example.com/logo.png"
+        alt="Company Logo"
+        width="200"
+        height="100"
+      />
     </a>
-</body>
+  </body>
 </html>
 ```
 
@@ -1665,7 +1720,7 @@ The `<form>` element defines a form that collects user input. It can contain var
 ```html
 <form action="/submit-form" method="post">
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name">
+  <input type="text" id="name" name="name" />
   <button type="submit">Submit</button>
 </form>
 ```
@@ -1677,13 +1732,13 @@ The `<input>` element is used to create various types of input fields, such as t
 **Syntax**:
 
 ```html
-<input type="input_type" name="name">
+<input type="input_type" name="name" />
 ```
 
 **Example**:
 
 ```html
-<input type="text" name="username" placeholder="Enter your username">
+<input type="text" name="username" placeholder="Enter your username" />
 ```
 
 **3. `<textarea>` Element**:
@@ -1699,7 +1754,12 @@ The `<textarea>` element is used for multi-line text input.
 **Example**:
 
 ```html
-<textarea name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+<textarea
+  name="comments"
+  rows="4"
+  cols="50"
+  placeholder="Enter your comments"
+></textarea>
 ```
 
 **4. `<button>` Element**:
@@ -1715,8 +1775,7 @@ The `<button>` element represents a clickable button. It can be used to submit a
 **Example**:
 
 ```html
-<button type="submit">Submit</button>
-<button type="reset">Reset</button>
+<button type="submit">Submit</button> <button type="reset">Reset</button>
 ```
 
 **5. `<select>` and `<option>` Elements**:
@@ -1763,29 +1822,29 @@ The `<input>` element supports various types, each suitable for different kinds 
 ```html
 <form action="/submit-form" method="post">
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
-  
+  <input type="text" id="username" name="username" />
+
   <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-  
+  <input type="password" id="password" name="password" />
+
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
-  
+  <input type="email" id="email" name="email" />
+
   <label for="age">Age:</label>
-  <input type="number" id="age" name="age" min="1" max="100">
-  
+  <input type="number" id="age" name="age" min="1" max="100" />
+
   <label for="dob">Date of Birth:</label>
-  <input type="date" id="dob" name="dob">
-  
+  <input type="date" id="dob" name="dob" />
+
   <label for="newsletter">Subscribe to newsletter:</label>
-  <input type="checkbox" id="newsletter" name="newsletter">
-  
+  <input type="checkbox" id="newsletter" name="newsletter" />
+
   <p>Gender:</p>
-  <input type="radio" id="male" name="gender" value="male">
+  <input type="radio" id="male" name="gender" value="male" />
   <label for="male">Male</label>
-  <input type="radio" id="female" name="gender" value="female">
+  <input type="radio" id="female" name="gender" value="female" />
   <label for="female">Female</label>
-  
+
   <button type="submit">Submit</button>
   <button type="reset">Reset</button>
 </form>
@@ -1845,7 +1904,7 @@ The `name` attribute specifies the name of the form element. It is used to ident
 **Syntax**:
 
 ```html
-<input type="text" name="name">
+<input type="text" name="name" />
 ```
 
 **Example**:
@@ -1853,7 +1912,7 @@ The `name` attribute specifies the name of the form element. It is used to ident
 ```html
 <form action="/submit-form" method="post">
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
+  <input type="text" id="username" name="username" />
   <button type="submit">Submit</button>
 </form>
 ```
@@ -1865,52 +1924,52 @@ Here’s an example form that includes various input types, form elements, and a
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Example</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Registration Form</h1>
     <form action="/submit-form" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="1" max="100">
-        
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob">
-        
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-        
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="us">United States</option>
-            <option value="ca">Canada</option>
-            <option value="uk">United Kingdom</option>
-        </select>
-        
-        <label for="newsletter">Subscribe to newsletter:</label>
-        <input type="checkbox" id="newsletter" name="newsletter">
-        
-        <p>Gender:</p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+
+      <label for="newsletter">Subscribe to newsletter:</label>
+      <input type="checkbox" id="newsletter" name="newsletter" />
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -1927,6 +1986,7 @@ By understanding and utilizing these form elements, input types, and attributes,
 ### 9. Semantic HTML
 
 Semantic Tags:
+
 - `<header>`: Represents the introductory content or a group of navigational links.
 - `<nav>`: Represents a section of navigation links.
 - `<main>`: Represents the dominant content of the `<body>`.
@@ -1934,6 +1994,7 @@ Semantic Tags:
 - `<section>`: Represents a standalone section of content.
 - `<footer>`: Represents the footer for a section or document.
 - Importance of Semantic HTML:
+
   - Enhances the accessibility of web content.
   - Improves SEO (Search Engine Optimization) by providing meaningful context to search engines.
   - Helps developers understand the structure and purpose of different sections of a web page.
@@ -1962,7 +2023,6 @@ Semantic Tags:
 ### 10. Demo for basic HTML
 
 ```html
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -2087,7 +2147,6 @@ Semantic Tags:
     </footer>
   </body>
 </html>
-
 ```
 
 [&#8593; Back to Top](#table-of-contents)
@@ -2145,17 +2204,20 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
    ```html
    <!DOCTYPE html>
    <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        <title>Font Awesome and Google Fonts</title>
        <!-- Font Awesome CDN -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   </head>
-   <body>
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+       />
+     </head>
+     <body>
        <!-- Add an icon -->
        <i class="fas fa-home"></i>
-   </body>
+     </body>
    </html>
    ```
 
@@ -2166,9 +2228,12 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 
    ```html
    <!-- Example of using Font Awesome icons -->
-   <i class="fas fa-home"></i> <!-- Home icon -->
-   <i class="fas fa-envelope"></i> <!-- Envelope icon -->
-   <i class="fas fa-phone"></i> <!-- Phone icon -->
+   <i class="fas fa-home"></i>
+   <!-- Home icon -->
+   <i class="fas fa-envelope"></i>
+   <!-- Envelope icon -->
+   <i class="fas fa-phone"></i>
+   <!-- Phone icon -->
    ```
 
 #### Adding Google Fonts
@@ -2184,25 +2249,35 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
    ```html
    <!DOCTYPE html>
    <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        <title>Font Awesome and Google Fonts</title>
        <!-- Font Awesome CDN -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+       />
        <!-- Google Fonts -->
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+       <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+       />
        <style>
-           body {
-               font-family: 'Roboto', sans-serif;
-           }
+         body {
+           font-family: 'Roboto', sans-serif;
+         }
        </style>
-   </head>
-   <body>
+     </head>
+     <body>
        <h1>Using Google Fonts and Font Awesome Icons</h1>
-       <p>This is an example of using Google Fonts (Roboto) and Font Awesome icons.</p>
-       <i class="fas fa-home"></i> <!-- Home icon -->
-   </body>
+       <p>
+         This is an example of using Google Fonts (Roboto) and Font Awesome
+         icons.
+       </p>
+       <i class="fas fa-home"></i>
+       <!-- Home icon -->
+     </body>
    </html>
    ```
 
@@ -2213,7 +2288,7 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 
    ```css
    body {
-       font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif;
    }
    ```
 
@@ -2348,55 +2423,60 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 - update the portfolio project
 
 ```html
- <!--Section: Contacts -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <div>
-                <label for="name">Name : </label>
-                <input type="text" id="name" name="name" required />
-            </div>
+<!--Section: Contacts -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <div>
+      <label for="name">Name : </label>
+      <input type="text" id="name" name="name" required />
+    </div>
 
-            <div>
-                <label for="email">Email : </label>
-                <input type="email" id="email" name="email" required />
-            </div>
+    <div>
+      <label for="email">Email : </label>
+      <input type="email" id="email" name="email" required />
+    </div>
 
-            <div>
-                <label for="subject">Subject : </label>
-                <select id="subject" name="subject" required>
-                    <option value="">Select a subject</option>
-                    <option value="inquiry">Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="job">Job Opportunity</option>
-                </select>
-            </div>
+    <div>
+      <label for="subject">Subject : </label>
+      <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="inquiry">Inquiry</option>
+        <option value="feedback">Feedback</option>
+        <option value="job">Job Opportunity</option>
+      </select>
+    </div>
 
-            <div>
-                <label for="message">Message : </label>
-                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
-            </div>
+    <div>
+      <label for="message">Message : </label>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="5"
+        required
+      ></textarea>
+    </div>
 
-            <div>
-                <label for="age">Age : </label>
-                <input type="number" id="age" name="age" min="1" max="100" />
-            </div>
+    <div>
+      <label for="age">Age : </label>
+      <input type="number" id="age" name="age" min="1" max="100" />
+    </div>
 
-            <div>
-                <label for="website">Website : </label>
-                <input type="url" id="website" name="website" pattern="https?://.+" />
-            </div>
+    <div>
+      <label for="website">Website : </label>
+      <input type="url" id="website" name="website" pattern="https?://.+" />
+    </div>
 
-            <div>
-                <label for="image">Upload Image : </label>
-                <input type="file" id="image" name="image" accept="image/*" />
-            </div>
+    <div>
+      <label for="image">Upload Image : </label>
+      <input type="file" id="image" name="image" accept="image/*" />
+    </div>
 
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-        </form>
-    </section>
-
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+  </form>
+</section>
 ```
 
 #### Project: Event Invitation Page with HTML
@@ -2464,178 +2544,195 @@ Adding Font Awesome icons and Google Fonts to your HTML project enhances the vis
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Project Documentation</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#usage">Usage</a></li>
-                <li><a href="#api">API</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
+      <h1>Project Documentation</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#api">API</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>This project is a comprehensive guide to help you understand and utilize the features of our software.</p>
-        </section>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          This project is a comprehensive guide to help you understand and
+          utilize the features of our software.
+        </p>
+      </section>
 
-        <section id="installation">
-            <h2>Installation</h2>
-            <p>Follow the steps below to install the software:</p>
-            <ol>
-                <li>Download the installation package from our website.</li>
-                <li>Run the installer and follow the on-screen instructions.</li>
-                <li>Once installed, open the software from the start menu.</li>
-            </ol>
-        </section>
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>Follow the steps below to install the software:</p>
+        <ol>
+          <li>Download the installation package from our website.</li>
+          <li>Run the installer and follow the on-screen instructions.</li>
+          <li>Once installed, open the software from the start menu.</li>
+        </ol>
+      </section>
 
-        <section id="usage">
-            <h2>Usage</h2>
-            <p>Here are some basic instructions on how to use the software:</p>
-            <ul>
-                <li>Open the software and log in using your credentials.</li>
-                <li>Navigate through the menu to access different features.</li>
-                <li>Use the help section for detailed instructions on each feature.</li>
-            </ul>
-        </section>
+      <section id="usage">
+        <h2>Usage</h2>
+        <p>Here are some basic instructions on how to use the software:</p>
+        <ul>
+          <li>Open the software and log in using your credentials.</li>
+          <li>Navigate through the menu to access different features.</li>
+          <li>
+            Use the help section for detailed instructions on each feature.
+          </li>
+        </ul>
+      </section>
 
-        <section id="api">
-            <h2>API</h2>
-            <p>Our software provides a robust API for developers. Here are some of the key endpoints:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Endpoint</th>
-                        <th>Description</th>
-                        <th>Method</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>/api/login</td>
-                        <td>Authenticate user</td>
-                        <td>POST</td>
-                    </tr>
-                    <tr>
-                        <td>/api/data</td>
-                        <td>Retrieve data</td>
-                        <td>GET</td>
-                    </tr>
-                    <tr>
-                        <td>/api/update</td>
-                        <td>Update data</td>
-                        <td>PUT</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <section id="api">
+        <h2>API</h2>
+        <p>
+          Our software provides a robust API for developers. Here are some of
+          the key endpoints:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Endpoint</th>
+              <th>Description</th>
+              <th>Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>/api/login</td>
+              <td>Authenticate user</td>
+              <td>POST</td>
+            </tr>
+            <tr>
+              <td>/api/data</td>
+              <td>Retrieve data</td>
+              <td>GET</td>
+            </tr>
+            <tr>
+              <td>/api/update</td>
+              <td>Update data</td>
+              <td>PUT</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <section id="faq">
-            <h2>FAQ</h2>
-            <details>
-                <summary>What is this software?</summary>
-                <p>This software is a tool designed to help you manage your tasks efficiently.</p>
-            </details>
-            <details>
-                <summary>How do I reset my password?</summary>
-                <p>Click on the 'Forgot Password' link on the login page and follow the instructions.</p>
-            </details>
-            <details>
-                <summary>Who do I contact for support?</summary>
-                <p>You can reach out to our support team via the contact form on our website.</p>
-            </details>
-        </section>
+      <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+          <summary>What is this software?</summary>
+          <p>
+            This software is a tool designed to help you manage your tasks
+            efficiently.
+          </p>
+        </details>
+        <details>
+          <summary>How do I reset my password?</summary>
+          <p>
+            Click on the 'Forgot Password' link on the login page and follow the
+            instructions.
+          </p>
+        </details>
+        <details>
+          <summary>Who do I contact for support?</summary>
+          <p>
+            You can reach out to our support team via the contact form on our
+            website.
+          </p>
+        </details>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 MyCompany. All rights reserved.</p>
+      <p>&copy; 2024 MyCompany. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
 ```
 
 ```css
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background: #4caf50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 h2 {
-    color: #4CAF50;
+  color: #4caf50;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 footer {
-    background: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
 ```
 
 ### 3.5 Send form data to your email using third-party API
@@ -2655,8 +2752,8 @@ The `<video>` element is used to embed video content in an HTML document. It sup
 
 ```html
 <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
   Your browser does not support the video tag.
 </video>
 ```
@@ -2675,8 +2772,8 @@ The `<audio>` element is used to embed sound content in an HTML document. It can
 
 ```html
 <audio controls>
-  <source src="audio.mp3" type="audio/mpeg">
-  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.mp3" type="audio/mpeg" />
+  <source src="audio.ogg" type="audio/ogg" />
   Your browser does not support the audio element.
 </audio>
 ```
@@ -2694,7 +2791,7 @@ These tags allow you to embed different types of media and interactive content, 
 **Example of `<embed>`:**
 
 ```html
-<embed src="example.pdf" width="600" height="500" type="application/pdf">
+<embed src="example.pdf" width="600" height="500" type="application/pdf" />
 ```
 
 - **`src`**: Specifies the path to the media file.
@@ -2739,30 +2836,33 @@ These elements and tags enhance the multimedia experience on web pages, allowing
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download PDF Example</title>
     <style>
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: blue;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: blue;
+        text-decoration: none;
+        border-radius: 5px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Download PDF Example</h1>
-    <a href="path/to/yourfile.pdf" download="YourFileName.pdf" class="download-btn">
-        Download PDF
+    <a
+      href="path/to/yourfile.pdf"
+      download="YourFileName.pdf"
+      class="download-btn"
+    >
+      Download PDF
     </a>
-</body>
+  </body>
 </html>
-
 ```
 
 [&#8593; Back to Top](#table-of-contents)
@@ -2770,12 +2870,15 @@ These elements and tags enhance the multimedia experience on web pages, allowing
 ### 3.8 [HTML5 Elements](https://www.tutorialrepublic.com/html-reference/html5-tags.php)
 
 1. **`<canvas>`**:
+
    - The `<canvas>` element is used to draw graphics on the web using JavaScript. It provides a resolution-dependent bitmap canvas which can be used for rendering graphs, game graphics, or other visual images.
 
 2. **`<svg>`**:
+
    - The `<svg>` element is used to define vector-based graphics. Unlike bitmaps, SVG images can be scaled indefinitely without losing quality. This makes SVG ideal for logos, icons, and complex graphics that require high resolution.
 
 3. **`<progress>`**:
+
    - The `<progress>` element represents the completion progress of a task, such as a download or file upload. It is typically used to show how much of the task has been completed.
 
 4. **`<meter>`**:
@@ -2788,182 +2891,227 @@ Here's how you can integrate these HTML5 elements into your existing portfolio p
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
     <!--Section: Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">My Skills</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--Section: Main content -->
     <main>
-        <!--Section: Intro -->
-        <section id="intro">
-            <h1>Anisul Islam</h1>
-            <p><em>Web developer and Lecturer of Computer Science</em></p>
-            <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
-                <img src="./images/anis.jpeg" alt="Anisul Islam" height="150">
-            </a>
-            <hr>
-        </section>
+      <!--Section: Intro -->
+      <section id="intro">
+        <h1>Anisul Islam</h1>
+        <p><em>Web developer and Lecturer of Computer Science</em></p>
+        <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
+          <img src="./images/anis.jpeg" alt="Anisul Islam" height="150" />
+        </a>
+        <hr />
+      </section>
 
-        <!--Section: About me -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p><strong>Experience:</strong> 5 years experience in web development</p>
-            <p><strong>Education:</strong> Master's in Software, Web and Cloud Computing</p>
-        </section>
+      <!--Section: About me -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          <strong>Experience:</strong> 5 years experience in web development
+        </p>
+        <p>
+          <strong>Education:</strong> Master's in Software, Web and Cloud
+          Computing
+        </p>
+      </section>
 
-        <!--Section: Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <table border="1" cellpadding="5" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Technology</th>
-                        <th>Proficiency</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Expert</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Expert</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Intermediate</td>
-                    </tr>
-                </tbody>
-            </table>
+      <!--Section: Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Expert</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Expert</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <!-- Using <progress> to show skill level completion -->
-            <h3>Skill Progress</h3>
-            <label for="htmlProgress">HTML:</label>
-            <progress id="htmlProgress" value="90" max="100">90%</progress><br>
-            <label for="cssProgress">CSS:</label>
-            <progress id="cssProgress" value="80" max="100">80%</progress><br>
-            <label for="jsProgress">JavaScript:</label>
-            <progress id="jsProgress" value="70" max="100">70%</progress>
+        <!-- Using <progress> to show skill level completion -->
+        <h3>Skill Progress</h3>
+        <label for="htmlProgress">HTML:</label>
+        <progress id="htmlProgress" value="90" max="100">90%</progress><br />
+        <label for="cssProgress">CSS:</label>
+        <progress id="cssProgress" value="80" max="100">80%</progress><br />
+        <label for="jsProgress">JavaScript:</label>
+        <progress id="jsProgress" value="70" max="100">70%</progress>
 
-            <!-- Using <meter> to show experience level -->
-            <h3>Experience Level</h3>
-            <label for="experienceLevel">Experience:</label>
-            <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
-        </section>
+        <!-- Using <meter> to show experience level -->
+        <h3>Experience Level</h3>
+        <label for="experienceLevel">Experience:</label>
+        <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
+      </section>
 
-        <!--Section: Projects -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <ol>
-                <li>
-                    <a target="_blank" href="https://github.com/anisul-Islam/portfolio-html">Portfolio Website</a>
-                </li>
-                <li>Blog Website</li>
-                <li>E-commerce Website</li>
-            </ol>
-        </section>
+      <!--Section: Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/anisul-Islam/portfolio-html"
+              >Portfolio Website</a
+            >
+          </li>
+          <li>Blog Website</li>
+          <li>E-commerce Website</li>
+        </ol>
+      </section>
 
-        <!--Section: Drawing and Graphics -->
-        <section id="graphics">
-            <h2>Graphics</h2>
-            <!-- Using <canvas> for drawing -->
-            <h3>Canvas Example</h3>
-            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-            <script>
-                const canvas = document.getElementById('myCanvas');
-                const ctx = canvas.getContext('2d');
-                ctx.fillStyle = '#FF0000';
-                ctx.fillRect(10, 10, 150, 75);
-            </script>
+      <!--Section: Drawing and Graphics -->
+      <section id="graphics">
+        <h2>Graphics</h2>
+        <!-- Using <canvas> for drawing -->
+        <h3>Canvas Example</h3>
+        <canvas
+          id="myCanvas"
+          width="200"
+          height="100"
+          style="border:1px solid #000000;"
+        ></canvas>
+        <script>
+          const canvas = document.getElementById('myCanvas');
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#FF0000';
+          ctx.fillRect(10, 10, 150, 75);
+        </script>
 
-            <!-- Using <svg> for vector graphics -->
-            <h3>SVG Example</h3>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-                <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">SVG</text>
-            </svg>
-        </section>
+        <!-- Using <svg> for vector graphics -->
+        <h3>SVG Example</h3>
+        <svg width="100" height="100">
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="black"
+            stroke-width="3"
+            fill="red"
+          />
+          <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">
+            SVG
+          </text>
+        </svg>
+      </section>
 
-        <!--Section: Contacts -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <div>
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+      <!--Section: Contacts -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-                <div>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-                <div>
-                    <label for="subject">Subject: </label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select a subject</option>
-                        <option value="inquiry">Inquiry</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="job">Job Opportunity</option>
-                    </select>
-                </div>
+          <div>
+            <label for="subject">Subject: </label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="job">Job Opportunity</option>
+            </select>
+          </div>
 
-                <div>
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="5" required></textarea>
-                </div>
+          <div>
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              required
+            ></textarea>
+          </div>
 
-                <div>
-                    <label for="age">Age: </label>
-                    <input type="number" id="age" name="age" min="1" max="100">
-                </div>
+          <div>
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" min="1" max="100" />
+          </div>
 
-                <div>
-                    <label for="website">Website: </label>
-                    <input type="url" id="website" name="website" pattern="https?://.+">
-                </div>
+          <div>
+            <label for="website">Website: </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
 
-                <div>
-                    <label for="file">Upload CV: </label>
-                    <input type="file" id="file" name="file" accept=".pdf">
-                </div>
+          <div>
+            <label for="file">Upload CV: </label>
+            <input type="file" id="file" name="file" accept=".pdf" />
+          </div>
 
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-            </form>
-        </section>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
     </main>
 
     <!--Section: Footer -->
     <footer>
-        <p>Copyright reserved by &copy; Anisul2024</p>
-        <p>Developed with &hearts;</p>
-        <a href="tel:01710444700"> Call me</a>
-        <a href="mailto:anisul@yahoo.co.uk">Email me</a>
-        <div class="social-media">
-            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
+      <p>Copyright reserved by &copy; Anisul2024</p>
+      <p>Developed with &hearts;</p>
+      <a href="tel:01710444700"> Call me</a>
+      <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+      <div class="social-media">
+        <a href="https://facebook.com/yourprofile" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/yourprofile" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
 ```
 
@@ -3033,12 +3181,13 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 ### 1. More Advanced Form
 
 1. **Input Types**
+
    - **Date Input (`<input type="date">`):**
      This allows users to select a date from a date picker.
 
      ```html
      <label for="birthday">Birthday:</label>
-     <input type="date" id="birthday" name="birthday">
+     <input type="date" id="birthday" name="birthday" />
      ```
 
    - **Color Input (`<input type="color">`):**
@@ -3046,7 +3195,7 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
      ```html
      <label for="favcolor">Favorite Color:</label>
-     <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+     <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
      ```
 
    - **Range Input (`<input type="range">`):**
@@ -3054,7 +3203,7 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
      ```html
      <label for="volume">Volume:</label>
-     <input type="range" id="volume" name="volume" min="0" max="100">
+     <input type="range" id="volume" name="volume" min="0" max="100" />
      ```
 
    - **Number Input (`<input type="number">`):**
@@ -3062,7 +3211,7 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
      ```html
      <label for="quantity">Quantity:</label>
-     <input type="number" id="quantity" name="quantity" min="1" max="10">
+     <input type="number" id="quantity" name="quantity" min="1" max="10" />
      ```
 
 2. **Datalist (`<datalist>`):**
@@ -3070,13 +3219,13 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
    ```html
    <label for="browser">Choose a browser:</label>
-   <input list="browsers" id="browser" name="browser">
+   <input list="browsers" id="browser" name="browser" />
    <datalist id="browsers">
-     <option value="Chrome">
-     <option value="Firefox">
-     <option value="Safari">
-     <option value="Edge">
-     <option value="Opera">
+     <option value="Chrome"></option>
+     <option value="Firefox"></option>
+     <option value="Safari"></option>
+     <option value="Edge"></option>
+     <option value="Opera"></option>
    </datalist>
    ```
 
@@ -3085,8 +3234,8 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
 
    ```html
    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-     <input type="range" id="a" value="50"> +
-     <input type="number" id="b" value="50">
+     <input type="range" id="a" value="50" /> +
+     <input type="number" id="b" value="50" />
      <output name="result" for="a b">100</output>
    </form>
    ```
@@ -3098,9 +3247,9 @@ By incorporating these elements, you can showcase the capabilities of HTML5 in h
    <fieldset>
      <legend>Personal Information</legend>
      <label for="fname">First name:</label>
-     <input type="text" id="fname" name="fname"><br><br>
+     <input type="text" id="fname" name="fname" /><br /><br />
      <label for="lname">Last name:</label>
-     <input type="text" id="lname" name="lname">
+     <input type="text" id="lname" name="lname" />
    </fieldset>
    ```
 
@@ -3130,108 +3279,108 @@ These advanced form elements and attributes enhance the functionality and user e
 
 1. Use Semantic elements over non semantic elements.
 
-    - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
-    - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
-    - In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
+   - semantic tags are meaningful tags for human, search engine. example: `<form> <table> <p> <h1> etc.`
+   - non-semantic tags are not meaningful tags for human, search engine. example: `<span> <div> etc.`
+   - In the following example button is more accessible than div for making a button. Semantic elements help the screen readers.
 
-    ```html
-    <div>Click me</div>
-    <button>Click me</button>
-    ```
+   ```html
+   <div>Click me</div>
+   <button>Click me</button>
+   ```
 
-    - Example of explicit semantic vs implicit sematic element
+   - Example of explicit semantic vs implicit sematic element
 
-    ```html
-    <div role="button">Click me</div>
-    <button>Click me</button>
-    ```
+   ```html
+   <div role="button">Click me</div>
+   <button>Click me</button>
+   ```
 
-    - landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer
+   - landmarks helps to naviagte from one place to another: header, h1...h6, main, nav, footer
 
 2. Use Heading tags in order
 
-    - use one h1 element in a webpage
-    - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
+   - use one h1 element in a webpage
+   - keep sequence when using: h1 -> h2 -> h3 ... (follow top-down order)
 
 3. Use alt attribute
 
-    - use alt attribute for `<img />` element
-    - alt attribute provides more info to the blind people
-    - low bandwidth might not render the image so the alt will help here
-    - alt attributes helps technologies like search engines
-    - title attribute can be used when we hover over image to get extra information
+   - use alt attribute for `<img />` element
+   - alt attribute provides more info to the blind people
+   - low bandwidth might not render the image so the alt will help here
+   - alt attributes helps technologies like search engines
+   - title attribute can be used when we hover over image to get extra information
 
 4. Contrast ratio checker
 
-    - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
+   - use contrast ratio checker for foreground and background color: https://webaim.org/resources/contrastchecker/
 
 5. Declare the languages
 
-    - `<html lang="en">`
+   - `<html lang="en">`
 
 6. Meaningful Link txt
 
-    - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
+   - make link text descriptive, understandable and clear `<a href="http://studywithanis.com" target="_blank"> Visit Anisul Islam's website </a>`
 
 7. Form related matters
 
-    - use label and bind input elements with label by using id and for value same. example is given below:
+   - use label and bind input elements with label by using id and for value same. example is given below:
 
-    ```html
-    <label for="email">Email: </label> <input type="email" id="email" />
+   ```html
+   <label for="email">Email: </label> <input type="email" id="email" />
 
-    <div class="form-control">
-      <fieldset>
-        <legend>Choose Gender:</legend>
-        <div class="form-control">
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
-        </div>
-        <div class="form-control">
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label>
-        </div>
-      </fieldset>
-    </div>
-    ```
+   <div class="form-control">
+     <fieldset>
+       <legend>Choose Gender:</legend>
+       <div class="form-control">
+         <input type="radio" id="male" name="gender" value="male" />
+         <label for="male">Male</label>
+       </div>
+       <div class="form-control">
+         <input type="radio" id="female" name="gender" value="female" />
+         <label for="female">Female</label>
+       </div>
+     </fieldset>
+   </div>
+   ```
 
 8. Use aria-label vs aria-labelby vs aria-descriptionby
 
-    - these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
-    - The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
-    - using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
-    - **_aria-label_** add accessible name directly to an element and it has higher priority than the element value. In the following example screen reader will say learn more about me instead of learn more
+   - these attribute has no visual impact but they are for assistive purpose. use them only when you can not use semantic elements
+   - The aria-label and aria-labelledby attributes are both used to give an element it's accessible name.
+   - using forms with standards labels - you shouldn't need it at all: -> label, for is more than enough
+   - **_aria-label_** add accessible name directly to an element and it has higher priority than the element value. In the following example screen reader will say learn more about me instead of learn more
 
-      ```html
-      <button aria-label="Learn more about me">Learn more</button>
-      ```
+     ```html
+     <button aria-label="Learn more about me">Learn more</button>
+     ```
 
-    - **_aria-labelby_** create a relationship between elements
+   - **_aria-labelby_** create a relationship between elements
 
-      ```html
-      <h3 id="hobbies">Hobbies</h3>
-      <ul aria-labelledby="hobbies">
-        <li>Playing Football</li>
-        <li>Playing Badminton</li>
-        <li>Swimming</li>
-      </ul>
-      ```
+     ```html
+     <h3 id="hobbies">Hobbies</h3>
+     <ul aria-labelledby="hobbies">
+       <li>Playing Football</li>
+       <li>Playing Badminton</li>
+       <li>Swimming</li>
+     </ul>
+     ```
 
-    - **_aria-descriptionby_**
+   - **_aria-descriptionby_**
 
-      ```html
-      <div>
-        <label for="password"> Password </label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          aria-describedby="help"
-          required
-        />
-        <div id="help">Pasword must be at least 8 character long</div>
-      </div>
-      ```
+     ```html
+     <div>
+       <label for="password"> Password </label>
+       <input
+         type="password"
+         name="password"
+         id="password"
+         aria-describedby="help"
+         required
+       />
+       <div id="help">Pasword must be at least 8 character long</div>
+     </div>
+     ```
 
 9. role and tabindex -> tabindex can start from 0 then -1, -2 for lesser priority so that you can navigate by keyboard one after one in an order
 
@@ -3398,10 +3547,12 @@ These advanced form elements and attributes enhance the functionality and user e
 #### Sources for Symbols
 
 1. **Unicode Character Table**
+
    - **URL:** [Unicode Table](https://unicode-table.com/)
    - **Description:** A comprehensive resource for finding Unicode characters, including symbols, special characters, and emojis. It provides the Unicode code point and various representations of each character.
 
 2. **HTML Special Characters**
+
    - **URL:** [W3Schools HTML Symbols](https://www.w3schools.com/charsets/ref_html_symbols.asp)
    - **Description:** A reference for HTML symbols and special characters, including their HTML codes and descriptions.
 
@@ -3412,56 +3563,75 @@ These advanced form elements and attributes enhance the functionality and user e
 #### Sources for Icons
 
 1. **Font Awesome**
+
    - **URL:** [Font Awesome](https://fontawesome.com/)
    - **Description:** A popular icon library offering scalable vector icons that can be customized with CSS. Free and Pro versions are available.
    - **Usage:**
 
      ```html
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+     />
      <i class="fas fa-camera"></i>
      ```
 
 2. **Material Icons**
+
    - **URL:** [Material Icons](https://material.io/resources/icons/)
    - **Description:** A set of icons from Google designed for use with Material Design. Available as font and SVG.
    - **Usage:**
 
      ```html
-     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     />
      <i class="material-icons">face</i>
      ```
 
 3. **Ionicons**
+
    - **URL:** [Ionicons](https://ionicons.com/)
    - **Description:** A beautiful set of premium icons for use in web, iOS, Android, and desktop apps. Available as font and SVG.
    - **Usage:**
 
      ```html
-     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+     <link
+       rel="stylesheet"
+       href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css"
+     />
      <i class="ion-md-heart"></i>
      ```
 
 4. **Bootstrap Icons**
+
    - **URL:** [Bootstrap Icons](https://icons.getbootstrap.com/)
    - **Description:** Official open-source SVG icon library for Bootstrap.
    - **Usage:**
 
      ```html
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+     />
      <i class="bi bi-alarm"></i>
      ```
 
 #### Sources for Emojis
 
 1. **Emojipedia**
+
    - **URL:** [Emojipedia](https://emojipedia.org/)
    - **Description:** A comprehensive emoji reference website that provides detailed information about each emoji, including how it appears on different platforms.
 
 2. **Get Emoji**
+
    - **URL:** [Get Emoji](https://getemoji.com/)
    - **Description:** A simple website to copy and paste emojis. Categories include smileys, animals, food, activities, and more.
 
 3. **EmojiCopy**
+
    - **URL:** [EmojiCopy](https://www.emojicopy.com/)
    - **Description:** Allows you to copy emojis with a single click. It features a search function and categories for easy browsing.
 
@@ -3481,10 +3651,14 @@ These advanced form elements and attributes enhance the functionality and user e
 #### Adding Icons
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<p>Social Icons: 
-  <i class="fab fa-facebook"></i> 
-  <i class="fab fa-twitter"></i> 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<p>
+  Social Icons:
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-twitter"></i>
   <i class="fab fa-instagram"></i>
 </p>
 ```
@@ -3502,18 +3676,22 @@ These resources and examples should help you incorporate symbols, icons, and emo
 1. **Color Palettes and Inspiration**
 
    - **Coolors**
+
      - **URL:** [Coolors](https://coolors.co/)
      - **Description:** Generate color schemes with ease, save your favorite palettes, and explore trending palettes for inspiration.
 
    - **Adobe Color**
+
      - **URL:** [Adobe Color](https://color.adobe.com/)
      - **Description:** Create, explore, and save color schemes. You can also extract color themes from images.
 
    - **Colormind**
+
      - **URL:** [Colormind](http://colormind.io/)
      - **Description:** A color scheme generator that uses deep learning to generate color palettes based on color theory.
 
    - **Color Hunt**
+
      - **URL:** [Color Hunt](https://colorhunt.co/)
      - **Description:** A free and open platform for color inspiration with curated color palettes.
 
@@ -3524,10 +3702,12 @@ These resources and examples should help you incorporate symbols, icons, and emo
 2. **Color Picker Tools**
 
    - **HTML Color Picker by W3Schools**
+
      - **URL:** [HTML Color Picker](https://www.w3schools.com/colors/colors_picker.asp)
      - **Description:** Simple color picker tool to select and preview colors in different formats (HEX, RGB, HSL).
 
    - **CSS Color Picker by CSS-TRICKS**
+
      - **URL:** [CSS-TRICKS Color Picker](https://css-tricks.com/accessible-color-picker/)
      - **Description:** An accessible color picker that ensures the colors you choose meet contrast standards.
 
@@ -3538,10 +3718,12 @@ These resources and examples should help you incorporate symbols, icons, and emo
 3. **Color Libraries and Systems**
 
    - **Material Design Colors**
+
      - **URL:** [Material Design Colors](https://material.io/design/color/the-color-system.html)
      - **Description:** Official Material Design color palette by Google, offering a wide range of primary and accent colors.
 
    - **Flat UI Colors**
+
      - **URL:** [Flat UI Colors](https://flatuicolors.com/)
      - **Description:** A collection of color palettes based on the flat design trend, featuring vibrant and muted colors.
 
@@ -3552,6 +3734,7 @@ These resources and examples should help you incorporate symbols, icons, and emo
 4. **Accessibility Tools**
 
    - **Contrast Ratio**
+
      - **URL:** [Contrast Ratio](https://contrast-ratio.com/)
      - **Description:** Check the contrast ratio between two colors to ensure text is readable for users with visual impairments.
 
@@ -3566,18 +3749,22 @@ These resources and examples should help you incorporate symbols, icons, and emo
 #### Learning Resources for HTML
 
 1. **MDN Web Docs (Mozilla Developer Network)**
+
    - **URL:** [MDN HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
    - **Description:** Comprehensive documentation and tutorials on HTML, including elements, attributes, and best practices.
 
 2. **W3Schools**
+
    - **URL:** [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
    - **Description:** Beginner-friendly tutorials covering HTML basics to advanced topics, with interactive examples and exercises.
 
 3. **Codecademy**
+
    - **URL:** [Codecademy HTML Course](https://www.codecademy.com/learn/learn-html)
    - **Description:** Interactive course that teaches HTML through hands-on projects and exercises.
 
 4. **freeCodeCamp**
+
    - **URL:** [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
    - **Description:** Free comprehensive course covering HTML, CSS, and responsive web design principles.
 
@@ -3588,56 +3775,67 @@ These resources and examples should help you incorporate symbols, icons, and emo
 #### Important VS Code Extensions
 
 1. **HTML Snippets**
+
    - **Description:** Provides a collection of useful HTML snippets for faster coding.
    - **Extension ID:** `abusaidm.html-snippets`
 
 2. **Live Server**
+
    - **Description:** Launch a development local Server with live reload feature for static & dynamic pages.
    - **Extension ID:** `ritwickdey.LiveServer`
 
 3. **Prettier - Code formatter**
+
    - **Description:** An opinionated code formatter that supports many languages and integrates with VS Code.
    - **Extension ID:** `esbenp.prettier-vscode`
 
 4. **Emmet**
+
    - **Description:** Provides support for Emmet syntax for writing HTML and CSS faster.
    - **Extension ID:** Built-in (no need to install separately)
 
 5. **Path Intellisense**
+
    - **Description:** Autocompletes filenames in your HTML, CSS, and JavaScript files.
    - **Extension ID:** `christian-kohler.path-intellisense`
 
 6. **Auto Close Tag**
+
    - **Description:** Automatically adds closing tags for HTML and XML elements.
    - **Extension ID:** `formulahendry.auto-close-tag`
 
 7. **Auto Rename Tag**
+
    - **Description:** Automatically renames paired HTML/XML tags.
    - **Extension ID:** `formulahendry.auto-rename-tag`
 
 8. **Bracket Pair Colorizer**
+
    - **Description:** Colors matching brackets to make code more readable.
    - **Extension ID:** `CoenraadS.bracket-pair-colorizer-2`
 
 9. **Beautify**
-    - **Description:** Beautify your code in place for HTML, CSS, and JavaScript files.
-    - **Extension ID:** `HookyQR.beautify`
+   - **Description:** Beautify your code in place for HTML, CSS, and JavaScript files.
+   - **Extension ID:** `HookyQR.beautify`
 
 These resources and extensions will help you learn HTML effectively and improve your productivity while coding in VS Code.
 
 ## Project Ideas for HTML
 
 1. [**Personal Portfolio Website**:](https://anisul-islam.netlify.app/)
+
    - Create a simple portfolio website to showcase your projects and skills.
    - Include sections such as "About Me", "Projects", "Skills", and "Contact".
    - Use basic HTML tags, lists, links, images, and forms.
 
 2. **Recipe Blog**:
+
    - Build a blog to share your favorite recipes.
    - Include a list of recipes, each linking to a detailed page.
    - Use images, lists for ingredients, and steps for instructions.
 
 3. [**Documentation Page**:](#project-documentation-page)
+
    - Design a digital version of your resume or CV.
 
 4. [**Event Invitation Page**:](#project-event-invitation-page-with-html)
