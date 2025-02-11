@@ -53,12 +53,12 @@
 
 - [Advanced Level](#advanced-level)
 
-  1.  [More Advanced Form](#1-more-advanced-form)
-  2.  [Web accessibility](#2-web-accessibility)
-  3.  [HTML5 API](#3-html5-api)
-  4.  [HTML Templates and Web Components](#4-html-templates-and-web-components)
-  5.  [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
-  6.  [Learning Resources](#6-learning-resources)
+  1. [More Advanced Form](#1-more-advanced-form)
+  2. [Web accessibility](#2-web-accessibility)
+  3. [HTML5 API](#3-html5-api)
+  4. [HTML Templates and Web Components](#4-html-templates-and-web-components)
+  5. [Sources for Symbols,Icons, emojis and colors](#5-sources-for-symbols-icons-emojis-colors)
+  6. [Learning Resources](#6-learning-resources)
 
 - [Project Ideas](#project-ideas-for-html)
   - [Portfolio](https://anisul-islam.netlify.app/)
@@ -1697,7 +1697,7 @@ By understanding and utilizing these features, you can effectively incorporate a
 
 ### 8. Form Basics
 
-Forms are essential for collecting user input on web pages. HTML provides a variety of elements to create forms and handle user input effectively. Here’s a detailed explanation of the form elements, input types, and form attributes:
+Forms are essential for collecting user input on web pages. HTML provides a variety of elements to create forms and handle user input effectively. `input fields must have name attribute to send data to server and remeber to bind them with label for by using id with each tag`, Here’s a detailed explanation of the form elements, input types, and form attributes:
 
 #### Form Elements
 
@@ -1718,7 +1718,7 @@ The `<form>` element defines a form that collects user input. It can contain var
 **Example**:
 
 ```html
-<form action="/submit-form" method="post">
+<form action="link_of_where_sending_data" method="post">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" />
   <button type="submit">Submit</button>
@@ -3324,7 +3324,7 @@ These advanced form elements and attributes enhance the functionality and user e
 
 7. Form related matters
 
-   - use label and bind input elements with label by using id and for value same. example is given below:
+   - use label and bind input elements with label by using id and for value same. label for + input/tag id, this way when you will click label it will hit the input field. example is given below:
 
    ```html
    <label for="email">Email: </label> <input type="email" id="email" />
